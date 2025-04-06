@@ -4,31 +4,34 @@ import os
 import automata as atma
 from automata.AnmalZoo.anml_zoo import anml_path, AnmalZoo
 from automata.utility.utility import minimize_automata
-from multiprocessing.dummy import Pool as ThreadPool
-import threading
+import sys
 
-global_lock = threading.Lock()
-
-def process_single_ds(uat):
+def process_anml(path):
     try:
-
-        uat_count = 200
-        # number of total automata to be processed. Make this number smaller to get results faster for a subset
-
-        automatas = atma.parse_anml_file(anml_path[uat])
+        automatas = atma.parse_anml_file(path)
         automatas.remove_ors()
         automatas = automatas.get_connected_components_as_automatas()
-
-        automatas = automatas[:uat_count]
-        # pick the number of automataon to be processed. comment this line if you want to process the whole benchmark
-
-        target_bit_widths = [1, 2, 4, 16]
+        
+        target_bit_widths = [1, 2, 4, 8, 16]
         # bitwidth to be calculated
 
         stats = [[0, 0] for _ in range(len(target_bit_widths))]
         total_ns, total_ne = 0.0, 0.0
-
-        for atm in automatas:
+        
+        filename = os.path.splitext(os.path.basename(path))[0]
+        top_dir = "./Outputs/Automatas/" + filename
+        
+        shutil.rmtree(top_dir, ignore_errors=True)
+        os.mkdir(top_dir)
+        
+        for atm_idx, atm in enumerate(automatas):
+            print("Processing {} of {}".format(atm_idx + 1, len(automatas)))
+            
+            result_dir = top_dir + "/" + str(atm_idx + 1)
+        
+            shutil.rmtree(result_dir, ignore_errors=True)
+            os.mkdir(result_dir)
+            
             total_ns += atm.nodes_count
             total_ne += atm.edges_count
 
@@ -55,36 +58,23 @@ def process_single_ds(uat):
 
                 stats[tb_idx][0] += n_s
                 stats[tb_idx][1] += n_e
-
-        global_lock.acquire()
-        print uat
+                
+                atm.draw_graph(result_dir + "/" + filename + "-" + str(tb) + ".svg")
+                os.system("cp {} {}".format(path, result_dir))
+        
         for tb_idx, tb in enumerate(target_bit_widths):
             print "bitwidth = ", tb, ":  number of states (normalized to 8bit design) = ", stats[tb_idx][0]/total_ns, "number of edges (normalized to 8bit design) = ", stats[tb_idx][1]/total_ne
-
-        global_lock.release()
-        return uat, stats
+        
+        return path, stats
     except Exception, e:
         tracebackString = traceback.format_exc(e)
         print tracebackString
         raise StandardError, "\n\nError occurred. Original traceback is\n%s\n" %(tracebackString)
 
 if __name__ == '__main__':
-
-    ds = [AnmalZoo.Brill, AnmalZoo.Bro217, AnmalZoo.Dotstar03,
-          AnmalZoo.Dotstar06, AnmalZoo.Dotstar09, AnmalZoo.ExactMath,
-          AnmalZoo.PowerEN, AnmalZoo.Protomata, AnmalZoo.Ranges05,
-          AnmalZoo.Ranges1, AnmalZoo.Snort, AnmalZoo.TCP, AnmalZoo.Hamming,
-          AnmalZoo.Levenshtein, AnmalZoo.EntityResolution, AnmalZoo.Fermi,
-          AnmalZoo.RandomForest, AnmalZoo.SPM, AnmalZoo.Synthetic_BlockRings, AnmalZoo.Synthetic_CoreRings]
-
-    ds = [AnmalZoo.ExactMath]
-    # this will only calculate for ExactMatch benchmark. add benchmarks to this list for more
-
-
-    thread_count = 8
-    #  process benchmarks in parallel
-
-    t_pool = ThreadPool(thread_count)
-    results = t_pool.map(process_single_ds, ds)
-    t_pool.close()
-    t_pool.join()
+    if len(sys.argv) > 1:
+        for i in range(1, len(sys.argv)):
+            print("Processing {}".format(sys.argv[i]))
+            process_anml(sys.argv[i])
+    else:
+        print("No arguments passed")

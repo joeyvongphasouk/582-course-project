@@ -33,9 +33,6 @@ def process_single_ds(uat):
 
         automata_per_stage = 200
         # this is a pipelineing parameter for staging as pipeline. We usually use 50 for this parameter
-        
-        print(anml_path[uat])
-        return;
 
         automatas = atma.parse_anml_file(anml_path[uat])
         automatas.remove_ors()
@@ -89,8 +86,7 @@ def process_single_ds(uat):
 
 
 if __name__ == '__main__':
-    ds = [AnmalZoo.Snort]
-    # ds = [AnmalZoo.Test1]
+    ds = [AnmalZoo.Custom]
     # current AWS instance has two CPUs. So it is possible to process two benchmarks in parallel
 
     thread_count = 8
