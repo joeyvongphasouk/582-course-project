@@ -57,13 +57,6 @@ module main();
 		
 		while (1)
 		begin
-			$display("Character: %h", character);
-			$display("0: %d %d", ste0Active, ste0ChildrenActivate);
-			$display("1: %d %d", ste1Active, ste1ChildrenActivate);
-			$display("2: %d %d", ste2Active, ste2ChildrenActivate);
-			$display("report: %d", ste1ChildrenActivate || ste2ChildrenActivate);
-			$display();
-			
 			bytes_read = $fread(character, fin, 0, 2);
 			if (bytes_read < 2)
 			begin
