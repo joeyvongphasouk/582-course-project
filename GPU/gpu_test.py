@@ -6,36 +6,44 @@ import subprocess
 def main():
     if len(sys.argv) < 2:
         print("incorrect usage, arg 1 should be either 'bkase' or 'infant'")
-        print("\t gpu_test.py bkase <input_search_file> <input_regex_file>")
+        print("\t gpu_test.py bkase ...")
+        print("\t gpu_test.py bkase_nsys ...")
         print("\t gpu_test.py infant <todo>")
         sys.exit(-1)
 
     if sys.argv[1] == "bkase":
-        gpu_grep_kase()
+        gpu_grep_kase(False)
+    elif sys.argv[1] == "bkase_nsys":
+        gpu_grep_kase(True)
     elif sys.argv[1] == "infant":
-        gpu_grep_infant()
+        gpu_grep_infant(False)
+    elif sys.argv[1] == "infant_nsys":
+        gpu_grep_infant(True)
     else:
-        print("incorrect usage, arg 1 should be either 'bkase' or 'infant'")
+        print("incorrect usage, arg 1 is not 'bkase' or 'infant'")
 
 
-def gpu_grep_kase():
+def gpu_grep_kase(report):
     # make the file
     try:
-        subprocess.run(["make"], cwd = "bkase-gpu-grep", check=True)
+        subprocess.run(["make"], cwd = "bkase-gpu-grep", check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     except subprocess.CalledProcessError as error:
         print("error make failed;", error)
         sys.exit(-1)
     
     # execute the file using the provided inputs
-    # arg 1 is the input file to search
-    # arg 2 is the input file for regexs, where each line is a new pattern to check
-    if len(sys.argv) != 4:
-        print("incorrect usage, gpu_test.py bkase <input_search_file> <input_regex_file>")
-        sys.exit(-1)
+    gpu_args = ["./bkase-gpu-grep/nfa"]
+    if report:
+        gpu_args = ["nsys", "profile", "./bkase-gpu-grep/nfa"]
+    
+    for i in range(len(sys.argv)):
+        if i > 1:
+            gpu_args.append(sys.argv[i])
+
     try:
-        subprocess.run(["nsys", "profile", "./bkase-gpu-grep/nfa", "-t", "-f", sys.argv[2], "-r", sys.argv[3]])
+        subprocess.run(gpu_args)
     except subprocess.CalledProcessError as error:
-        print("error nsys nfa call failed", error)
+        print("error nfa call failed", error)
         sys.exit(-1)
 
 

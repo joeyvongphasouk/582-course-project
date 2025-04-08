@@ -9,12 +9,15 @@ The first version is from [Brandon Kase](https://github.com/bkase), adapted by [
 
 To run, utlize the gpu_test script; (gpu-grep method, the input file to search, and the pattern input file)
 
-    python3 gpu_test.py bkase ../Inputs/TestFiles/romeojuliet.txt ../Inputs/Regexs/romeo_regex.txt
+    python3 gpu_test.py bkase ../Inputs/TestFiles/romeo_search.txt ../Inputs/Regexs/romeo_regex.txt
 
 To collect benchmarking information;
 
-    nsys profile -o /nsysOutputs gpu_test.py bkase ../Inputs/TestFiles/romeojuliet.txt ../Inputs/Regexs/romeo_regex.txt
-    nsys stats report1.nsys-rep
+    python3 gpu_test.py bkase_nsys ../Inputs/TestFiles/romeo_search.txt ../Inputs/Regexs/romeo_regex.txt
+
+To just print out grep info, ref following example:
+
+    python3 gpu_test.py bkase -f ../Inputs/TestFiles/romeo_search.txt R*
 
 # iNFAnt gpu grep
 The second version is from [Vinh Dang](https://github.com/vqd8a): https://github.com/vqd8a/iNFAnt2. This version supports PCRE patterns.

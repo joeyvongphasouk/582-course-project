@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libgpunfautils.a CMakeFiles/gpunfautils.dir/src/gpunfautils/common.cpp.o CMakeFiles/gpunfautils.dir/src/gpunfautils/gpunfautils_generated_abstract_gpunfa.cu.o CMakeFiles/gpunfautils.dir/src/gpunfautils/gpunfautils_generated_utils.cu.o
+/usr/bin/ranlib lib/libgpunfautils.a

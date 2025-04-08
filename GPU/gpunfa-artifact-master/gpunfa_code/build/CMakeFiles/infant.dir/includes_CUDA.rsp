@@ -1,0 +1,1 @@
+-I"/home/arctic/582-course-project/GPU/gpunfa-artifact-master/gpunfa_code/." -I"/home/arctic/582-course-project/GPU/gpunfa-artifact-master/gpunfa_code/include" -I"/usr/local/cuda-12.8/include"
