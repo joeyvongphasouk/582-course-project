@@ -1,0 +1,429 @@
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Apr 16 23:50:59 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source ACTG.tcl
+# read_verilog ACTG.v 
+# read_xdc clock_constraint.xdc
+# synth_design -top main -part xcu50-fsvh2104-2-e
+Command: synth_design -top main -part xcu50-fsvh2104-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu50'
+INFO: [Device 21-403] Loading part xcu50-fsvh2104-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 418050
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3077.949 ; gain = 256.801 ; free physical = 25491 ; free virtual = 60113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [/home/hkchu/VerilogTest/ACTG.v:33]
+WARNING: [Synth 8-11581] system function call 'fopen' not supported [/home/hkchu/VerilogTest/ACTG.v:51]
+INFO: [Synth 8-6157] synthesizing module 'STE0' [/home/hkchu/VerilogTest/ACTG.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'STE0' (0#1) [/home/hkchu/VerilogTest/ACTG.v:1]
+INFO: [Synth 8-6157] synthesizing module 'STE1' [/home/hkchu/VerilogTest/ACTG.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'STE1' (0#1) [/home/hkchu/VerilogTest/ACTG.v:8]
+INFO: [Synth 8-6157] synthesizing module 'STE2' [/home/hkchu/VerilogTest/ACTG.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'STE2' (0#1) [/home/hkchu/VerilogTest/ACTG.v:16]
+INFO: [Synth 8-6157] synthesizing module 'FF' [/home/hkchu/VerilogTest/ACTG.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'FF' (0#1) [/home/hkchu/VerilogTest/ACTG.v:24]
+WARNING: [Synth 8-11581] system function call 'fread' not supported [/home/hkchu/VerilogTest/ACTG.v:56]
+WARNING: [Synth 8-11581] system task call 'finish' not supported [/home/hkchu/VerilogTest/ACTG.v:58]
+INFO: [Synth 8-251] Character: xxxx [/home/hkchu/VerilogTest/ACTG.v:62]
+INFO: [Synth 8-251] 0: S x [/home/hkchu/VerilogTest/ACTG.v:63]
+INFO: [Synth 8-251] 1: x x [/home/hkchu/VerilogTest/ACTG.v:64]
+INFO: [Synth 8-251] 2: x x [/home/hkchu/VerilogTest/ACTG.v:65]
+INFO: [Synth 8-251] report: x [/home/hkchu/VerilogTest/ACTG.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [/home/hkchu/VerilogTest/ACTG.v:33]
+WARNING: [Synth 8-6014] Unused sequential element bytesRead_reg was removed.  [/home/hkchu/VerilogTest/ACTG.v:56]
+WARNING: [Synth 8-3848] Net character in module/entity main does not have driver. [/home/hkchu/VerilogTest/ACTG.v:37]
+WARNING: [Synth 8-7129] Port character[7] in module STE2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port character[6] in module STE2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port character[5] in module STE2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port character[4] in module STE2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port character[3] in module STE2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port character[2] in module STE2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port character[1] in module STE2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port character[0] in module STE2 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3149.887 ; gain = 328.738 ; free physical = 25404 ; free virtual = 60027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3167.699 ; gain = 346.551 ; free physical = 25403 ; free virtual = 60025
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3167.699 ; gain = 346.551 ; free physical = 25403 ; free virtual = 60025
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3167.699 ; gain = 0.000 ; free physical = 25403 ; free virtual = 60025
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/hkchu/VerilogTest/clock_constraint.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK2_N'. [/home/hkchu/VerilogTest/clock_constraint.xdc:1]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'IOSTANDARD' specified for 'objects'. [/home/hkchu/VerilogTest/clock_constraint.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK2_N'. [/home/hkchu/VerilogTest/clock_constraint.xdc:2]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports SYSCLK2_N]'. [/home/hkchu/VerilogTest/clock_constraint.xdc:2]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/hkchu/VerilogTest/clock_constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3267.387 ; gain = 0.000 ; free physical = 25384 ; free virtual = 60006
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3267.387 ; gain = 0.000 ; free physical = 25384 ; free virtual = 60006
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3267.387 ; gain = 446.238 ; free physical = 25392 ; free virtual = 60015
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu50-fsvh2104-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3275.391 ; gain = 454.242 ; free physical = 25392 ; free virtual = 60015
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3275.391 ; gain = 454.242 ; free physical = 25392 ; free virtual = 60015
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3275.391 ; gain = 454.242 ; free physical = 25392 ; free virtual = 60016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 5952 (col length:93)
+BRAMs: 2688 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3275.391 ; gain = 454.242 ; free physical = 25401 ; free virtual = 60028
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3736.262 ; gain = 915.113 ; free physical = 24976 ; free virtual = 59603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3736.262 ; gain = 915.113 ; free physical = 24976 ; free virtual = 59603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3746.277 ; gain = 925.129 ; free physical = 24968 ; free virtual = 59596
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3916.090 ; gain = 1094.941 ; free physical = 24834 ; free virtual = 59462
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3916.090 ; gain = 1094.941 ; free physical = 24834 ; free virtual = 59462
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3916.090 ; gain = 1094.941 ; free physical = 24834 ; free virtual = 59462
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3916.090 ; gain = 1094.941 ; free physical = 24834 ; free virtual = 59462
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3916.090 ; gain = 1094.941 ; free physical = 24834 ; free virtual = 59462
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3916.090 ; gain = 1094.941 ; free physical = 24834 ; free virtual = 59462
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3916.090 ; gain = 1094.941 ; free physical = 24834 ; free virtual = 59462
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3916.090 ; gain = 995.254 ; free physical = 24834 ; free virtual = 59462
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3916.090 ; gain = 1094.941 ; free physical = 24834 ; free virtual = 59462
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3916.090 ; gain = 0.000 ; free physical = 24834 ; free virtual = 59462
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/hkchu/VerilogTest/clock_constraint.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK2_N'. [/home/hkchu/VerilogTest/clock_constraint.xdc:1]
+CRITICAL WARNING: [Common 17-161] Invalid option value 'IOSTANDARD' specified for 'objects'. [/home/hkchu/VerilogTest/clock_constraint.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK2_N'. [/home/hkchu/VerilogTest/clock_constraint.xdc:2]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports SYSCLK2_N]'. [/home/hkchu/VerilogTest/clock_constraint.xdc:2]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/hkchu/VerilogTest/clock_constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3916.090 ; gain = 0.000 ; free physical = 25009 ; free virtual = 59637
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ee3d4f8a
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 18 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 3916.090 ; gain = 2432.660 ; free physical = 25009 ; free virtual = 59637
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3327.597; main = 3327.597; forked = 323.411
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4363.852; main = 3888.355; forked = 915.773
+# opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu50'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu50'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.3 . Memory (MB): peak = 3916.090 ; gain = 0.000 ; free physical = 25017 ; free virtual = 59645
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3916.090 ; gain = 0.000 ; free physical = 25009 ; free virtual = 59636
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4088.090 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4088.090 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+Phase 1 Initialization | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4088.090 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4088.090 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4088.090 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4088.090 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4088.090 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+Retarget | Checksum: 1986bc3f5
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4088.090 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+Constant propagation | Checksum: 1986bc3f5
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4088.090 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+Phase 5 Sweep | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4088.090 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+Sweep | Checksum: 1986bc3f5
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4120.105 ; gain = 32.016 ; free physical = 24842 ; free virtual = 59469
+BUFG optimization | Checksum: 1986bc3f5
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4120.105 ; gain = 32.016 ; free physical = 24842 ; free virtual = 59469
+Shift Register Optimization | Checksum: 1986bc3f5
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4120.105 ; gain = 32.016 ; free physical = 24842 ; free virtual = 59469
+Post Processing Netlist | Checksum: 1986bc3f5
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4120.105 ; gain = 32.016 ; free physical = 24842 ; free virtual = 59469
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4120.105 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4120.105 ; gain = 32.016 ; free physical = 24842 ; free virtual = 59469
+Phase 9 Finalization | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4120.105 ; gain = 32.016 ; free physical = 24842 ; free virtual = 59469
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4120.105 ; gain = 32.016 ; free physical = 24842 ; free virtual = 59469
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4120.105 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4120.105 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4120.105 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+Ending Netlist Obfuscation Task | Checksum: 1986bc3f5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4120.105 ; gain = 0.000 ; free physical = 24842 ; free virtual = 59469
+INFO: [Common 17-83] Releasing license: Implementation
+21 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4120.105 ; gain = 204.016 ; free physical = 24842 ; free virtual = 59469
+# place_design
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu50'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu50'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4120.105 ; gain = 0.000 ; free physical = 24847 ; free virtual = 59474
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: aa2e746b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4120.105 ; gain = 0.000 ; free physical = 24847 ; free virtual = 59474
+Phase 1 Placer Initialization | Checksum: aa2e746b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4120.105 ; gain = 0.000 ; free physical = 24847 ; free virtual = 59474
+Ending Placer Task | Checksum: aa2e746b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4120.105 ; gain = 0.000 ; free physical = 24847 ; free virtual = 59474
+9 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+place_design failed
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 16 23:51:34 2025...

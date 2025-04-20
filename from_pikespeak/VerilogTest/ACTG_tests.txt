@@ -1,0 +1,53 @@
+ACTG is the FA from Grapefruit paper but with no edge from 0 to 2
+
+Input: 
+AAAGCCCCC?C?ATCCA
+
+Expected Output:
+Character: 4141
+0: S 1
+1: x 0
+2: x 0
+report: 0
+
+Character: 4147
+0: S 1
+1: 1 0
+2: 0 0
+report: 0
+
+Character: 4343
+0: S 0
+1: 1 1
+2: 0 0
+report: 1
+
+Character: 4343
+0: S 0
+1: 1 1
+2: 1 1
+report: 1
+
+Character: 433F
+0: S 0
+1: 1 0
+2: 1 1
+report: 1
+
+Character: 433F
+0: S 0
+1: 0 0
+2: 0 0
+report: 0
+
+Character: 4154
+0: S 0
+1: 0 0
+2: 0 0
+report: 0
+
+Character: 4343
+0: S 0
+1: 0 0
+2: 0 0
+report: 0

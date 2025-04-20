@@ -1,0 +1,2244 @@
+/*
+
+AMD Vivado v2024.2 (64-bit) [Major: 2024, Minor: 2]
+SW Build: 5239630 on Fri Nov 08 22:34:34 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+
+Process ID (PID): 425061
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Apr 17 09:10:42 MDT 2025
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: Ubuntu
+OS Version: 6.8.0-57-generic
+OS Architecture: amd64
+Available processors (cores): 16
+LSB Release Description: DISTRIB_ID=Ubuntu
+
+Display: localhost:10.0
+Screen size: 1536x864
+Local screen bounds: x = 0, y = 0, width = 1536, height = 864
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: true
+
+Java version: 	21.0.1 64-bit
+
+Java home: 	/tools/Xilinx/Vivado/2024.2/tps/lnx64/jre21.0.1_12
+Java executable: 	/tools/Xilinx/Vivado/2024.2/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	hkchu
+User home directory: /home/hkchu
+User working directory: /home/hkchu/VerilogTest
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2024.2
+RDI_DATADIR: /tools/Xilinx/SharedData/2024.2/data:/tools/Xilinx/Vivado/2024.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2024.2/bin
+
+Vivado preferences file: /home/hkchu/.Xilinx/Vivado/2024.2/vivado.xml
+Vivado preferences directory: /home/hkchu/.Xilinx/Vivado/2024.2/
+Vivado layouts directory: /home/hkchu/.Xilinx/Vivado/2024.2/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2024.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/hkchu/VerilogTest/vivado.log
+Vivado journal file: 	/home/hkchu/VerilogTest/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-425061-pikespeak
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: /tools/Xilinx/Vivado/2024.2
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2024.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/SharedData/2024.2/data:/tools/Xilinx/Vivado/2024.2/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2024.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /tools/Xilinx/Vivado/2024.2/lib/lnx64.o/Ubuntu/22:/tools/Xilinx/Vivado/2024.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vivado/2024.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/Vitis/2024.2/bin:/tools/Xilinx/Vivado/2024.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/hkchu/VerilogTest:pikespeak_1744902613_425021
+RDI_SHARED_DATA: /tools/Xilinx/SharedData/2024.2/data
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2024.2/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+XILINX: /tools/Xilinx/Vivado/2024.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2024.2/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis/2024.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2024.2
+XILINX_SDK: /tools/Xilinx/Vitis/2024.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2024.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2024.2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,548 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  3027 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,569 MB. GUI used memory: 63 MB. Current time: 4/17/25, 9:10:43 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/hkchu/VerilogTest/project_1/project_1.xpr", 0); // b.c (PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS)
+// [GUI Memory]: 86 MB (+87486kb) [00:00:41]
+// [Engine Memory]: 1,570 MB (+1494383kb) [00:00:41]
+// Opening Vivado Project: /home/hkchu/VerilogTest/project_1/project_1.xpr. Version: Vivado v2024.2 
+// WARNING: HEventQueue.dispatchEvent() is taking  4555 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,616 MB. GUI used memory: 62 MB. Current time: 4/17/25, 9:11:05 AM MDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  6200 ms.
+// Tcl Message: open_project /home/hkchu/VerilogTest/project_1/project_1.xpr 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 126 MB (+37124kb) [00:00:52]
+// [Engine Memory]: 1,711 MB (+66025kb) [00:00:52]
+// WARNING: HEventQueue.dispatchEvent() is taking  1033 ms.
+// Tcl Message: open_project /home/hkchu/VerilogTest/project_1/project_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  5646 ms.
+// Project name: project_1; location: /home/hkchu/VerilogTest/project_1; part: xcu50-fsvh2104-2-e
+// Tcl Message: open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 7796.664 ; gain = 152.188 ; free physical = 26894 ; free virtual = 61593 
+// WARNING: HEventQueue.dispatchEvent() is taking  3200 ms.
+// Elapsed time: 19 seconds
+dismissDialog("Open Project"); // bh (Open Project Progress)
+// [GUI Memory]: 138 MB (+6613kb) [00:01:05]
+// WARNING: HEventQueue.dispatchEvent() is taking  2698 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,779 MB. GUI used memory: 67 MB. Current time: 4/17/25, 9:11:25 AM MDT
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HEventQueue.dispatchEvent() is taking  3699 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1380 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6208 ms.
+// Elapsed time: 89 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  4086 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4422 ms.
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Block Design"); // a (RDIResource.BaseDialog_OK)
+// 'P' command handler elapsed time: 14 seconds
+dismissDialog("Create Block Design"); // aB (design_1)
+// TclEventType: LOAD_FEATURE
+// Tcl Message: create_bd_design "design_1" 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SAVE_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  4488 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5490 ms.
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  4596 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,815 MB. GUI used memory: 71 MB. Current time: 4/17/25, 9:13:19 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  2240 ms.
+// Elapsed time: 18 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// Tcl Message: create_bd_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 7892.578 ; gain = 0.000 ; free physical = 26873 ; free virtual = 61579 
+// [Engine Memory]: 1,799 MB (+2513kb) [00:03:02]
+dismissDialog("Create Block Design"); // bh (Create Block Design Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  3372 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3711 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02m:18s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02m:19s
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HEventQueue.dispatchEvent() is taking  2263 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02m:22s
+// WARNING: HEventQueue.dispatchEvent() is taking  4307 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,842 MB. GUI used memory: 69 MB. Current time: 4/17/25, 9:13:39 AM MDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02m:27s
+// WARNING: HEventQueue.dispatchEvent() is taking  2882 ms.
+// Elapsed time: 68 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 241, 183, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  2270 ms.
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+// WARNING: HEventQueue.dispatchEvent() is taking  3334 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1281 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3009 ms.
+// Elapsed time: 28 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ethern"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+// WARNING: HEventQueue.dispatchEvent() is taking  2893 ms.
+// Elapsed time: 489 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1194 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1061 ms.
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // an (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // an (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // an (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, "Add Module to Block Design"); // aq (PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, add_module_to_bd_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: LOAD_FEATURE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  1359 ms.
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_bd_cell -type module -reference main main_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  6691 ms.
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  4735 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,862 MB. GUI used memory: 73 MB. Current time: 4/17/25, 9:24:27 AM MDT
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:13 . Memory (MB): peak = 7952.418 ; gain = 14.992 ; free physical = 26876 ; free virtual = 61583 
+// Elapsed time: 13 seconds
+dismissDialog("Add Module"); // bh (Add Module Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 13m:16s
+// WARNING: HEventQueue.dispatchEvent() is taking  1489 ms.
+// [GUI Memory]: 151 MB (+5856kb) [00:14:12]
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 13m:19s
+// Elapsed time: 76 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 355, 157, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // aq (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells main_0] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 14m:38s
+// [Engine Memory]: 1,894 MB (+4856kb) [00:15:32]
+// WARNING: HEventQueue.dispatchEvent() is taking  1133 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 14m:41s
+// WARNING: HEventQueue.dispatchEvent() is taking  1702 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1593 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("ACTG.v", 124, 64); // ae (ACTG.v)
+selectCodeEditor("ACTG.v", 132, 165); // ae (ACTG.v)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,925 MB. GUI used memory: 75 MB. Current time: 4/17/25, 9:26:03 AM MDT
+typeControlKey((HResource) null, "ACTG.v", 'v'); // ae (ACTG.v)
+// WARNING: HEventQueue.dispatchEvent() is taking  2410 ms.
+selectCodeEditor("ACTG.v", 132, 165); // ae (ACTG.v)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2522 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 15m:04s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 15m:06s
+// WARNING: HEventQueue.dispatchEvent() is taking  4086 ms.
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// WARNING: updateGUI() is taking  1650 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1651 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1242 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 8, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1762 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, clock_constraint.xdc]", 6, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // an (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, "Add Module to Block Design"); // aq (PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, add_module_to_bd_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  1113 ms.
+// Tcl Message: create_bd_cell -type module -reference main main_0 
+// WARNING: HEventQueue.dispatchEvent() is taking  5202 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,967 MB. GUI used memory: 76 MB. Current time: 4/17/25, 9:26:47 AM MDT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ACTG.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+dismissDialog("Add Module"); // bh (Add Module Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 15m:35s
+// WARNING: HEventQueue.dispatchEvent() is taking  1529 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1702 ms.
+// [Engine Memory]: 1,991 MB (+2636kb) [00:16:31]
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 15m:38s
+selectCodeEditor("ACTG.v", 83, 86); // ae (ACTG.v)
+// WARNING: HEventQueue.dispatchEvent() is taking  1175 ms.
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 387, 153, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_SOURCE, "Go to Source"); // aq (PAResourceCommand.PACommandNames_GOTO_SOURCE, show_source_menu)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_SOURCE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 408, 137, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // an (PAResourceQtoS.SystemBuilderView_ORIENTATION, Orientation)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // an (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenuItem(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "Regenerate Layout"); // aq (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, regenerate_rsb_layout_menu)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 393, 147, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // an (PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // aq (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: delete_bd_objs [get_bd_cells main_0] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 16m:16s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 16m:18s
+// WARNING: updateGUI() is taking  2347 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2347 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,021 MB. GUI used memory: 76 MB. Current time: 4/17/25, 9:27:33 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  2907 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // an (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // an (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // an (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, "Add Module to Block Design"); // aq (PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, add_module_to_bd_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  1180 ms.
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_bd_cell -type module -reference main main_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  8694 ms.
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  7942 ms.
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:00.43 ; elapsed = 00:00:18 . Memory (MB): peak = 8106.660 ; gain = 0.000 ; free physical = 26852 ; free virtual = 61560 
+// Elapsed time: 18 seconds
+dismissDialog("Add Module"); // bh (Add Module Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 17m:02s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 17m:04s
+// WARNING: HEventQueue.dispatchEvent() is taking  2081 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1698 ms.
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// WARNING: HEventQueue.dispatchEvent() is taking  5550 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5106 ms.
+// Elapsed time: 16 seconds
+selectButton(PAResourceQtoS.SaveProjectUtils_CANCEL, "Cancel", "Save Project"); // a (PAResourceQtoS.SaveProjectUtils_CANCEL)
+// 'i' command handler elapsed time: 16 seconds
+dismissDialog("Save Project"); // ac.d (dialog0)
+// WARNING: HEventQueue.dispatchEvent() is taking  1755 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 341, 146, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  1614 ms.
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // an (PAResourceQtoS.SystemBuilderView_ORIENTATION, Orientation)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // an (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // an (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:04s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:06s
+// Elapsed time: 194 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ACTG.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// WARNING: HEventQueue.dispatchEvent() is taking  2342 ms.
+selectCodeEditor("ACTG.v", 110, 101); // ae (ACTG.v)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (PAResourceAtoD.AbstractFileView_RELOAD)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 345, 141, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // aq (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// Tcl Message: delete_bd_objs [get_bd_cells main_0] 
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// WARNING: HEventQueue.dispatchEvent() is taking  4790 ms.
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: IP_LOCK_CHANGE
+// WARNING: updateGUI() is taking  3894 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3894 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,042 MB. GUI used memory: 76 MB. Current time: 4/17/25, 9:32:45 AM MDT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1647 ms.
+// Tcl Message: delete_bd_objs: Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:09 . Memory (MB): peak = 8126.660 ; gain = 10.000 ; free physical = 23785 ; free virtual = 58653 
+// Elapsed time: 11 seconds
+dismissDialog("Confirm Delete"); // bh (Confirm Delete Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:36s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:38s
+// Elapsed time: 136 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // an (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // an (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // an (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, "Add Module to Block Design"); // aq (PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, add_module_to_bd_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  1365 ms.
+// Tcl Message: create_bd_cell -type module -reference main main_0 
+// WARNING: HEventQueue.dispatchEvent() is taking  10571 ms.
+// Elapsed time: 12 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+dismissDialog("Add Module"); // bh (Add Module Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 24m:14s
+// WARNING: HEventQueue.dispatchEvent() is taking  1520 ms.
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ACTG.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// WARNING: HEventQueue.dispatchEvent() is taking  1233 ms.
+selectCodeEditor("ACTG.v", 230, 157); // ae (ACTG.v)
+selectCodeEditor("ACTG.v", 410, 220); // ae (ACTG.v)
+selectCodeEditor("ACTG.v", 409, 218); // ae (ACTG.v)
+selectCodeEditor("ACTG.v", 563, 155, true, false, false, false, false); // ae (ACTG.v) - Shift Key
+// WARNING: HEventQueue.dispatchEvent() is taking  1940 ms.
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 24m:42s
+// WARNING: HEventQueue.dispatchEvent() is taking  3771 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 24m:48s
+// WARNING: HEventQueue.dispatchEvent() is taking  1774 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1902 ms.
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// WARNING: HEventQueue.dispatchEvent() is taking  1365 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, "Add Module to Block Design"); // aq (PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, add_module_to_bd_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  1070 ms.
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_bd_cell -type module -reference main main_1 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  7025 ms.
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  4108 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,107 MB. GUI used memory: 77 MB. Current time: 4/17/25, 9:36:30 AM MDT
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:12 . Memory (MB): peak = 8167.680 ; gain = 0.000 ; free physical = 26241 ; free virtual = 61537 
+// [Engine Memory]: 2,107 MB (+17363kb) [00:26:12]
+// Elapsed time: 13 seconds
+dismissDialog("Add Module"); // bh (Add Module Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  1367 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1582 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 25m:22s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ACTG.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// WARNING: HEventQueue.dispatchEvent() is taking  2180 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2964 ms.
+typeControlKey(null, null, 'z');
+selectCodeEditor("ACTG.v", 54, 114); // ae (ACTG.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 25m:32s
+// WARNING: HEventQueue.dispatchEvent() is taking  1325 ms.
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 25m:34s
+// Elapsed time: 134 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/clock]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/clock]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 353, 102, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // an (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenuItem(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "Validate Design"); // aq (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, validate_bd_design_rsb_menu)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// Tcl Message: ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source:  /main_0/clock /main_1/clock  
+// Tcl Message: ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors. 
+// WARNING: HEventQueue.dispatchEvent() is taking  4678 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4082 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  1535 ms.
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 379, 229, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  3391 ms.
+dismissDialog("Critical Messages"); // dQ.a (dialog1)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // an (PAResourceQtoS.SystemBuilderView_ORIENTATION, Orientation)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // aq (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1048 ms.
+// Tcl Message: delete_bd_objs [get_bd_cells main_1] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 28m:14s
+// WARNING: HEventQueue.dispatchEvent() is taking  1287 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 28m:16s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,168 MB. GUI used memory: 78 MB. Current time: 4/17/25, 9:39:28 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  2193 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 383, 161, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  1294 ms.
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // aq (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  2428 ms.
+// Tcl Message: delete_bd_objs [get_bd_cells main_0] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 28m:31s
+// WARNING: HEventQueue.dispatchEvent() is taking  1621 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2696 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7462 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,181 MB. GUI used memory: 79 MB. Current time: 4/17/25, 9:39:55 AM MDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 28m:43s
+// WARNING: HEventQueue.dispatchEvent() is taking  2262 ms.
+// Elapsed time: 49 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v), ste0 : STE0 (ACTG.v)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v), ste0 : STE0 (ACTG.v)]", 2, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, "Add Module to Block Design"); // aq (PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, add_module_to_bd_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_bd_cell -type module -reference STE0 STE0_0 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  11710 ms.
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  4780 ms.
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:00.4 ; elapsed = 00:00:18 . Memory (MB): peak = 8263.699 ; gain = 0.000 ; free physical = 26241 ; free virtual = 61537 
+// Elapsed time: 19 seconds
+dismissDialog("Add Module"); // bh (Add Module Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  2829 ms.
+selectButton((HResource) null, "Show IP Status"); // h
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// WARNING: HEventQueue.dispatchEvent() is taking  8533 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,215 MB. GUI used memory: 78 MB. Current time: 4/17/25, 9:41:37 AM MDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 30m:25s
+// WARNING: HEventQueue.dispatchEvent() is taking  3367 ms.
+// Elapsed time: 12 seconds
+selectButton("OptionPane.button", "OK", "Background Task"); // JButton (OptionPane.button)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 30m:30s
+// WARNING: HEventQueue.dispatchEvent() is taking  3310 ms.
+selectButton((HResource) null, "Show IP Status"); // h
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// WARNING: HEventQueue.dispatchEvent() is taking  3782 ms.
+// Tcl Message: report_ip_status -name ip_status  
+// TclEventType: IP_SUMMARY_RESULTS
+// WARNING: HEventQueue.dispatchEvent() is taking  6707 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5099 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2578 ms.
+// Elapsed time: 20 seconds
+dismissDialog("Report IP Status"); // bh (Report IP Status Progress)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// WARNING: HEventQueue.dispatchEvent() is taking  1018 ms.
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: update_module_reference [get_ips  design_1_STE0_0_0] 
+// WARNING: HEventQueue.dispatchEvent() is taking  1224 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6533 ms.
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  3781 ms.
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Upgrading '/home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  1203 ms.
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated design_1_STE0_0_0 to use current project options 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// WARNING: HEventQueue.dispatchEvent() is taking  1298 ms.
+// Tcl Message: Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// Tcl Message: upgrade_ip: Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:16 . Memory (MB): peak = 8305.645 ; gain = 0.000 ; free physical = 26235 ; free virtual = 61531 update_module_reference: Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:16 . Memory (MB): peak = 8305.645 ; gain = 0.000 ; free physical = 26235 ; free virtual = 61531 
+// WARNING: HEventQueue.dispatchEvent() is taking  6439 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1193 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5182 ms.
+// Elapsed time: 32 seconds
+selectButton("OptionPane.button", "OK", "Upgrade IP"); // JButton (OptionPane.button)
+// WARNING: HEventQueue.dispatchEvent() is taking  6694 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1041 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 31m:39s
+// [Engine Memory]: 2,246 MB (+34929kb) [00:32:32]
+dismissDialog("Generate Output Products"); // W (dialog2)
+// WARNING: HEventQueue.dispatchEvent() is taking  3246 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6180 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 31m:49s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 31m:49s
+// WARNING: HEventQueue.dispatchEvent() is taking  2347 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,240 MB. GUI used memory: 79 MB. Current time: 4/17/25, 9:43:04 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  2351 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2755 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 31m:57s
+// WARNING: HEventQueue.dispatchEvent() is taking  2537 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2090 ms.
+// Elapsed time: 24 seconds
+selectTab((HResource) null, (HResource) null, "Design", 1); // aa
+// WARNING: HEventQueue.dispatchEvent() is taking  2039 ms.
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[design_1]", 0, true); // a (PAResourceQtoS.SystemTreeView_SYSTEM_TREE) - Node
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[design_1]", 0, true, false, false, false, true, false); // a (PAResourceQtoS.SystemTreeView_SYSTEM_TREE) - Popup Trigger - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  3693 ms.
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  5581 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2701 ms.
+// Elapsed time: 31 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Block Design"); // a (RDIResource.BaseDialog_OK)
+// 'P' command handler elapsed time: 31 seconds
+// TclEventType: RSB_SAVE_DIAGRAM
+dismissDialog("Create Block Design"); // aB (design_2)
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1993 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2121 ms.
+// Tcl Message: create_bd_design "design_2" 
+// Tcl Message: Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd>  
+// WARNING: HEventQueue.dispatchEvent() is taking  7767 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1266 ms.
+// Elapsed time: 12 seconds
+dismissDialog("Create Block Design"); // bh (Create Block Design Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 33m:07s
+// WARNING: HEventQueue.dispatchEvent() is taking  2402 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 6588ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6591 ms.
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  2021 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 33m:19s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 33m:21s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,267 MB. GUI used memory: 81 MB. Current time: 4/17/25, 9:44:33 AM MDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 33m:24s
+// WARNING: HEventQueue.dispatchEvent() is taking  1765 ms.
+// Elapsed time: 22 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+// WARNING: HEventQueue.dispatchEvent() is taking  1402 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // an (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // an (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // an (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, "Add Module to Block Design"); // aq (PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, add_module_to_bd_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  1078 ms.
+// Tcl Message: create_bd_cell -type module -reference main main_0 
+// WARNING: HEventQueue.dispatchEvent() is taking  8390 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 5856ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5856 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1448 ms.
+// Elapsed time: 16 seconds
+dismissDialog("Add Module"); // bh (Add Module Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 33m:57s
+// WARNING: HEventQueue.dispatchEvent() is taking  5542 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,308 MB. GUI used memory: 83 MB. Current time: 4/17/25, 9:45:16 AM MDT
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/clock]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 375, 157, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  4405 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 34m:08s
+// WARNING: HEventQueue.dispatchEvent() is taking  6192 ms.
+// Elapsed time: 14 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/clock]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 375, 157, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  6098 ms.
+// [GUI Memory]: 160 MB (+1992kb) [00:35:19]
+// WARNING: HEventQueue.dispatchEvent() is taking  7424 ms.
+// Elapsed time: 15 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/clock]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 343, 147, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  1812 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1072 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 383, 143, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  4145 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/clock]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 335, 138, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  1253 ms.
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 371, 153, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  3956 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/clock]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  1951 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 405, 159, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  1013 ms.
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // aq (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1862 ms.
+// Tcl Message: delete_bd_objs [get_bd_cells main_0] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 35m:01s
+// WARNING: HEventQueue.dispatchEvent() is taking  3314 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 35m:07s
+// WARNING: HEventQueue.dispatchEvent() is taking  2768 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6894 ms.
+// Elapsed time: 18 seconds
+selectButton((HResource) null, "Show IP Status"); // h
+// WARNING: HEventQueue.dispatchEvent() is taking  1897 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3664 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2192 ms.
+// Elapsed time: 46 seconds
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "Refresh module reference"); // o.d (PAResourceItoN.IPStatusTablePanel_MORE_INFO)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/STE0_0 ; true ; design_1_STE0_0_0 [STE0_v1_0] (Stale module reference) ; design_1_STE0_0_0 [STE0_v1_0] (Stale module reference) ;  ; STE0_v1_0 ; 1.0 (Rev. 1) ; 1.0 (Rev. 1) ; design_1_STE0_0_0 [STE0_v1_0] (Stale module reference) ; xcu50-fsvh2104-2-e", 1, "design_1_STE0_0_0 [STE0_v1_0] (Stale module reference)", 3, false); // x (PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/STE0_0 ; true ; design_1_STE0_0_0 [STE0_v1_0] (Stale module reference) ; design_1_STE0_0_0 [STE0_v1_0] (Stale module reference) ;  ; STE0_v1_0 ; 1.0 (Rev. 1) ; 1.0 (Rev. 1) ; design_1_STE0_0_0 [STE0_v1_0] (Stale module reference) ; xcu50-fsvh2104-2-e", 1, (String) null, 4, false); // x (PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE)
+// WARNING: HEventQueue.dispatchEvent() is taking  1423 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1334 ms.
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (RDIResource.BaseReportTab_RERUN)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// WARNING: HEventQueue.dispatchEvent() is taking  2892 ms.
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// WARNING: HEventQueue.dispatchEvent() is taking  1190 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8331 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5879 ms.
+// Elapsed time: 19 seconds
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/STE0_0 ; false ; design_1_STE0_0_0 [STE0_v1_0] (Up-to-date) ; No changes required ;  ; STE0_v1_0 ; 1.0 (Rev. 1) ; 1.0 (Rev. 1) ; design_1_STE0_0_0 [STE0_v1_0] (Up-to-date) ; xcu50-fsvh2104-2-e", 1, "/STE0_0", 0, true); // x (PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE) - Node
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/STE0_0 ; false ; design_1_STE0_0_0 [STE0_v1_0] (Up-to-date) ; No changes required ;  ; STE0_v1_0 ; 1.0 (Rev. 1) ; 1.0 (Rev. 1) ; design_1_STE0_0_0 [STE0_v1_0] (Up-to-date) ; xcu50-fsvh2104-2-e", 1, "/STE0_0", 0, true); // x (PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE) - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1165 ms.
+dismissDialog("Report IP Status"); // bh (Report IP Status Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  2169 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1217 ms.
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd), design_1_STE0_0_0 (Module Reference Wrapper)]", 8, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1287 ms.
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // an (PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, IP Documentation)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // an (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // an (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // an (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // an (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd)]", 7, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd)]", 7, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd)]", 7, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // aq (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// WARNING: HEventQueue.dispatchEvent() is taking  4671 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1093 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6135 ms.
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Remove Sources"); // a (RDIResource.BaseDialog_OK)
+// 'c' command handler elapsed time: 12 seconds
+dismissDialog("Remove Sources"); // V (dialog3)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: remove_files  /home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// WARNING: HEventQueue.dispatchEvent() is taking  9122 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,321 MB. GUI used memory: 83 MB. Current time: 4/17/25, 9:48:57 AM MDT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// WARNING: HEventQueue.dispatchEvent() is taking  4217 ms.
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  6304 ms.
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: remove_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 8464.629 ; gain = 51.977 ; free physical = 26231 ; free virtual = 61527 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/V.b': 25s
+// WARNING: HEventQueue.dispatchEvent() is taking  3154 ms.
+// [Engine Memory]: 2,384 MB (+26814kb) [00:38:53]
+// Elapsed time: 25 seconds
+dismissDialog("Remove Sources"); // bh (Remove Sources Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  6937 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 38m:08s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,398 MB. GUI used memory: 85 MB. Current time: 4/17/25, 9:49:20 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  7475 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3946 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8726 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 38m:28s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 28 seconds
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", "Quick Access"); // OverlayTextField (RDIResource.SearchCommandComponent_QUICK_ACCESS)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 38m:29s
+// WARNING: HEventQueue.dispatchEvent() is taking  9169 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6864 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4713 ms.
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // an (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // an (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // an (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, "Add Module to Block Design"); // aq (PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, add_module_to_bd_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  1131 ms.
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_bd_cell -type module -reference main main_0 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  7313 ms.
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  4667 ms.
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:14 . Memory (MB): peak = 8496.645 ; gain = 0.000 ; free physical = 26246 ; free virtual = 61542 
+// Elapsed time: 15 seconds
+dismissDialog("Add Module"); // bh (Add Module Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  1106 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3421 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1080 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,418 MB. GUI used memory: 84 MB. Current time: 4/17/25, 9:50:34 AM MDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 39m:22s
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+// WARNING: HEventQueue.dispatchEvent() is taking  4850 ms.
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// WARNING: HEventQueue.dispatchEvent() is taking  3308 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9847 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2031 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4532 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 39m:49s
+// WARNING: HEventQueue.dispatchEvent() is taking  1057 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3848 ms.
+// Elapsed time: 57 seconds
+selectButton("OptionPane.button", "OK", "Background Task"); // JButton (OptionPane.button)
+// WARNING: HEventQueue.dispatchEvent() is taking  1615 ms.
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION)
+// WARNING: HEventQueue.dispatchEvent() is taking  4197 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4965 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2854 ms.
+// Elapsed time: 25 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Run Connection Automation"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// WARNING: HEventQueue.dispatchEvent() is taking  2011 ms.
+dismissDialog("Run Connection Automation"); // G (dialog4)
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100.0} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins main_0/clock] 
+// Tcl Message: INFO: [Device 21-403] Loading part xcu50-fsvh2104-2-e 
+// TclEventType: REPORT_IP_STATUS_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  10028 ms.
+// [Engine Memory]: 3,731 MB (+1287711kb) [00:42:02]
+// TclEventType: REPORT_IP_STATUS_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,731 MB. GUI used memory: 85 MB. Current time: 4/17/25, 9:52:22 AM MDT
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  5433 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4804 ms.
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// WARNING: HEventQueue.dispatchEvent() is taking  1382 ms.
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// WARNING: HEventQueue.dispatchEvent() is taking  1377 ms.
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 9809.109 ; gain = 1311.473 ; free physical = 24914 ; free virtual = 60212 apply_bd_automation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 9809.109 ; gain = 1311.473 ; free physical = 24914 ; free virtual = 60212 
+// Elapsed time: 26 seconds
+dismissDialog("Run Connection Automation"); // bh (Run Connection Automation Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  3020 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,770 MB. GUI used memory: 86 MB. Current time: 4/17/25, 9:52:40 AM MDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 41m:29s
+// WARNING: HEventQueue.dispatchEvent() is taking  6485 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4323 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 41m:40s
+// WARNING: HEventQueue.dispatchEvent() is taking  5244 ms.
+// Elapsed time: 60 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /clk_wiz/locked]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 411, 115, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /clk_wiz/clk_in1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  1124 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2128 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /clk_wiz]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /clk_wiz]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 381, 72, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // aq (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  3707 ms.
+// Tcl Message: delete_bd_objs [get_bd_nets clk_wiz_clk_out1] [get_bd_cells clk_wiz] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 42m:48s
+// WARNING: HEventQueue.dispatchEvent() is taking  1974 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2902 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,795 MB. GUI used memory: 85 MB. Current time: 4/17/25, 9:54:05 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  3251 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 42m:56s
+// WARNING: HEventQueue.dispatchEvent() is taking  4913 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11170 ms.
+// Elapsed time: 30 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, clock_constraint.xdc]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// WARNING: HEventQueue.dispatchEvent() is taking  1464 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, clock_constraint.xdc]", 6, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // an (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+// WARNING: HEventQueue.dispatchEvent() is taking  5759 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10440 ms.
+// Elapsed time: 27 seconds
+selectMenuItem(PAResourceCommand.PACommandNames_SET_TARGET_UCF, "Set as Target Constraint File"); // aq (PAResourceCommand.PACommandNames_SET_TARGET_UCF, set_target_constr_file_menu)
+// Run Command: PAResourceCommand.PACommandNames_SET_TARGET_UCF
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  8503 ms.
+// Tcl Message: set_property target_constrs_file /home/hkchu/VerilogTest/clock_constraint.xdc [current_fileset -constrset] 
+// WARNING: HEventQueue.dispatchEvent() is taking  33489 ms.
+// Elapsed time: 100 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/clock]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  1451 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1615 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2885 ms.
+// Elapsed time: 18 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/clock]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  2574 ms.
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 317, 146, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  2277 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2731 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1021 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1651 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3584 ms.
+// Elapsed time: 66 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/clock]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 285, 147, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  1130 ms.
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // an (PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // aq (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, auto_connect_ports_menu)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins main_0/clock] 
+// Tcl Message: endgroup 
+// WARNING: HEventQueue.dispatchEvent() is taking  2236 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  2679 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1440 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/character]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/character]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 347, 167, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /clock_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  2346 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /clock_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /clock_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 287, 147, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // an (PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "External Port Properties..."); // aq (RDIResourceCommand.RDICommands_PROPERTIES, edit_properties_menu)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// WARNING: HEventQueue.dispatchEvent() is taking  4261 ms.
+// Elapsed time: 12 seconds
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // g (RDIResource.PropertiesView_TABBED_PANE)
+// TclEventType: RSB_CANVAS_LOCATION
+// WARNING: HEventQueue.dispatchEvent() is taking  4794 ms.
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 13 seconds
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // g (RDIResource.PropertiesView_TABBED_PANE)
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "clock", true); // ad (PAResourceQtoS.RSBExternalPortPropPanels_NAME)
+// Tcl Command: 'set_property name clock [get_bd_ports clock_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  1754 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1091 ms.
+// Tcl Message: set_property name clock [get_bd_ports clock_0] 
+// WARNING: HEventQueue.dispatchEvent() is taking  7183 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4417 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4084 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2531 ms.
+// Elapsed time: 28 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+// WARNING: HEventQueue.dispatchEvent() is taking  2755 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1781 ms.
+// Elapsed time: 13 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "cons"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Constant", 0, "Constant", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Constant", 0); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Constant", 0, "Constant", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  2122 ms.
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 
+// Tcl Message: INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilconstant:1.0 for the IP type xilinx.com:ip:xlconstant:1.1 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlconstant:1.1 may be deprecated in future releases. More information on inline hdl IP is available in UG994  
+// Tcl Message: endgroup 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 48m:55s
+// WARNING: HEventQueue.dispatchEvent() is taking  2916 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2865 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,812 MB. GUI used memory: 86 MB. Current time: 4/17/25, 10:00:13 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  4030 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 49m:05s
+// WARNING: HEventQueue.dispatchEvent() is taking  5523 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2488 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1659 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5522 ms.
+// Elapsed time: 33 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /xlconstant_0/dout]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  2043 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2530 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /xlconstant_0/dout]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/character]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/character]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 419, 281, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  1219 ms.
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // an (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // an (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenuItem(PAResourceCommand.PACommandNames_MAKE_CONNECTION, "Make Connection..."); // aq (PAResourceCommand.PACommandNames_MAKE_CONNECTION, make_rsb_connection_menu)
+// Run Command: PAResourceCommand.PACommandNames_MAKE_CONNECTION
+// WARNING: HEventQueue.dispatchEvent() is taking  4906 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4342 ms.
+// Elapsed time: 11 seconds
+selectTree(PAResourceQtoS.RSBSelectPinsDialog_PINS_TREE, "[, Other type, xlconstant_0, dout]", 7, false); // dN (PAResourceQtoS.RSBSelectPinsDialog_PINS_TREE)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Make Connection"); // a (RDIResource.BaseDialog_OK)
+// 'bC' command handler elapsed time: 13 seconds
+// TclEventType: RSB_CONNECTION_CHANGE
+dismissDialog("Make Connection"); // dL (dialog5)
+// WARNING: HEventQueue.dispatchEvent() is taking  5863 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4310 ms.
+// Tcl Message: connect_bd_net [get_bd_pins main_0/character] [get_bd_pins xlconstant_0/dout] 
+// Tcl Message: connect_bd_net: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:10 . Memory (MB): peak = 9902.133 ; gain = 0.000 ; free physical = 24921 ; free virtual = 60220 
+// WARNING: HEventQueue.dispatchEvent() is taking  1326 ms.
+// Elapsed time: 11 seconds
+dismissDialog("Make Connection"); // bh (Make Connection Progress)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/report]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/report]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 628, 269, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  1119 ms.
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // an (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // aq (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, auto_connect_ports_menu)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: make_bd_pins_external  [get_bd_pins main_0/report] 
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  6672 ms.
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  4708 ms.
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  1267 ms.
+// Tcl Message: make_bd_pins_external: Time (s): cpu = 00:00:00.4 ; elapsed = 00:00:13 . Memory (MB): peak = 9902.133 ; gain = 0.000 ; free physical = 24924 ; free virtual = 60223 
+// Tcl Message: endgroup 
+// Elapsed time: 15 seconds
+dismissDialog("Create External Connection"); // bh (Create External Connection Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  2245 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2759 ms.
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 87, 207, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// Elapsed time: 17 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 53, 204, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "Regenerate Layout"); // aq (PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, regenerate_rsb_layout_menu)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// WARNING: HEventQueue.dispatchEvent() is taking  2483 ms.
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 235, 91, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  3625 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1161 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2567 ms.
+// Elapsed time: 10 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 159, 242, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // an (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenuItem(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "Validate Design"); // aq (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, validate_bd_design_rsb_menu)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  2116 ms.
+// Tcl Message: validate_bd_design 
+// WARNING: HEventQueue.dispatchEvent() is taking  1283 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9015 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6404 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6500 ms.
+// Elapsed time: 52 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // dQ.a (dialog6)
+// WARNING: HEventQueue.dispatchEvent() is taking  2140 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1501 ms.
+// Elapsed time: 46 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/report]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/report]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 533, 175, 772, 372, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ACTG.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("ACTG.v", 78, 66); // ae (ACTG.v)
+typeControlKey((HResource) null, "ACTG.v", 'v'); // ae (ACTG.v)
+// WARNING: HEventQueue.dispatchEvent() is taking  1749 ms.
+selectCodeEditor("ACTG.v", 236, 53); // ae (ACTG.v)
+typeControlKey((HResource) null, "ACTG.v", 'v'); // ae (ACTG.v)
+// WARNING: HEventQueue.dispatchEvent() is taking  1020 ms.
+selectCodeEditor("ACTG.v", 236, 53); // ae (ACTG.v)
+typeControlKey((HResource) null, "ACTG.v", 'v'); // ae (ACTG.v)
+// WARNING: HEventQueue.dispatchEvent() is taking  1051 ms.
+typeControlKey((HResource) null, "ACTG.v", 'v'); // ae (ACTG.v)
+selectCodeEditor("ACTG.v", 187, 139); // ae (ACTG.v)
+selectCodeEditor("ACTG.v", 187, 139); // ae (ACTG.v)
+typeControlKey((HResource) null, "ACTG.v", 'c'); // ae (ACTG.v)
+typeControlKey((HResource) null, "ACTG.v", 'v'); // ae (ACTG.v)
+// WARNING: HEventQueue.dispatchEvent() is taking  1513 ms.
+typeControlKey((HResource) null, "ACTG.v", 'v'); // ae (ACTG.v)
+typeControlKey(null, null, 'z');
+selectCodeEditor("ACTG.v", 221, 141); // ae (ACTG.v)
+typeControlKey((HResource) null, "ACTG.v", 'v'); // ae (ACTG.v)
+typeControlKey((HResource) null, "ACTG.v", 'v'); // ae (ACTG.v)
+typeControlKey((HResource) null, "ACTG.v", 'v'); // ae (ACTG.v)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 54m:41s
+// WARNING: HEventQueue.dispatchEvent() is taking  1023 ms.
+// Elapsed time: 15 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (PAResourceAtoD.AbstractFileView_RELOAD)
+selectCodeEditor("ACTG.v", 156, 146); // ae (ACTG.v)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 54m:45s
+// WARNING: HEventQueue.dispatchEvent() is taking  1149 ms.
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectButton((HResource) null, "Show IP Status"); // h
+// WARNING: HEventQueue.dispatchEvent() is taking  1267 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1972 ms.
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (RDIResource.BaseReportTab_RERUN)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// WARNING: HEventQueue.dispatchEvent() is taking  1935 ms.
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// WARNING: HEventQueue.dispatchEvent() is taking  4320 ms.
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/main_0 ; true ; design_2_main_0_1 [main_v1_0] (Stale module reference) ; design_2_main_0_1 [main_v1_0] (Stale module reference) ;  ; main_v1_0 ; 1.0 (Rev. 1) ; 1.0 (Rev. 1) ; design_2_main_0_1 [main_v1_0] (Stale module reference) ; xcu50-fsvh2104-2-e", 1, "true", 1, false); // x (PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/main_0 ; true ; design_2_main_0_1 [main_v1_0] (Stale module reference) ; design_2_main_0_1 [main_v1_0] (Stale module reference) ;  ; main_v1_0 ; 1.0 (Rev. 1) ; 1.0 (Rev. 1) ; design_2_main_0_1 [main_v1_0] (Stale module reference) ; xcu50-fsvh2104-2-e", 1, "design_2_main_0_1 [main_v1_0] (Stale module reference)", 3, false); // x (PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE)
+// WARNING: HEventQueue.dispatchEvent() is taking  1321 ms.
+dismissDialog("Report IP Status"); // bh (Report IP Status Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  1837 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3637 ms.
+ // selectButton(PAResourceItoN.IPStatusTablePanel_MORE_INFO, "Refresh module reference"); // o.d (PAResourceItoN.IPStatusTablePanel_MORE_INFO)
+selectTreeTable(PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE, "/main_0 ; true ; design_2_main_0_1 [main_v1_0] (Stale module reference) ; design_2_main_0_1 [main_v1_0] (Stale module reference) ;  ; main_v1_0 ; 1.0 (Rev. 1) ; 1.0 (Rev. 1) ; design_2_main_0_1 [main_v1_0] (Stale module reference) ; xcu50-fsvh2104-2-e", 1, "design_2_main_0_1 [main_v1_0] (Stale module reference)", 3, false); // x (PAResourceItoN.IPStatusTablePanel_IP_STATUS_TABLE)
+// WARNING: HEventQueue.dispatchEvent() is taking  1900 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1646 ms.
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// WARNING: HEventQueue.dispatchEvent() is taking  1668 ms.
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: update_module_reference [get_ips  design_2_main_0_1] 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// WARNING: HEventQueue.dispatchEvent() is taking  1385 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8893 ms.
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  5394 ms.
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: Upgrading '/home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated design_2_main_0_1 to use current project options 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// WARNING: HEventQueue.dispatchEvent() is taking  1394 ms.
+// Tcl Message: Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd>  Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui>  
+// Tcl Message: upgrade_ip: Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:19 . Memory (MB): peak = 9902.133 ; gain = 0.000 ; free physical = 24902 ; free virtual = 60201 update_module_reference: Time (s): cpu = 00:00:00.71 ; elapsed = 00:00:19 . Memory (MB): peak = 9902.133 ; gain = 0.000 ; free physical = 24902 ; free virtual = 60201 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/K.d': 20s
+// WARNING: HEventQueue.dispatchEvent() is taking  1829 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5424 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5846 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  15072 ms.
+// WARNING: updateGUI() is taking  7104 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7104 ms.
+// Elapsed time: 57 seconds
+selectButton("OptionPane.button", "OK", "Upgrade IP"); // JButton (OptionPane.button)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,877 MB. GUI used memory: 90 MB. Current time: 4/17/25, 10:07:36 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  3888 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 56m:28s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  3040 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3266 ms.
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate", "Generate Output Products"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// WARNING: HEventQueue.dispatchEvent() is taking  4798 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 56m:40s
+// WARNING: HEventQueue.dispatchEvent() is taking  3020 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4570 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5593 ms.
+// Elapsed time: 55 seconds
+selectButton("OptionPane.button", "OK", "Background Task"); // JButton (OptionPane.button)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 57m:33s
+// WARNING: HEventQueue.dispatchEvent() is taking  1566 ms.
+// Elapsed time: 98 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL, "Skip", "Generate Output Products"); // a (PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL)
+dismissDialog("Generate Output Products"); // W (dialog7)
+// WARNING: HEventQueue.dispatchEvent() is taking  4872 ms.
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // a (dialog8)
+// WARNING: HEventQueue.dispatchEvent() is taking  1631 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2775 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /report_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 635, 158, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // aq (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// WARNING: HEventQueue.dispatchEvent() is taking  1193 ms.
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  10791 ms.
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets main_0_report] [get_bd_ports report_0] 
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  3788 ms.
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  1213 ms.
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:17 . Memory (MB): peak = 9949.156 ; gain = 0.000 ; free physical = 24899 ; free virtual = 60199 
+// Elapsed time: 19 seconds
+dismissDialog("Confirm Delete"); // bh (Confirm Delete Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  1657 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4216 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/result]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  1117 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/result]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  2703 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/result]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 600, 159, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  1241 ms.
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // aq (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, auto_connect_ports_menu)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// Tcl Message: startgroup 
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  1221 ms.
+// Tcl Message: make_bd_pins_external  [get_bd_pins main_0/result] 
+// Tcl Message: endgroup 
+// WARNING: HEventQueue.dispatchEvent() is taking  2541 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2280 ms.
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 322, 268, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // an (PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight)
+selectMenuItem(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "Validate Design"); // aq (PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, validate_bd_design_rsb_menu)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: RSB_VALIDATE_DIAGRAM
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: validate_bd_design 
+// WARNING: HEventQueue.dispatchEvent() is taking  8554 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7232 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8386 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2073 ms.
+// Elapsed time: 75 seconds
+selectButton("OptionPane.button", "OK", "Validate Design"); // JButton (OptionPane.button)
+// WARNING: HEventQueue.dispatchEvent() is taking  2167 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// WARNING: HEventQueue.dispatchEvent() is taking  4735 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4544 ms.
+// Elapsed time: 10 seconds
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save", "Save Project"); // a (PAResourceQtoS.SaveProjectUtils_SAVE)
+// WARNING: HEventQueue.dispatchEvent() is taking  4325 ms.
+// TclEventType: RSB_SAVE_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  3831 ms.
+dismissDialog("Save Project"); // ac.d (dialog9)
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd>  Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui>  
+// WARNING: HEventQueue.dispatchEvent() is taking  9686 ms.
+dismissDialog("Save Constraints"); // bh (Save Constraints Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:02m:10s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:02m:13s
+// Elapsed time: 29 seconds
+selectButton(RDIResource.BaseDialog_YES, "Yes", "No Implementation Results Available"); // a (RDIResource.BaseDialog_YES)
+// WARNING: HEventQueue.dispatchEvent() is taking  5546 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5853 ms.
+dismissDialog("No Implementation Results Available"); // u (dialog10)
+// WARNING: HEventQueue.dispatchEvent() is taking  6052 ms.
+// Elapsed time: 178 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+// 'cM' command handler elapsed time: 233 seconds
+dismissDialog("Launch Runs"); // cP (dialog11)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Apr 17 10:16:46 2025] Launched synth_1... Run output will be captured here: /home/hkchu/VerilogTest/project_1/project_1.runs/synth_1/runme.log [Thu Apr 17 10:16:47 2025] Launched impl_1... Run output will be captured here: /home/hkchu/VerilogTest/project_1/project_1.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3878 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1165 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  10862 ms.
+// Elapsed time: 95 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 22, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Tcl (Dont Echo) Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// WARNING: HEventQueue.dispatchEvent() is taking  1126 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10540 ms.
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  8040 ms.
+// Tcl Message: open_hw_manager 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.a': 20s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,890 MB. GUI used memory: 75 MB. Current time: 4/17/25, 10:18:43 AM MDT
+// 'L' command handler elapsed time: 20 seconds
+// Elapsed time: 20 seconds
+dismissDialog("Open Hardware Manager"); // bh (Open Hardware Manager Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  1350 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1411 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4816 ms.
+// WARNING: updateGUI() is taking  5860 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5860 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3241 ms.
+// Elapsed time: 42 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Bitstream Generation Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // W.a (dialog12)
+// WARNING: HEventQueue.dispatchEvent() is taking  4330 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5073 ms.
+// Elapsed time: 33 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 258, 114); // B (PAResourceItoN.LogMonitor_MONITOR, Monitor)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 293, 93); // B (PAResourceItoN.LogMonitor_MONITOR, Monitor)
+// WARNING: HEventQueue.dispatchEvent() is taking  3159 ms.
+// Elapsed time: 29 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 643, 97); // B (PAResourceItoN.LogMonitor_MONITOR, Monitor)
+// WARNING: HEventQueue.dispatchEvent() is taking  1559 ms.
+selectTab(PAResourceItoN.LogView_TABBED_PANE, PAResourceItoN.LogView_IMPL_TAB, "Implementation", 1); // g (PAResourceItoN.LogView_TABBED_PANE, MonitorView)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 331, 81); // B (PAResourceItoN.LogMonitor_MONITOR, Monitor)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 330, 13); // B (PAResourceItoN.LogMonitor_MONITOR, Monitor)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 330, 13); // B (PAResourceItoN.LogMonitor_MONITOR, Monitor)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 330, 13); // B (PAResourceItoN.LogMonitor_MONITOR, Monitor)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 335, 66); // B (PAResourceItoN.LogMonitor_MONITOR, Monitor)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:14m:13s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:14m:17s
+// Elapsed time: 291 seconds
+selectCodeEditor("ACTG.v", 233, 117); // ae (ACTG.v)
+// WARNING: HEventQueue.dispatchEvent() is taking  3946 ms.
+selectCodeEditor("ACTG.v", 288, 180); // ae (ACTG.v)
+// WARNING: HEventQueue.dispatchEvent() is taking  1006 ms.
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 337, 99); // B (PAResourceItoN.LogMonitor_MONITOR, Monitor)
+// Elapsed time: 15 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 1038, 50); // B (PAResourceItoN.LogMonitor_MONITOR, Monitor)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:18m:05s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,968 MB. GUI used memory: 74 MB. Current time: 4/17/25, 10:29:18 AM MDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:18m:09s
+// [Engine Memory]: 3,920 MB (+2652kb) [01:19:03]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:26m:49s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:26m:53s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:27m:49s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:27m:53s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:29m:01s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:29m:05s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:29m:53s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,994 MB. GUI used memory: 73 MB. Current time: 4/17/25, 10:41:08 AM MDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:29m:57s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:31m:33s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:31m:37s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:38m:09s
+// HMemoryUtils.trashcanNow. Engine heap size: 4,026 MB. GUI used memory: 74 MB. Current time: 4/17/25, 10:49:23 AM MDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:38m:13s
+// Elapsed time: 1957 seconds
+selectCodeEditor("ACTG.v", 143, 58); // ae (ACTG.v)
+// WARNING: HEventQueue.dispatchEvent() is taking  8003 ms.
+// Elapsed time: 10 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (PAResourceAtoD.AbstractFileView_RELOAD)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// WARNING: HEventQueue.dispatchEvent() is taking  4557 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8654 ms.
+// TclEventType: RSB_OPEN_DIAGRAM
+// HMemoryUtils.trashcanNow. Engine heap size: 4,040 MB. GUI used memory: 75 MB. Current time: 4/17/25, 10:59:07 AM MDT
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  4261 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5004 ms.
+// Tcl Message: open_bd_design {/home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd} 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/U': 22s
+// 'bN' command handler elapsed time: 22 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  2610 ms.
+// Elapsed time: 22 seconds
+dismissDialog("Open Block Design"); // bh (Open Block Design Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  5540 ms.
+// Elapsed time: 117 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  1023 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /xlconstant_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /xlconstant_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /clock_0_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /xlconstant_0_dout]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /main_0_result]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /clock_0_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /xlconstant_0_dout]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /xlconstant_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /main_0_result]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /clock]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /result_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// WARNING: HEventQueue.dispatchEvent() is taking  6830 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6951 ms.
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Confirm Delete"); // a (RDIResource.BaseDialog_OK)
+// 'c' command handler elapsed time: 15 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  2445 ms.
+// Tcl Message: startgroup 
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Confirm Delete"); // a (dialog13)
+// WARNING: HEventQueue.dispatchEvent() is taking  8938 ms.
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets clock_0_1] [get_bd_nets xlconstant_0_dout] [get_bd_nets main_0_result] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  4932 ms.
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  1097 ms.
+// Tcl Message: delete_bd_objs: Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:14 . Memory (MB): peak = 10121.152 ; gain = 0.000 ; free physical = 24884 ; free virtual = 60191 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  2031 ms.
+// Tcl Message: delete_bd_objs [get_bd_cells xlconstant_0] [get_bd_cells main_0] 
+// Tcl Message: delete_bd_objs [get_bd_ports clock] [get_bd_ports result_0] 
+// Tcl Message: endgroup 
+// Elapsed time: 17 seconds
+dismissDialog("Confirm Delete"); // bh (Confirm Delete Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:50m:45s
+// WARNING: HEventQueue.dispatchEvent() is taking  2604 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:50m:49s
+// WARNING: HEventQueue.dispatchEvent() is taking  1219 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1077 ms.
+// Elapsed time: 53 seconds
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (RDIResource.BaseReportTab_RERUN)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// WARNING: HEventQueue.dispatchEvent() is taking  1025 ms.
+// TclEventType: IP_SUMMARY_RESULTS
+// WARNING: HEventQueue.dispatchEvent() is taking  1267 ms.
+// Tcl Message: report_ip_status -name ip_status  
+// WARNING: HEventQueue.dispatchEvent() is taking  8410 ms.
+// Elapsed time: 11 seconds
+dismissDialog("Report IP Status"); // bh (Report IP Status Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  3488 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1169 ms.
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1088 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3923 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (ACTG.v)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // an (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, "Add Module to Block Design"); // aq (PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD, add_module_to_bd_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_MODULE_TO_BD
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_bd_cell -type module -reference main main_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  8831 ms.
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  4839 ms.
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:15 . Memory (MB): peak = 10148.156 ; gain = 0.000 ; free physical = 24875 ; free virtual = 60183 
+// Elapsed time: 15 seconds
+dismissDialog("Add Module"); // bh (Add Module Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  2383 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3660 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,067 MB. GUI used memory: 76 MB. Current time: 4/17/25, 11:04:05 AM MDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:52m:54s
+// WARNING: HEventQueue.dispatchEvent() is taking  2210 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3997 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1165 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4659 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:53m:07s
+// WARNING: HEventQueue.dispatchEvent() is taking  5469 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1415 ms.
+// Elapsed time: 120 seconds
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (RDIResource.BaseReportTab_RERUN)
+// WARNING: HEventQueue.dispatchEvent() is taking  1988 ms.
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (RDIResource.BaseReportTab_RERUN)
+// Tcl Command: 'report_ip_status -name ip_status '
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// WARNING: HEventQueue.dispatchEvent() is taking  3976 ms.
+// TclEventType: IP_SUMMARY_RESULTS
+// WARNING: HEventQueue.dispatchEvent() is taking  12278 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5814 ms.
+// Tcl Message: report_ip_status -name ip_status  
+// TclEventType: IP_SUMMARY_RESULTS
+// WARNING: HEventQueue.dispatchEvent() is taking  4319 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2200 ms.
+// Tcl Message: report_ip_status: Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:18 . Memory (MB): peak = 10169.152 ; gain = 0.000 ; free physical = 24875 ; free virtual = 60182 
+// WARNING: HEventQueue.dispatchEvent() is taking  1107 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/g.d': 34s
+// WARNING: HEventQueue.dispatchEvent() is taking  4871 ms.
+// Elapsed time: 34 seconds
+dismissDialog("Report IP Status"); // bh (Report IP Status Progress)
+// Elapsed time: 62 seconds
+selectButton("OptionPane.button", "OK", "Background Task"); // JButton (OptionPane.button)
+// WARNING: HEventQueue.dispatchEvent() is taking  2227 ms.
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// WARNING: HEventQueue.dispatchEvent() is taking  1462 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1305 ms.
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: update_module_reference [get_ips  design_2_main_0_2] 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// WARNING: HEventQueue.dispatchEvent() is taking  1088 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10386 ms.
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  6071 ms.
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: Upgrading '/home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated design_2_main_0_2 to use current project options 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// WARNING: HEventQueue.dispatchEvent() is taking  2489 ms.
+// Tcl Message: Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd>  Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui>  
+// Tcl Message: upgrade_ip: Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:21 . Memory (MB): peak = 10169.152 ; gain = 0.000 ; free physical = 24877 ; free virtual = 60184 update_module_reference: Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:21 . Memory (MB): peak = 10169.152 ; gain = 0.000 ; free physical = 24877 ; free virtual = 60184 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/K.d': 23s
+// WARNING: HEventQueue.dispatchEvent() is taking  6187 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2006 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5386 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1897 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  14481 ms.
+// WARNING: updateGUI() is taking  10607 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10607 ms.
+// Elapsed time: 64 seconds
+selectButton("OptionPane.button", "OK", "Upgrade IP"); // JButton (OptionPane.button)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:57m:35s
+// WARNING: HEventQueue.dispatchEvent() is taking  3577 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5173 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,105 MB. GUI used memory: 78 MB. Current time: 4/17/25, 11:08:57 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  6086 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:57m:51s
+// Elapsed time: 16 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate", "Generate Output Products"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// WARNING: HEventQueue.dispatchEvent() is taking  2035 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9022 ms.
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  5795 ms.
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  /home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd] 
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  6843 ms.
+// Tcl Message: ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source:  /main_0/clock  
+// Tcl Message: ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd  
+// Tcl Message: generate_target: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:13 . Memory (MB): peak = 10181.148 ; gain = 0.000 ; free physical = 24876 ; free virtual = 60184 
+// Tcl Message: ERROR: [Common 17-39] 'generate_target' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.  
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/W.b': 23s
+// WARNING: HEventQueue.dispatchEvent() is taking  8406 ms.
+// Elapsed time: 23 seconds
+dismissDialog("Managing Output Products"); // bh (Managing Output Products Progress)
+// WARNING: updateGUI() is taking  4724 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4724 ms.
+// Elapsed time: 17 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View", "Critical Messages"); // a (PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW)
+// WARNING: HEventQueue.dispatchEvent() is taking  3696 ms.
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// 'B' command handler elapsed time: 3 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  3202 ms.
+dismissDialog("Critical Messages"); // a (dialog14)
+// WARNING: HEventQueue.dispatchEvent() is taking  3563 ms.
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-758] The following clock pins are not connected to a valid clock source: . /main_0/clock", 0); // b (PAResourceAtoD.CmdMsgDialog_MESSAGES)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[BD 41-1031] Hdl Generation failed for the IP Integrator design /home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd", 1); // b (PAResourceAtoD.CmdMsgDialog_MESSAGES)
+// Elapsed time: 12 seconds
+dismissDialog("Critical Messages"); // a (dialog15)
+// WARNING: HEventQueue.dispatchEvent() is taking  4024 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/clock]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 317, 142, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  7464 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/clock]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 314, 146, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  1079 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5629 ms.
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // aq (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, auto_connect_ports_menu)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins main_0/clock] 
+// Tcl Message: endgroup 
+// WARNING: HEventQueue.dispatchEvent() is taking  1667 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/HBM_CATTRIP]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/HBM_CATTRIP]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 500, 153, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  1282 ms.
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // an (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // aq (PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, auto_connect_ports_menu)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// WARNING: HEventQueue.dispatchEvent() is taking  1330 ms.
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins main_0/HBM_CATTRIP] 
+// Tcl Message: endgroup 
+// WARNING: HEventQueue.dispatchEvent() is taking  4823 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+// WARNING: HEventQueue.dispatchEvent() is taking  1630 ms.
+// Elapsed time: 11 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "1G/2.5G Ethernet PCS/PMA or SGMII", 0, "1G/2.5G Ethernet PCS/PMA or SGMII", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "1G/2.5G Ethernet PCS/PMA or SGMII", 0, "1G/2.5G Ethernet PCS/PMA or SGMII", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI 1G/2.5G Ethernet Subsystem", 16, "AXI 1G/2.5G Ethernet Subsystem", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI 1G/2.5G Ethernet Subsystem", 16, "AXI 1G/2.5G Ethernet Subsystem", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI 1G/2.5G Ethernet Subsystem", 16); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI 1G/2.5G Ethernet Subsystem", 16, "AXI 1G/2.5G Ethernet Subsystem", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  7009 ms.
+// Tcl Message: startgroup 
+// TclEventType: REPORT_IP_STATUS_STALE
+// WARNING: updateGUI() is taking  7396 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7396 ms.
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_ethernet:7.2 axi_ethernet_0 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  5735 ms.
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:08 . Memory (MB): peak = 10181.148 ; gain = 0.000 ; free physical = 24871 ; free virtual = 60182 
+// Tcl Message: endgroup 
+// WARNING: HTimer (Open addressing views timer) is taking 64ms to process. Increasing delay to 1300 ms.
+// Elapsed time: 21 seconds
+dismissDialog("Add IP"); // bh (Add IP Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:00m:28s
+// [Engine Memory]: 4,126 MB (+10138kb) [02:01:22]
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:00m:29s
+// HMemoryUtils.trashcanNow. Engine heap size: 4,136 MB. GUI used memory: 79 MB. Current time: 4/17/25, 11:11:43 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1624 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3172 ms.
+// Elapsed time: 227 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /main_0/result]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 602, 123, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  2339 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1684 ms.
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // an (PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // an (PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight)
+// Elapsed time: 33 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_ethernet_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1756 ms.
+// Tcl Message: delete_bd_objs [get_bd_cells axi_ethernet_0] 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:05m:09s
+// WARNING: HEventQueue.dispatchEvent() is taking  5464 ms.
+// Elapsed time: 11 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 571, 75, 772, 345, false, false, false, true, false); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// WARNING: HEventQueue.dispatchEvent() is taking  2575 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:05m:17s
+// HMemoryUtils.trashcanNow. Engine heap size: 4,146 MB. GUI used memory: 79 MB. Current time: 4/17/25, 11:16:33 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1930 ms.
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  1370 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6970 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10504 ms.
+// Elapsed time: 651 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  3234 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2168 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4481 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1185 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1523 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1321 ms.
+// Elapsed time: 31 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ultr"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UltraScale+ 100G Ethernet Subsystem", 0, "UltraScale+ 100G Ethernet Subsystem", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UltraScale+ Integrated Block (PCIE4C) for PCI Express", 1, "UltraScale+ Integrated Block (PCIE4C) for PCI Express", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UltraScale+ Integrated Block (PCIE4C) for PCI Express", 1, "UltraScale+ Integrated Block (PCIE4C) for PCI Express", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UltraScale+ Integrated Block (PCIE4C) for PCI Express", 1, "UltraScale+ Integrated Block (PCIE4C) for PCI Express", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Tcl Message: startgroup 
+// TclEventType: REPORT_IP_STATUS_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  14142 ms.
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:pcie4c_uscale_plus:1.0 pcie4c_uscale_plus_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  7408 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4531 ms.
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: xit::create_sub_core: Time (s): cpu = 00:00:00.98 ; elapsed = 00:00:13 . Memory (MB): peak = 10235.168 ; gain = 0.000 ; free physical = 24857 ; free virtual = 60168 
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,130 MB. GUI used memory: 80 MB. Current time: 4/17/25, 11:28:34 AM MDT
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  6123 ms.
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:05 ; elapsed = 00:00:30 . Memory (MB): peak = 10235.168 ; gain = 0.000 ; free physical = 24855 ; free virtual = 60166 
+// Tcl Message: endgroup 
+// Elapsed time: 37 seconds
+dismissDialog("Add IP"); // bh (Add IP Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:17m:29s
+// WARNING: HEventQueue.dispatchEvent() is taking  1423 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8858 ms.
+// Elapsed time: 95 seconds
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION, "Run Block Automation"); // h (PAResourceQtoS.RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION)
+// WARNING: HEventQueue.dispatchEvent() is taking  6818 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7675 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3092 ms.
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Run Block Automation"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Run Block Automation"); // G (dialog16)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:pcie4c_uscale_plus -config { axi_clk {Maximum Data Width} lane_width {X16} link_speed {8.0 GT/s (PCIe Gen 3)}}  [get_bd_cells pcie4c_uscale_plus_0] 
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  6366 ms.
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2048 ms.
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: xit::create_sub_core: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 10252.172 ; gain = 0.000 ; free physical = 24866 ; free virtual = 60178 
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_ADD_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// WARNING: HEventQueue.dispatchEvent() is taking  1010 ms.
+// Tcl Message: apply_bd_automation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 10252.172 ; gain = 0.000 ; free physical = 24864 ; free virtual = 60176 
+// Elapsed time: 16 seconds
+dismissDialog("Run Block Automation"); // bh (Run Block Automation Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:19m:41s
+// HMemoryUtils.trashcanNow. Engine heap size: 4,185 MB. GUI used memory: 80 MB. Current time: 4/17/25, 11:30:53 AM MDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:19m:45s
+// WARNING: HEventQueue.dispatchEvent() is taking  1635 ms.
+// Elapsed time: 95 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+// WARNING: HEventQueue.dispatchEvent() is taking  4047 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1030 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3253 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1314 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1454 ms.
+// Elapsed time: 23 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "proc"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+// Elapsed time: 20 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "zyn"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  5410 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11430 ms.
+// Elapsed time: 34 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+// WARNING: HEventQueue.dispatchEvent() is taking  2688 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1091 ms.
+// Elapsed time: 34 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "axi dma"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Direct Memory Access", 1, "AXI Direct Memory Access", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Direct Memory Access", 1, "AXI Direct Memory Access", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Direct Memory Access", 1, "AXI Direct Memory Access", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  10172 ms.
+// Tcl Message: startgroup 
+// TclEventType: REPORT_IP_STATUS_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  15995 ms.
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0 
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// WARNING: HEventQueue.dispatchEvent() is taking  5132 ms.
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// No Address Blocks Available for network [Network 0]
+// WARNING: HEventQueue.dispatchEvent() is taking  1072 ms.
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:00.5 ; elapsed = 00:00:22 . Memory (MB): peak = 10267.176 ; gain = 0.000 ; free physical = 24868 ; free virtual = 60181 
+// Tcl Message: endgroup 
+// Elapsed time: 33 seconds
+dismissDialog("Add IP"); // bh (Add IP Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:23m:49s
+// HMemoryUtils.trashcanNow. Engine heap size: 4,213 MB. GUI used memory: 81 MB. Current time: 4/17/25, 11:35:03 AM MDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:23m:53s
+// WARNING: HEventQueue.dispatchEvent() is taking  5599 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11726 ms.
+// Elapsed time: 98 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /pcie4c_uscale_plus_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed time: 19 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_dma_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /pcie4c_uscale_plus_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /util_ds_buf]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_dma_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /pcie4c_uscale_plus_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /util_ds_buf]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /util_ds_buf_IBUF_DS_ODIV2]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /util_ds_buf_IBUF_OUT]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /clock_0_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /main_0_HBM_CATTRIP]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_nets /diff_clock_rtl_0_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /reset_rtl_0_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_nets /pcie4c_uscale_plus_0_pcie4_mgt]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /clock_0_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /util_ds_buf_IBUF_OUT]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /util_ds_buf_IBUF_DS_ODIV2]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_dma_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /main_0_HBM_CATTRIP]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /pcie4c_uscale_plus_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /main_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /util_ds_buf]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_nets /reset_rtl_0_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_nets /diff_clock_rtl_0_1]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_nets /pcie4c_uscale_plus_0_pcie4_mgt]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /clock_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_ports /diff_clock_rtl_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /HBM_CATTRIP_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_intf_ports /pcie_7x_mgt_rtl_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_ports /reset_rtl_0]"); // gh (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  1368 ms.
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// WARNING: HEventQueue.dispatchEvent() is taking  5201 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4800 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2977 ms.
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Confirm Delete"); // a (RDIResource.BaseDialog_OK)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Confirm Delete"); // a (RDIResource.BaseDialog_OK)
+// 'c' command handler elapsed time: 14 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  2816 ms.
+// Tcl Message: startgroup 
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Confirm Delete"); // a (dialog17)
+// WARNING: HEventQueue.dispatchEvent() is taking  13655 ms.
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets diff_clock_rtl_0_1] [get_bd_intf_nets pcie4c_uscale_plus_0_pcie4_mgt] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  12920 ms.
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:14 . Memory (MB): peak = 10288.184 ; gain = 0.000 ; free physical = 24873 ; free virtual = 60188 
+// Tcl Message: delete_bd_objs [get_bd_nets clock_0_1] [get_bd_nets util_ds_buf_IBUF_OUT] [get_bd_nets util_ds_buf_IBUF_DS_ODIV2] [get_bd_nets main_0_HBM_CATTRIP] [get_bd_nets reset_rtl_0_1] 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// No Address Blocks Available for network [Network 0]
+// WARNING: HEventQueue.dispatchEvent() is taking  4687 ms.
+// Tcl Message: delete_bd_objs: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:13 . Memory (MB): peak = 10288.184 ; gain = 0.000 ; free physical = 24876 ; free virtual = 60191 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/h': 34s
+// WARNING: HEventQueue.dispatchEvent() is taking  3968 ms.
+// Tcl Message: delete_bd_objs [get_bd_cells axi_dma_0] [get_bd_cells pcie4c_uscale_plus_0] [get_bd_cells main_0] [get_bd_cells util_ds_buf] 
+// Tcl Message: delete_bd_objs [get_bd_intf_ports diff_clock_rtl_0] [get_bd_intf_ports pcie_7x_mgt_rtl_0] 
+// Tcl Message: delete_bd_objs [get_bd_ports clock_0] [get_bd_ports HBM_CATTRIP_0] [get_bd_ports reset_rtl_0] 
+// Tcl Message: endgroup 
+// Elapsed time: 35 seconds
+dismissDialog("Confirm Delete"); // bh (Confirm Delete Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:26m:42s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:26m:45s
+// WARNING: HEventQueue.dispatchEvent() is taking  1963 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2581 ms.
+// Elapsed time: 108 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+// WARNING: HEventQueue.dispatchEvent() is taking  1392 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4800 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1260 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1464 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2023 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1394 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2722 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1106 ms.
+// Elapsed time: 282 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+// WARNING: HEventQueue.dispatchEvent() is taking  23377 ms.
+// Elapsed time: 157 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "3GPP Mixed Mode Turbo Decoder", 3, "3GPP Mixed Mode Turbo Decoder", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// WARNING: HEventQueue.dispatchEvent() is taking  1385 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1538 ms.
+// Elapsed time: 24 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "ethernet"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI EthernetLite", 5, "AXI EthernetLite", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UltraScale+ 100G Ethernet Subsystem", 9, "UltraScale+ 100G Ethernet Subsystem", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UltraScale+ 100G Ethernet Subsystem", 9, "UltraScale+ 100G Ethernet Subsystem", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UltraScale+ 100G Ethernet Subsystem", 9, "UltraScale+ 100G Ethernet Subsystem", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  11525 ms.
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:cmac_usplus:3.1 cmac_usplus_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  18150 ms.
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  2782 ms.
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 10306.188 ; gain = 0.000 ; free physical = 24851 ; free virtual = 60173 
+// Tcl Message: endgroup 
+// Elapsed time: 37 seconds
+dismissDialog("Add IP"); // bh (Add IP Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,236 MB. GUI used memory: 82 MB. Current time: 4/17/25, 11:48:08 AM MDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:36m:57s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:37m:01s
+// WARNING: HEventQueue.dispatchEvent() is taking  2897 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2452 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4047 ms.
+// Elapsed time: 41 seconds
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION, "Run Block Automation"); // h (PAResourceQtoS.RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION)
+// WARNING: HEventQueue.dispatchEvent() is taking  13420 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  27001 ms.

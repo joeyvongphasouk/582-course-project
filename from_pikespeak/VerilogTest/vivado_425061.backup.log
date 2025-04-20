@@ -1,0 +1,273 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Apr 17 09:10:14 2025
+# Process ID         : 425061
+# Current directory  : /home/hkchu/VerilogTest
+# Command line       : vivado
+# Log file           : /home/hkchu/VerilogTest/vivado.log
+# Journal file       : /home/hkchu/VerilogTest/vivado.jou
+# Running On         : pikespeak
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i9-11900K @ 3.50GHz
+# CPU Frequency      : 4708.303 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 67262 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 69410 MB
+# Available Virtual  : 65480 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/hkchu/VerilogTest/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 7796.664 ; gain = 152.188 ; free physical = 26894 ; free virtual = 61593
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 7892.578 ; gain = 0.000 ; free physical = 26873 ; free virtual = 61579
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference main main_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clock' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clock' has no FREQ_HZ parameter.
+create_bd_cell: Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:13 . Memory (MB): peak = 7952.418 ; gain = 14.992 ; free physical = 26876 ; free virtual = 61583
+delete_bd_objs [get_bd_cells main_0]
+create_bd_cell -type module -reference main main_0
+WARNING: [IP_Flow 19-3571] IP 'design_1_main_0_1' is restricted:
+* Detected changes to module reference file(s).
+regenerate_bd_layout
+delete_bd_objs [get_bd_cells main_0]
+create_bd_cell -type module -reference main main_0
+WARNING: [IP_Flow 19-3571] IP 'design_1_main_0_2' is restricted:
+* Detected changes to module reference file(s).
+create_bd_cell: Time (s): cpu = 00:00:00.43 ; elapsed = 00:00:18 . Memory (MB): peak = 8106.660 ; gain = 0.000 ; free physical = 26852 ; free virtual = 61560
+delete_bd_objs [get_bd_cells main_0]
+delete_bd_objs: Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:09 . Memory (MB): peak = 8126.660 ; gain = 10.000 ; free physical = 23785 ; free virtual = 58653
+create_bd_cell -type module -reference main main_0
+WARNING: [IP_Flow 19-3571] IP 'design_1_main_0_3' is restricted:
+* Detected changes to module reference file(s).
+create_bd_cell -type module -reference main main_1
+WARNING: [IP_Flow 19-3571] IP 'design_1_main_1_0' is restricted:
+* Detected changes to module reference file(s).
+create_bd_cell: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:12 . Memory (MB): peak = 8167.680 ; gain = 0.000 ; free physical = 26241 ; free virtual = 61537
+validate_bd_design
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/main_0/clock
+/main_1/clock
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+delete_bd_objs [get_bd_cells main_1]
+delete_bd_objs [get_bd_cells main_0]
+create_bd_cell -type module -reference STE0 STE0_0
+WARNING: [IP_Flow 19-3571] IP 'design_1_STE0_0_0' is restricted:
+* Detected changes to module reference file(s).
+create_bd_cell: Time (s): cpu = 00:00:00.4 ; elapsed = 00:00:18 . Memory (MB): peak = 8263.699 ; gain = 0.000 ; free physical = 26241 ; free virtual = 61537
+report_ip_status -name ip_status 
+update_module_reference [get_ips  design_1_STE0_0_0]
+Upgrading '/home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_STE0_0_0 to use current project options
+Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+upgrade_ip: Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:16 . Memory (MB): peak = 8305.645 ; gain = 0.000 ; free physical = 26235 ; free virtual = 61531
+update_module_reference: Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:16 . Memory (MB): peak = 8305.645 ; gain = 0.000 ; free physical = 26235 ; free virtual = 61531
+create_bd_design "design_2"
+Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd> 
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference main main_0
+WARNING: [IP_Flow 19-3571] IP 'design_2_main_0_0' is restricted:
+* Detected changes to module reference file(s).
+delete_bd_objs [get_bd_cells main_0]
+report_ip_status -name ip_status 
+export_ip_user_files -of_objects  [get_files /home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  /home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+remove_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 8464.629 ; gain = 51.977 ; free physical = 26231 ; free virtual = 61527
+create_bd_cell -type module -reference main main_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clock' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clock' has no FREQ_HZ parameter.
+create_bd_cell: Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:14 . Memory (MB): peak = 8496.645 ; gain = 0.000 ; free physical = 26246 ; free virtual = 61542
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {New Clocking Wizard} Freq {100.0} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins main_0/clock]
+INFO: [Device 21-403] Loading part xcu50-fsvh2104-2-e
+create_bd_cell: Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 9809.109 ; gain = 1311.473 ; free physical = 24914 ; free virtual = 60212
+apply_bd_automation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 9809.109 ; gain = 1311.473 ; free physical = 24914 ; free virtual = 60212
+delete_bd_objs [get_bd_nets clk_wiz_clk_out1] [get_bd_cells clk_wiz]
+set_property target_constrs_file /home/hkchu/VerilogTest/clock_constraint.xdc [current_fileset -constrset]
+startgroup
+make_bd_pins_external  [get_bd_pins main_0/clock]
+endgroup
+set_property name clock [get_bd_ports clock_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilconstant:1.0 for the IP type xilinx.com:ip:xlconstant:1.1 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlconstant:1.1 may be deprecated in future releases. More information on inline hdl IP is available in UG994 
+endgroup
+connect_bd_net [get_bd_pins main_0/character] [get_bd_pins xlconstant_0/dout]
+connect_bd_net: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:10 . Memory (MB): peak = 9902.133 ; gain = 0.000 ; free physical = 24921 ; free virtual = 60220
+startgroup
+make_bd_pins_external  [get_bd_pins main_0/report]
+make_bd_pins_external: Time (s): cpu = 00:00:00.4 ; elapsed = 00:00:13 . Memory (MB): peak = 9902.133 ; gain = 0.000 ; free physical = 24924 ; free virtual = 60223
+endgroup
+regenerate_bd_layout
+validate_bd_design
+CRITICAL WARNING: [BD 41-1367] The port name 'report' of cell '/main_0' is a reserved keyword in a Hardware Description Language. Please consider renaming the port.
+report_ip_status -name ip_status 
+update_module_reference [get_ips  design_2_main_0_1]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clock' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clock' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clock' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clock' has no FREQ_HZ parameter.
+Upgrading '/home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd'
+INFO: [IP_Flow 19-3420] Updated design_2_main_0_1 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'report'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'result'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_2_main_0_1'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'report' is not found on the upgraded version of the cell '/main_0'. Its connection to the net 'main_0_report' has been removed.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_2_main_0_1' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+WARNING: [BD 41-597] NET <main_0_report> has no source
+Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+upgrade_ip: Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:19 . Memory (MB): peak = 9902.133 ; gain = 0.000 ; free physical = 24902 ; free virtual = 60201
+update_module_reference: Time (s): cpu = 00:00:00.71 ; elapsed = 00:00:19 . Memory (MB): peak = 9902.133 ; gain = 0.000 ; free physical = 24902 ; free virtual = 60201
+delete_bd_objs [get_bd_nets main_0_report] [get_bd_ports report_0]
+delete_bd_objs: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:17 . Memory (MB): peak = 9949.156 ; gain = 0.000 ; free physical = 24899 ; free virtual = 60199
+startgroup
+make_bd_pins_external  [get_bd_pins main_0/result]
+endgroup
+validate_bd_design
+save_bd_design
+Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Apr 17 10:16:46 2025] Launched synth_1...
+Run output will be captured here: /home/hkchu/VerilogTest/project_1/project_1.runs/synth_1/runme.log
+[Thu Apr 17 10:16:47 2025] Launched impl_1...
+Run output will be captured here: /home/hkchu/VerilogTest/project_1/project_1.runs/impl_1/runme.log
+open_hw_manager
+CRITICAL WARNING: [HDL 9-1206] Syntax error near '<=' [/home/hkchu/VerilogTest/ACTG.v:39]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near '<=' [/home/hkchu/VerilogTest/ACTG.v:39]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near '=' [/home/hkchu/VerilogTest/ACTG.v:40]
+CRITICAL WARNING: [HDL 9-3116] 'character' is not a type [/home/hkchu/VerilogTest/ACTG.v:40]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near '=' [/home/hkchu/VerilogTest/ACTG.v:40]
+CRITICAL WARNING: [HDL 9-3116] 'character' is not a type [/home/hkchu/VerilogTest/ACTG.v:40]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near '<=' [/home/hkchu/VerilogTest/ACTG.v:51]
+CRITICAL WARNING: [HDL 9-3116] 'character' is not a type [/home/hkchu/VerilogTest/ACTG.v:51]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near '<=' [/home/hkchu/VerilogTest/ACTG.v:51]
+CRITICAL WARNING: [HDL 9-3116] 'character' is not a type [/home/hkchu/VerilogTest/ACTG.v:51]
+open_bd_design {/home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd}
+startgroup
+delete_bd_objs [get_bd_nets clock_0_1] [get_bd_nets xlconstant_0_dout] [get_bd_nets main_0_result]
+delete_bd_objs: Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:14 . Memory (MB): peak = 10121.152 ; gain = 0.000 ; free physical = 24884 ; free virtual = 60191
+delete_bd_objs [get_bd_cells xlconstant_0] [get_bd_cells main_0]
+delete_bd_objs [get_bd_ports clock] [get_bd_ports result_0]
+endgroup
+report_ip_status -name ip_status 
+create_bd_cell -type module -reference main main_0
+WARNING: [IP_Flow 19-3571] IP 'design_2_main_0_2' is restricted:
+* Detected changes to module reference file(s).
+create_bd_cell: Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:15 . Memory (MB): peak = 10148.156 ; gain = 0.000 ; free physical = 24875 ; free virtual = 60183
+report_ip_status -name ip_status 
+report_ip_status: Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:18 . Memory (MB): peak = 10169.152 ; gain = 0.000 ; free physical = 24875 ; free virtual = 60182
+update_module_reference [get_ips  design_2_main_0_2]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clock' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clock' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clock' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clock' has no FREQ_HZ parameter.
+Upgrading '/home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd'
+INFO: [IP_Flow 19-3420] Updated design_2_main_0_2 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'character'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'HBM_CATTRIP'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_2_main_0_2'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_2_main_0_2' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : </home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+upgrade_ip: Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:21 . Memory (MB): peak = 10169.152 ; gain = 0.000 ; free physical = 24877 ; free virtual = 60184
+update_module_reference: Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:21 . Memory (MB): peak = 10169.152 ; gain = 0.000 ; free physical = 24877 ; free virtual = 60184
+generate_target all [get_files  /home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd]
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/main_0/clock
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /home/hkchu/VerilogTest/project_1/project_1.srcs/sources_1/bd/design_2/design_2.bd 
+generate_target: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:13 . Memory (MB): peak = 10181.148 ; gain = 0.000 ; free physical = 24876 ; free virtual = 60184
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+startgroup
+make_bd_pins_external  [get_bd_pins main_0/clock]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins main_0/HBM_CATTRIP]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_ethernet:7.2 axi_ethernet_0
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs eth_buf/S_AXI_2TEMAC/SEG_mac_Reg'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs s_axi/SEG_eth_buf_REG'
+WARNING: [BD 41-2721] Requested assignment from slave segment '/mac/s_axi/Reg' to address space '/eth_buf/S_AXI_2TEMAC' was auto-corrected from <0x0000_0000 [ 128K ]> to <0x0000_0000 [ 4K ]>.
+create_bd_cell: Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:08 . Memory (MB): peak = 10181.148 ; gain = 0.000 ; free physical = 24871 ; free virtual = 60182
+endgroup
+delete_bd_objs [get_bd_cells axi_ethernet_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:pcie4c_uscale_plus:1.0 pcie4c_uscale_plus_0
+xit::create_sub_core: Time (s): cpu = 00:00:00.98 ; elapsed = 00:00:13 . Memory (MB): peak = 10235.168 ; gain = 0.000 ; free physical = 24857 ; free virtual = 60168
+create_bd_cell: Time (s): cpu = 00:00:05 ; elapsed = 00:00:30 . Memory (MB): peak = 10235.168 ; gain = 0.000 ; free physical = 24855 ; free virtual = 60166
+endgroup
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins -of_objects {}'
+WARNING: [BD 5-233] No interface ports matched 'get_bd_intf_ports -of_objects {}'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /pcie4c_uscale_plus_0/pcie4_mgt'
+apply_bd_automation -rule xilinx.com:bd_rule:pcie4c_uscale_plus -config { axi_clk {Maximum Data Width} lane_width {X16} link_speed {8.0 GT/s (PCIe Gen 3)}}  [get_bd_cells pcie4c_uscale_plus_0]
+xit::create_sub_core: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 10252.172 ; gain = 0.000 ; free physical = 24866 ; free virtual = 60178
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:pcie_7x_mgt_rtl:1.0 pcie_7x_mgt_rtl_0
+INFO: [BoardRule 102-9] connect_bd_intf_net /pcie_7x_mgt_rtl_0 /pcie4c_uscale_plus_0/pcie4_mgt
+INFO: [BoardRule 102-10] create_bd_port -dir I reset_rtl_0 -type rst
+INFO: [BoardRule 102-7] set_property CONFIG.POLARITY ACTIVE_LOW /reset_rtl_0
+INFO: [BoardRule 102-15] connect_bd_net /reset_rtl_0 /pcie4c_uscale_plus_0/sys_reset
+INFO: [BoardRule 102-19] set_property CONFIG.POLARITY ACTIVE_LOW /reset_rtl_0
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 diff_clock_rtl_0
+INFO: [BoardRule 102-4] set_property CONFIG.FREQ_HZ 100000000 /diff_clock_rtl_0
+INFO: [BoardRule 102-9] connect_bd_intf_net /diff_clock_rtl_0 /util_ds_buf/CLK_IN_D
+apply_bd_automation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 10252.172 ; gain = 0.000 ; free physical = 24864 ; free virtual = 60176
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+create_bd_cell: Time (s): cpu = 00:00:00.5 ; elapsed = 00:00:22 . Memory (MB): peak = 10267.176 ; gain = 0.000 ; free physical = 24868 ; free virtual = 60181
+endgroup
+startgroup
+delete_bd_objs [get_bd_intf_nets diff_clock_rtl_0_1] [get_bd_intf_nets pcie4c_uscale_plus_0_pcie4_mgt]
+delete_bd_objs: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:14 . Memory (MB): peak = 10288.184 ; gain = 0.000 ; free physical = 24873 ; free virtual = 60188
+delete_bd_objs [get_bd_nets clock_0_1] [get_bd_nets util_ds_buf_IBUF_OUT] [get_bd_nets util_ds_buf_IBUF_DS_ODIV2] [get_bd_nets main_0_HBM_CATTRIP] [get_bd_nets reset_rtl_0_1]
+delete_bd_objs: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:13 . Memory (MB): peak = 10288.184 ; gain = 0.000 ; free physical = 24876 ; free virtual = 60191
+delete_bd_objs [get_bd_cells axi_dma_0] [get_bd_cells pcie4c_uscale_plus_0] [get_bd_cells main_0] [get_bd_cells util_ds_buf]
+delete_bd_objs [get_bd_intf_ports diff_clock_rtl_0] [get_bd_intf_ports pcie_7x_mgt_rtl_0]
+delete_bd_objs [get_bd_ports clock_0] [get_bd_ports HBM_CATTRIP_0] [get_bd_ports reset_rtl_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:cmac_usplus:3.1 cmac_usplus_0
+create_bd_cell: Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 10306.188 ; gain = 0.000 ; free physical = 24851 ; free virtual = 60173
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:cmac_usplus  [get_bd_cells cmac_usplus_0]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 diff_clock_rtl_0
+INFO: [BoardRule 102-4] set_property CONFIG.FREQ_HZ 156250000 /diff_clock_rtl_0
+INFO: [BoardRule 102-9] connect_bd_intf_net /diff_clock_rtl_0 /cmac_usplus_0/gt_ref_clk
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilvector_logic:1.0 for the IP type xilinx.com:ip:util_vector_logic:2.0 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:util_vector_logic:2.0 may be deprecated in future releases. More information on inline hdl IP is available in UG994 
+create_bd_cell: Time (s): cpu = 00:00:00.91 ; elapsed = 00:00:32 . Memory (MB): peak = 10336.035 ; gain = 0.000 ; free physical = 24816 ; free virtual = 60139
+apply_bd_automation: Time (s): cpu = 00:00:00.99 ; elapsed = 00:00:32 . Memory (MB): peak = 10336.035 ; gain = 0.000 ; free physical = 24818 ; free virtual = 60140

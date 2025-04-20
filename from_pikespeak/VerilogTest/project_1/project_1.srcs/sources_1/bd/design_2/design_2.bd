@@ -1,0 +1,42 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xcu50-fsvh2104-2-e",
+      "gen_directory": "../../../../project_1.gen/sources_1/bd/design_2",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2"
+    },
+    "design_tree": {
+      "main_0": ""
+    },
+    "components": {
+      "main_0": {
+        "vlnv": "xilinx.com:module_ref:main:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_main_0_2",
+        "xci_path": "ip/design_2_main_0_2/design_2_main_0_2.xci",
+        "inst_hier_path": "main_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "main",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "result": {
+            "direction": "O"
+          },
+          "HBM_CATTRIP": {
+            "direction": "O"
+          }
+        }
+      }
+    }
+  }
+}
