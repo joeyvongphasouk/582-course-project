@@ -32,13 +32,10 @@ endmodule
 
 module main(
 	input clock,
-	//input [15:0] character,
-	output HBM_CATTRIP
+	input [15:0] character,
+	output HBM_CATTRIP,
+	output result
 );
-	//integer fin, bytesRead;
-	reg [15:0] character;
-	initial character = 16'h4141;
-	
 	wire ste1Active, ste2Active;
     wire ste0ChildrenActivate, ste1ChildrenActivate, ste2ChildrenActivate;
 	
@@ -49,11 +46,13 @@ module main(
 	FF ste1FF(ste0ChildrenActivate || ste1ChildrenActivate, clock, ste1Active);
 	FF ste2FF(ste1ChildrenActivate, clock, ste2Active);
 	
-	//assign result = ste1ChildrenActivate || ste2ChildrenActivate;
+	assign result = ste1ChildrenActivate || ste2ChildrenActivate;
 	
 	assign HBM_CATTRIP = 1'b0;
 	
-    /*initial
+    /*
+	integer fin, bytesRead;
+	initial
     begin
 		fin = $fopen("input.txt", "rb");
 	end

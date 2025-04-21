@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date         : Thu Apr 17 10:17:18 2025
+| Date         : Thu Apr 17 12:42:59 2025
 | Host         : pikespeak running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
 | Design       : main
@@ -35,11 +35,11 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*               |    9 |     0 |          0 |    871680 | <0.01 |
-|   LUT as Logic          |    9 |     0 |          0 |    871680 | <0.01 |
+| CLB LUTs*               |    0 |     0 |          0 |    871680 |  0.00 |
+|   LUT as Logic          |    0 |     0 |          0 |    871680 |  0.00 |
 |   LUT as Memory         |    0 |     0 |          0 |    403200 |  0.00 |
-| CLB Registers           |    2 |     0 |          0 |   1743360 | <0.01 |
-|   Register as Flip Flop |    2 |     0 |          0 |   1743360 | <0.01 |
+| CLB Registers           |    0 |     0 |          0 |   1743360 |  0.00 |
+|   Register as Flip Flop |    0 |     0 |          0 |   1743360 |  0.00 |
 |   Register as Latch     |    0 |     0 |          0 |   1743360 |  0.00 |
 | CARRY8                  |    0 |     0 |          0 |    108960 |  0.00 |
 | F7 Muxes                |    0 |     0 |          0 |    435840 |  0.00 |
@@ -66,7 +66,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 2     |          Yes |       Reset |            - |
+| 0     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -100,7 +100,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| Bonded IOB |   18 |     0 |          0 |       416 |  4.33 |
+| Bonded IOB |    1 |     0 |          0 |       416 |  0.24 |
 +------------+------+-------+------------+-----------+-------+
 
 
@@ -110,7 +110,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCE     |    1 |     0 |          0 |       192 |  0.52 |
+| BUFGCE     |    0 |     0 |          0 |       192 |  0.00 |
 | BUFGCE_DIV |    0 |     0 |          0 |        32 |  0.00 |
 | BUFG_GT    |    0 |     0 |          0 |       384 |  0.00 |
 | BUFGCTRL*  |    0 |     0 |          0 |        64 |  0.00 |
@@ -163,15 +163,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| INBUF    |   17 |                 I/O |
-| IBUFCTRL |   17 |              Others |
-| LUT5     |    4 |                 CLB |
-| LUT6     |    2 |                 CLB |
-| LUT3     |    2 |                 CLB |
-| FDRE     |    2 |            Register |
 | OBUF     |    1 |                 I/O |
-| LUT4     |    1 |                 CLB |
-| BUFGCE   |    1 |               Clock |
 +----------+------+---------------------+
 
 

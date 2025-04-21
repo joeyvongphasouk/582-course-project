@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x0",
+      "boundary_crc": "0xABAD3DCF1E690FC1",
       "device": "xcu50-fsvh2104-2-e",
       "gen_directory": "../../../../project_1.gen/sources_1/bd/design_2",
       "name": "design_2",
@@ -12,12 +12,21 @@
     "design_tree": {
       "main_0": ""
     },
+    "ports": {
+      "clock_0": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "HBM_CATTRIP_0": {
+        "direction": "O"
+      }
+    },
     "components": {
       "main_0": {
         "vlnv": "xilinx.com:module_ref:main:1.0",
         "ip_revision": "1",
-        "xci_name": "design_2_main_0_2",
-        "xci_path": "ip/design_2_main_0_2/design_2_main_0_2.xci",
+        "xci_name": "design_2_main_0_3",
+        "xci_path": "ip/design_2_main_0_3/design_2_main_0_3.xci",
         "inst_hier_path": "main_0",
         "reference_info": {
           "ref_type": "hdl",
@@ -29,13 +38,24 @@
             "type": "clk",
             "direction": "I"
           },
-          "result": {
-            "direction": "O"
-          },
           "HBM_CATTRIP": {
             "direction": "O"
           }
         }
+      }
+    },
+    "nets": {
+      "clock_0_1": {
+        "ports": [
+          "clock_0",
+          "main_0/clock"
+        ]
+      },
+      "main_0_HBM_CATTRIP": {
+        "ports": [
+          "main_0/HBM_CATTRIP",
+          "HBM_CATTRIP_0"
+        ]
       }
     }
   }

@@ -33,7 +33,6 @@ endmodule
 module main(
 	input clock,
 	//input [15:0] character,
-	output result,
 	output HBM_CATTRIP
 );
 	//integer fin, bytesRead;
@@ -50,7 +49,7 @@ module main(
 	FF ste1FF(ste0ChildrenActivate || ste1ChildrenActivate, clock, ste1Active);
 	FF ste2FF(ste1ChildrenActivate, clock, ste2Active);
 	
-	assign result = ste1ChildrenActivate || ste2ChildrenActivate;
+	//assign result = ste1ChildrenActivate || ste2ChildrenActivate;
 	
 	assign HBM_CATTRIP = 1'b0;
 	

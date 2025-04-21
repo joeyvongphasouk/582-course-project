@@ -121,7 +121,7 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet /home/hkchu/VerilogTest/project_1/project_1.runs/synth_1/main.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/hkchu/VerilogTest/clock_constraint.xdc
+  read_xdc /home/hkchu/VerilogTest/constraints.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
