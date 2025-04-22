@@ -1,0 +1,88 @@
+turbostat version 2024.07.26 - Len Brown <lenb@kernel.org>
+Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.11.0-24-generic root=UUID=3a7c0651-fa27-415e-bd67-bc2a75d47865 ro quiet splash vt.handoff=7
+CPUID(0): GenuineIntel 0x1b CPUID levels
+CPUID(1): family:model:stepping 0x6:8c:1 (6:140:1) microcode 0xb8
+CPUID(0x80000000): max_extended_levels: 0x80000008
+CPUID(1): SSE3 MONITOR - EIST TM2 TSC MSR ACPI-TM HT TM
+CPUID(6): APERF, TURBO, DTS, PTM, HWP, HWPnotify, HWPwindow, HWPepp, HWPpkg, EPB
+cpu0: MSR_IA32_MISC_ENABLE: 0x00850089 (TCC EIST MWAIT PREFETCH TURBO)
+CPUID(7): No-SGX No-Hybrid
+CPUID(0x15): eax_crystal: 2 ebx_tsc: 126 ecx_crystal_hz: 38400000
+TSC: 2419 MHz (38400000 Hz * 126 / 2 / 1000000)
+CPUID(0x16): base_mhz: 2400 max_mhz: 4200 bus_mhz: 100
+cpu0: MSR_PLATFORM_INFO: 0x4043df0811800
+4 * 100.0 = 400.0 MHz max efficiency frequency
+24 * 100.0 = 2400.0 MHz base frequency
+cpu0: MSR_TURBO_RATIO_LIMIT: 0x2626262626262a2a
+38 * 100.0 = 3800.0 MHz max turbo 8 active cores
+38 * 100.0 = 3800.0 MHz max turbo 7 active cores
+38 * 100.0 = 3800.0 MHz max turbo 6 active cores
+38 * 100.0 = 3800.0 MHz max turbo 5 active cores
+38 * 100.0 = 3800.0 MHz max turbo 4 active cores
+38 * 100.0 = 3800.0 MHz max turbo 3 active cores
+42 * 100.0 = 4200.0 MHz max turbo 2 active cores
+42 * 100.0 = 4200.0 MHz max turbo 1 active cores
+cpu0: MSR_CONFIG_TDP_NOMINAL: 0x00000018 (base_ratio=24)
+cpu0: MSR_CONFIG_TDP_LEVEL_1: 0x00090060 (PKG_MIN_PWR_LVL1=0 PKG_MAX_PWR_LVL1=0 LVL1_RATIO=9 PKG_TDP_LVL1=96)
+cpu0: MSR_CONFIG_TDP_LEVEL_2: 0x000e0078 (PKG_MIN_PWR_LVL2=0 PKG_MAX_PWR_LVL2=0 LVL2_RATIO=14 PKG_TDP_LVL2=120)
+cpu0: MSR_CONFIG_TDP_CONTROL: 0x00000000 ( lock=0)
+cpu0: MSR_TURBO_ACTIVATION_RATIO: 0x00000017 (MAX_NON_TURBO_RATIO=23 lock=0)
+cpu0: cpufreq driver: intel_pstate
+cpu0: cpufreq governor: powersave
+cpufreq intel_pstate no_turbo: 0
+cpu0: MSR_MISC_PWR_MGMT: 0x00401cc0 (ENable-EIST_Coordination DISable-EPB DISable-OOB)
+cpu0: MSR_PM_ENABLE: 0x00000001 (HWP)
+cpu0: MSR_HWP_CAPABILITIES: 0x010c182a (high 42 guar 24 eff 12 low 1)
+cpu0: MSR_HWP_REQUEST: 0x80002a04 (min 4 max 42 des 0 epp 0x80 window 0x0 pkg 0x0)
+cpu0: MSR_HWP_REQUEST_PKG: 0x8000ff01 (min 1 max 255 des 0 epp 0x80 window 0x0)
+cpu0: MSR_HWP_INTERRUPT: 0x00000005 (EN_Guaranteed_Perf_Change, Dis_Excursion_Min)
+cpu0: MSR_HWP_STATUS: 0x00000004 (No-Guaranteed_Perf_Change, Excursion_Min)
+cpu0: EPB: 6 (balanced)
+cpu0: MSR_IA32_POWER_CTL: 0x0024005b (C1E auto-promotion: ENabled)
+cpu0: MSR_PKG_CST_CONFIG_CONTROL: 0x74000008 (UNdemote-C1, demote-C1, UNlocked, pkg-cstate-limit=8 (unlimited))
+/dev/cpu_dma_latency: 2000000000 usec (default)
+current_driver: intel_idle
+current_governor: menu
+current_governor_ro: menu
+cpu0: POLL: CPUIDLE CORE POLL IDLE
+cpu0: C1ACPI: ACPI FFH MWAIT 0x0
+cpu0: C2ACPI: ACPI FFH MWAIT 0x31
+cpu0: C3ACPI: ACPI FFH MWAIT 0x60
+cpu0: MSR_PKGC3_IRTL: 0x00000000 (NOTvalid, 0 ns)
+cpu0: MSR_PKGC6_IRTL: 0x00000000 (NOTvalid, 0 ns)
+cpu0: MSR_PKGC7_IRTL: 0x00000000 (NOTvalid, 0 ns)
+cpu0: MSR_PKGC8_IRTL: 0x00000000 (NOTvalid, 0 ns)
+cpu0: MSR_PKGC9_IRTL: 0x00000000 (NOTvalid, 0 ns)
+cpu0: MSR_PKGC10_IRTL: 0x00000000 (NOTvalid, 0 ns)
+Uncore Frequency package0 die0: 400 - 3600 MHz (400 - 3600 MHz) 1000 MHz
+RAPL: 9362 sec. Joule Counter Range, at 28 Watts
+cpu0: MSR_RAPL_POWER_UNIT: 0x000a0e03 (0.125000 Watts, 0.000061 Joules, 0.000977 sec.)
+cpu0: MSR_PKG_POWER_INFO: 0x000000e0 (28 W TDP, RAPL 0 - 0 W, 0.000000 sec.)
+cpu0: MSR_PKG_POWER_LIMIT: 0x4201e0001e8640 (UNlocked)
+cpu0: PKG Limit #1: ENabled (200.000 Watts, 32.000000 sec, clamp DISabled)
+cpu0: PKG Limit #2: DISabled (60.000 Watts, 0.002441* sec, clamp DISabled)
+cpu0: MSR_VR_CURRENT_CONFIG: 0x000003c8
+cpu0: PKG Limit #4: 121.000000 Watts (UNlocked)
+cpu0: MSR_DRAM_POWER_LIMIT: 0x00000000 (UNlocked)
+cpu0: DRAM Limit: DISabled (0.000 Watts, 0.000977 sec, clamp DISabled)
+cpu0: MSR_PP0_POLICY: 0
+cpu0: MSR_PP0_POWER_LIMIT: 0x00000000 (UNlocked)
+cpu0: Cores Limit: DISabled (0.000 Watts, 0.000977 sec, clamp DISabled)
+cpu0: MSR_PP1_POLICY: 0
+cpu0: MSR_PP1_POWER_LIMIT: 0x00000000 (UNlocked)
+cpu0: GFX Limit: DISabled (0.000 Watts, 0.000977 sec, clamp DISabled)
+cpu0: MSR_IA32_TEMPERATURE_TARGET: 0x86640000 (94 C) (100 default - 6 offset)
+cpu0: MSR_IA32_PACKAGE_THERM_STATUS: 0x883d0008 (39 C)
+cpu0: MSR_IA32_PACKAGE_THERM_INTERRUPT: 0x00000003 (100 C, 100 C)
+cpu0: MSR_MISC_FEATURE_CONTROL: 0x00000800 (L2-Prefetch L2-Prefetch-pair L1-Prefetch L1-IP-Prefetch)
+0.049736 sec
+Core	CPU	Avg_MHz	Busy%	Bzy_MHz	TSC_MHz	IPC	IRQ	SMI	POLL	C1ACPI	C2ACPI	C3ACPI	POLL%	C1ACPI%	C2ACPI%	C3ACPI%	CPU%c1	CPU%c6	CPU%c7	CoreTmp	CoreThr	PkgTmp	Totl%C0	Any%C0	GFX%C0	CPUGFX%	Pkg%pc2	Pkg%pc3	Pkg%pc6	Pkg%pc7	Pkg%pc8	Pkg%pc9	Pk%pc10	CPU%LPI	SYS%LPI	PkgWatt	CorWatt	GFXWatt	RAMWatt	PKG_%	RAM_%	UncMHz
+-	-	531	13.39	3968	2418	1.35	124	0	3	50	12	66	0.05	7.33	2.47	76.81	15.09	0.00	57.92	60	539	61	109.82	100.53	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	11.80	10.05	0.00	0.00	0.00	0.00	3600
+0	0	44	2.54	1741	2419	0.63	24	0	0	11	6	31	0.00	12.77	9.87	75.09	30.39	0.00	61.01	39	180	61	110.08	100.77	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	11.84	10.08	0.00	0.00	0.00	0.00	3600
+0	4	105	4.11	2556	2419	1.11	10	0	3	7	2	26	0.39	6.13	2.48	87.50	30.39
+1	1	14	0.82	1704	2419	0.65	13	0	0	13	1	2	0.00	20.27	1.45	77.54	20.24	0.00	79.13	42	102
+1	5	6	0.16	3722	2419	0.86	1	0	0	1	0	2	0.00	0.32	0.00	99.52	20.24
+2	2	8	0.37	2069	2419	0.71	5	0	0	4	1	2	0.00	2.15	1.98	95.52	8.56	0.00	91.56	35	34
+2	6	6	0.18	3267	2419	0.80	2	0	0	1	0	2	0.00	0.03	0.00	99.80	8.56
+3	3	17	0.57	2965	2419	0.44	15	0	0	11	2	1	0.00	15.64	4.00	79.80	1.25	0.00	0.00	60	539
+3	7	4050	98.35	4118	2419	1.37	54	0	0	2	0	0	0.00	1.42	0.00	0.00	1.25
