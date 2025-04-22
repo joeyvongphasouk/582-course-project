@@ -225,12 +225,13 @@ __global__ void parallelMatch(char *bigLine, u32 *tableOfLineStarts,
     int i;
     for (i = blockIdx.x * blockDim.x + threadIdx.x; i < numLines;
          i += gridDim.x * blockDim.x) {
-
+      
+      // modified so that the devResult would pass if already matched
+      // ensures ruleset matches over everything
+      if (devResult[i] == 1) continue;
       char *lineSegment = bigLine + tableOfLineStarts[i];
       if (panypmatch(st, lineSegment, &d1, &d2))
         devResult[i] = 1;
-      else
-        devResult[i] = 0;
     }
   }
 }

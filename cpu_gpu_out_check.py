@@ -33,6 +33,9 @@ def check_single(input_file, regex_file):
             print("error make failed;", error)
             sys.exit(-1)
 
+        # there is an option in bkase nfa to test using a given file
+        # but it doesn't work for some reason???
+        # 
         for line in rf:
             regex = line.strip()
             gpu_args = ["./GPU/bkase-gpu-grep/nfa", "-f", input_file, f'{regex}']
