@@ -200,7 +200,6 @@ int main(int argc, char **argv) {
 
 
 
-      // printf("num num_lines: %i\n", num_lines);
       // for (int i = 0; i < num_lines; i++) {
       //     std::cout << "num_lines[" << i << "] = " << lines[i] << std::endl;
       // }
@@ -213,13 +212,33 @@ int main(int argc, char **argv) {
       host_line_table[0] = 0;
       int num_lines = 0;
 
-      int len = strlen(lines[0]);
+      int total_len = 0;
+      while ((*lines)[total_len] != '\0') total_len++;
+      int len = total_len;
+      // printf("num num_lines: %i\n", len);
+      // printf("num total len: %i\n", total_len);
       for (int i = 0; i < len; i++) {
         if ((lines[0])[i] == '\n' || lines[0][i] == 0) {
           host_line_table[++num_lines] = i + 1;
           lines[0][i] = 0;
+          // printf("san check\n");
         }
       }
+      if (host_line_table[num_lines] != total_len) {
+        host_line_table[++num_lines] = total_len;
+      }
+
+      // printf("=== HOST LINE DEBUG ===\n");
+      // for (int i = 0; i < num_lines; i++) {
+      //   printf("Line %d: %s\n", i, lines[0] + host_line_table[i]);
+      // }
+      // printf("=======================\n");
+      // printf("DEBUG: Total lines parsed: %d\n", num_lines);
+      // for (int i = 0; i < num_lines; i++) {
+      //     printf("Line %d: %s\n", i, lines[0] + host_line_table[i]);
+      // }
+
+
 
       cudaMalloc((void **)&device_line_table, sizeof(u32) * (len));
       cudaMalloc((void **)&device_line, sizeof(char) * (len + 1));
