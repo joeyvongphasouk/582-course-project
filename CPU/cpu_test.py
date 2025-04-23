@@ -3,7 +3,7 @@
 import sys
 import subprocess
 import time
-import psutil
+# import psutil
 
 def main():
     if len(sys.argv) < 2:
