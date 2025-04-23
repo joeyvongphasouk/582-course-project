@@ -1,3 +1,9 @@
+# THIS SCRIPT IS DEPRECATED
+# just run the commands directly
+
+
+
+
 # this is a script to execute inputs onto bkase or infant gpu grep methods
 
 import sys

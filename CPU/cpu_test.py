@@ -1,4 +1,4 @@
-# this is a script to execute inputs onto bkase or infant gpu grep methods
+# this is a script to grab performance measures on CPU executions
 
 import sys
 import subprocess

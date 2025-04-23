@@ -1,7 +1,0 @@
-/home/arctic/582-course-project/GPU/gpunfa-artifact-master/gpunfa_code/build/CMakeFiles/gpunfacommons.dir
-/home/arctic/582-course-project/GPU/gpunfa-artifact-master/gpunfa_code/build/CMakeFiles/gpunfautils.dir
-/home/arctic/582-course-project/GPU/gpunfa-artifact-master/gpunfa_code/build/CMakeFiles/obat.dir
-/home/arctic/582-course-project/GPU/gpunfa-artifact-master/gpunfa_code/build/CMakeFiles/infant.dir
-/home/arctic/582-course-project/GPU/gpunfa-artifact-master/gpunfa_code/build/CMakeFiles/ppopp12.dir
-/home/arctic/582-course-project/GPU/gpunfa-artifact-master/gpunfa_code/build/CMakeFiles/edit_cache.dir
-/home/arctic/582-course-project/GPU/gpunfa-artifact-master/gpunfa_code/build/CMakeFiles/rebuild_cache.dir
