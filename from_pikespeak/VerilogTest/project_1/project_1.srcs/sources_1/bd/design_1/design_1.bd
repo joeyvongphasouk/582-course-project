@@ -1,0 +1,40 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xcu50-fsvh2104-2-e",
+      "gen_directory": "../../../../project_1.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2"
+    },
+    "design_tree": {
+      "STE0_0": ""
+    },
+    "components": {
+      "STE0_0": {
+        "vlnv": "xilinx.com:module_ref:STE0:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_STE0_0_0",
+        "xci_path": "ip/design_1_STE0_0_0/design_1_STE0_0_0.xci",
+        "inst_hier_path": "STE0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "STE0",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "character": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "activateChildren": {
+            "direction": "O"
+          }
+        }
+      }
+    }
+  }
+}

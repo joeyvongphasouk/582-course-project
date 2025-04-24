@@ -30,11 +30,12 @@ module FF(
 		isActive <= setActive;
 endmodule
 
-module main();
-	integer fin, bytesRead;
-	reg [15:0] character;
-	reg clock;
-	
+module main(
+	input clock,
+	input [15:0] character,
+	output HBM_CATTRIP,
+	output result
+);
 	wire ste1Active, ste2Active;
     wire ste0ChildrenActivate, ste1ChildrenActivate, ste2ChildrenActivate;
 	
@@ -45,29 +46,30 @@ module main();
 	FF ste1FF(ste0ChildrenActivate || ste1ChildrenActivate, clock, ste1Active);
 	FF ste2FF(ste1ChildrenActivate, clock, ste2Active);
 	
-	always #5 clock = !clock;
+	assign result = ste1ChildrenActivate || ste2ChildrenActivate;
 	
-    initial
+	assign HBM_CATTRIP = 1'b0;
+	
+    /*
+	integer fin, bytesRead;
+	initial
     begin
 		fin = $fopen("input.txt", "rb");
-		clock = 0;
-		
-		while (1)
-		begin
-			bytesRead = $fread(character, fin, 0, 2);
-			if (bytesRead < 2)
-				$finish;
-			
-			#1;
-			
-			$display("Character: %h", character);
-			$display("0: S %d", ste0ChildrenActivate);
-			$display("1: %d %d", ste1Active, ste1ChildrenActivate);
-			$display("2: %d %d", ste2Active, ste2ChildrenActivate);
-			$display("report: %d", ste1ChildrenActivate || ste2ChildrenActivate);
-			$display();
-			
-			#9;
-		end
 	end
+	
+	always @(posedge clock)
+	begin
+		bytesRead = $fread(character, fin, 0, 2);
+		if (bytesRead < 2)
+			$finish;
+		
+		#1;
+		
+		$display("Character: %h", character);
+		$display("0: S %d", ste0ChildrenActivate);
+		$display("1: %d %d", ste1Active, ste1ChildrenActivate);
+		$display("2: %d %d", ste2Active, ste2ChildrenActivate);
+		$display("report: %d", ste1ChildrenActivate || ste2ChildrenActivate);
+		$display();
+	end*/
 endmodule

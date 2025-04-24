@@ -1,0 +1,19 @@
+RE : : self-replace-0
+ALT : last=ALTLIST : last-replace-last.*
+ALT : 1=null : self-replace-0
+ALTLIST : last=ALTLIST : last-replace-last.*
+ALTLIST : 0=lambda : self-replace-
+ALTLIST : 0?=pipe : 0-replace-
+SEQ : last=SEQLIST : last-replace-last.*
+SEQ : 1=null : self-replace-0
+SEQLIST : last=SEQLIST : last-replace-last.*
+SEQLIST : 0=lambda : self-replace-
+ATOM : 1.0=* : self-rename-kleene 1-replace-
+ATOM : 1.0=+ : self-rename-plus 1-replace-
+ATOM : self=ATOM 1=null : self-replace-0
+ATOMMOD : 0=lambda : self-replace-
+NUCLEUS : 0?=open 2?=close : self-replace-1
+NUCLEUS : 1=CHARRNG : self-rename-range 1-replace-1.1
+NUCLEUS : 0?=dot : 0-rename-dot
+NUCLEUS : 1=null : self-replace-0
+CHARRNG : 0=lambda : self-replace-
