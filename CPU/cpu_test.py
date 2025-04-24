@@ -22,6 +22,8 @@ def main():
         mem_ere_grep()
     elif sys.argv[1] == "time":
         time_ere_grep()
+    elif sys.argv[1] == "time_single":
+        time_ere_grep_single()
     else:
         print("incorrect usage, arg 1 should be either 'ere' or 'pcre'")
 
@@ -81,6 +83,23 @@ def time_ere_grep():
     start_time = time.time()
     try:
         output = subprocess.check_output(['egrep', '-f', sys.argv[3], sys.argv[2]], text=True)
+        # print(output)
+    except subprocess.CalledProcessError as e:
+        if e.returncode == 1:
+            print("no matches found\n") # note, this is similar to bkase's grep output
+        else:
+            print(f"error: {e} \n")
+    end_time = time.time()
+
+    
+    # results.write(f"Start time: {start_time}\n")
+    # results.write(f"End time: {end_time}\n")
+    print(f"Elapsed time: {end_time - start_time}\n")
+
+def time_ere_grep_single():
+    start_time = time.time()
+    try:
+        output = subprocess.check_output(['pcregrep', sys.argv[3], sys.argv[2]], text=True)
         # print(output)
     except subprocess.CalledProcessError as e:
         if e.returncode == 1:

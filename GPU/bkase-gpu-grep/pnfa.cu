@@ -558,8 +558,10 @@ __global__ void parallelMatch(char *bigLine, u32 *tableOfLineStarts,
       if (panypmatch(st, lineSegment, &d1, &d2))
         devResult[i] = 1;
     }
-    
-    __syncthreads();
+
+    if (!(j == 0 || j == numRegexs - 1)) {
+      __syncthreads();
+    }
   }
 }
 

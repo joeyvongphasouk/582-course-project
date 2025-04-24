@@ -138,6 +138,7 @@ int main(int argc, char **argv) {
 
     // match just a single regex
     if (regexFile == NULL) {
+      startTime = CycleTimer::currentSeconds();
       char *regexBuffer = (char *)malloc(strlen(argv[regexIndex]) + 1);
       strcpy(regexBuffer, argv[regexIndex]);
       simplifyRe(&regexBuffer, &builder);
@@ -150,7 +151,6 @@ int main(int argc, char **argv) {
 
       // this doesn't actually give you the number of lines in num_lines whyyyyyyyyy
       // it basically just reads it into lines and calls it good :)
-      startTime = CycleTimer::currentSeconds();
       readFile(fileName, &lines, &num_lines);
       endReadFile = CycleTimer::currentSeconds();
 
@@ -164,14 +164,22 @@ int main(int argc, char **argv) {
       int num_lines = 0;
       int len = strlen(lines[0]);
       for (int i = 0; i < len; i++) {
+        // printf("%c", (lines[0])[i]);
         if ((lines[0])[i] == '\n') {
           table[++num_lines] = i + 1;
           lines[0][i] = 0;
+          // printf("char preced: %c\n", (lines[0])[i- 1] );
+          // printf("INCREMENT\n");
         }
       }
 
-      if ((lines[0])[len - 1] == '\n') /*if at the end file not '\n', then we not forgot last offset */
-        --num_lines;
+      if (len > 0 && (lines[0][len - 1] != '\n')) {
+        ++num_lines;
+        table[num_lines] = len;
+      }
+
+      // if ((lines[0])[len - 1] == '\n') /*if at the end file not '\n', then we not forgot last offset */
+      //   --num_lines;
 
       cudaMalloc((void **)&device_line_table, sizeof(u32) * (len));
       cudaMalloc((void **)&device_line, sizeof(char) * (len + 1));
@@ -197,156 +205,154 @@ int main(int argc, char **argv) {
       readFile(regexFile, &regexs, &num_regexs);
       readFile(fileName, &lines, &num_lines);
       endReadFile = CycleTimer::currentSeconds();
-
-
-
-      // for (int i = 0; i < num_lines; i++) {
-      //     std::cout << "num_lines[" << i << "] = " << lines[i] << std::endl;
-      // }
-
+      
+      // the following stuff is for passing in the search file to the gpu
       char *device_line;
       u32 *device_line_table;
-      // copyStringsToDevice(lines, num_lines, &device_line,
-      // &device_line_table);
-      u32 *host_line_table = (u32 *)malloc(sizeof(u32) * strlen(*lines));
-      host_line_table[0] = 0;
-      int num_lines = 0;
 
-      int total_len = 0;
-      while ((*lines)[total_len] != '\0') total_len++;
-      int len = total_len;
-      // printf("num num_lines: %i\n", len);
-      // printf("num total len: %i\n", total_len);
+      // set the table of indices
+      // additionally, go over lines array and set \n to be \0 (whilst also incrementing num_lines)
+      u32 *table = (u32 *)malloc(sizeof(u32) * strlen(*lines));
+      table[0] = 0;
+      int num_lines = 0;
+      int len = strlen(lines[0]);
       for (int i = 0; i < len; i++) {
-        if ((lines[0])[i] == '\n' || lines[0][i] == 0) {
-          host_line_table[++num_lines] = i + 1;
+        // printf("%c", (lines[0])[i]);
+        if ((lines[0])[i] == '\n') {
+          table[++num_lines] = i + 1;
           lines[0][i] = 0;
-          // printf("san check\n");
+          // printf("char preced: %c\n", (lines[0])[i- 1] );
+          // printf("INCREMENT\n");
         }
       }
-      if (host_line_table[num_lines] != total_len) {
-        host_line_table[++num_lines] = total_len;
+
+      if (len > 0 && (lines[0][len - 1] != '\n')) {
+        ++num_lines;
+        table[num_lines] = len;
       }
 
-      // printf("=== HOST LINE DEBUG ===\n");
-      // for (int i = 0; i < num_lines; i++) {
-      //   printf("Line %d: %s\n", i, lines[0] + host_line_table[i]);
-      // }
-      // printf("=======================\n");
-      // printf("DEBUG: Total lines parsed: %d\n", num_lines);
-      // for (int i = 0; i < num_lines; i++) {
-      //     printf("Line %d: %s\n", i, lines[0] + host_line_table[i]);
-      // }
-
-
+      // printf("num_lines: %d\n", num_lines);
 
       cudaMalloc((void **)&device_line_table, sizeof(u32) * (len));
       cudaMalloc((void **)&device_line, sizeof(char) * (len + 1));
 
-      cudaMemcpy(device_line_table, host_line_table, sizeof(u32) * (len), cudaMemcpyHostToDevice);
+      cudaMemcpy(device_line_table, table, sizeof(u32) * (len), cudaMemcpyHostToDevice);
       cudaMemcpy(device_line, *lines, sizeof(char) * (len + 1), cudaMemcpyHostToDevice);
 
 
-      // // redo this cause it 
-      // u32 *host_regex_table = (u32 *)malloc(sizeof(u32) * strlen(*regexs));
-      // host_regex_table[0] = 0;
-      // int num_regexs = 0;
 
+      // orig
+      char * device_regex;
+			u32 * device_regex_table;
+			u32 * host_regex_table = (u32 *) malloc(sizeof(u32) * strlen(*regexs));
+			host_regex_table[0] = 0;
+			int num_regexs = 0;
+	
+			len = strlen(regexs[0]);
+			for (int i = 0; i < len; i++) {
+				if (regexs[0][i] == '\n' || regexs[0][i] == 0) {
+				
+					host_regex_table[++num_regexs] = i+1;
+					regexs[0][i] = 0;			
+			
+          char * regexBuffer = (char*)malloc(strlen(regexs[0] + host_regex_table[num_regexs-1])+1);
+          strcpy(regexBuffer, regexs[0] + host_regex_table[num_regexs-1]);
+          simplifyRe(&regexBuffer, &builder);
+          free(regexBuffer);
+
+					strcpy(regexs[0] + host_regex_table[num_regexs-1],builder.re);
+				}
+			}
+
+      if (len > 0 && (regexs[0][len - 1] != '\n')) {
+        ++num_regexs;
+
+        // null-terminate last regex
+        regexs[0][len] = 0;
+
+        char *regexBuffer = (char*)malloc(strlen(regexs[0] + host_regex_table[num_regexs - 1]) + 1);
+        strcpy(regexBuffer, regexs[0] + host_regex_table[num_regexs - 1]);
+        simplifyRe(&regexBuffer, &builder);
+        free(regexBuffer);
+
+        strcpy(regexs[0] + host_regex_table[num_regexs - 1], builder.re);
+      }
+
+			cudaMalloc((void**)&device_regex_table, sizeof (u32) * (len ));		
+			cudaMalloc((void**)&device_regex, sizeof (char) * (len + 1));		
+
+			cudaMemcpy(device_regex_table, host_regex_table, sizeof(u32) * (len), cudaMemcpyHostToDevice);
+			cudaMemcpy(device_regex, *regexs, sizeof(char) * (len + 1), cudaMemcpyHostToDevice);
+			
+			endCopyStringsToDevice = CycleTimer::currentSeconds();
+
+			pMatch(device_line, device_line_table, num_lines, num_regexs, timerOn, device_regex, device_regex_table, lines, table);
+			endPMatch = CycleTimer::currentSeconds();
+
+
+
+
+
+      // // // work from here
+      // std::vector<std::string> regex_list;
+      // int start = 0;
       // len = strlen(regexs[0]);
-      // for (int i = 0; i < len; i++) {
+
+      // // iter through regexs[0], which is just the entire regex file
+      // // sperate into regex list based on \n or \0 terminator
+      // for (int i = 0; i <= len; i++) {
       //   if (regexs[0][i] == '\n' || regexs[0][i] == 0) {
-
-      //     host_regex_table[++num_regexs] = i + 1;
       //     regexs[0][i] = 0;
-
-      //     char *regexBuffer = (char *)malloc(
-      //         strlen(regexs[0] + host_regex_table[num_regexs - 1]) + 1);
-      //     strcpy(regexBuffer, regexs[0] + host_regex_table[num_regexs - 1]);
-      //     simplifyRe(&regexBuffer, &builder);
-      //     free(regexBuffer);
-
-      //     strcpy(regexs[0] + host_regex_table[num_regexs - 1], builder.re);
+      //     if (i - start > 0) {
+      //       regex_list.emplace_back(regexs[0] + start);
+      //     }
+      //     start = i + 1;
       //   }
       // }
-
-      // printf("num regex: %i\n", num_regexs);
-      // for (int i = 0; i < num_regexs; i++) {
-      //     std::cout << "regexs[" << i << "] = " << regexs[i] << std::endl;
+      
+      // int num_regexs = regex_list.size();
+      // std::vector<std::string> simplified;
+      // std::vector<u32> offsets;
+      
+      // std::string regex_concat;
+      // u32 offset = 0;
+      
+      // // go back through collected regexs and 
+      // for (const auto& r : regex_list) {
+      //   char* regexBuffer = (char*)malloc(r.length() + 1);
+      //   strcpy(regexBuffer, r.c_str());
+      
+      //   simplifyRe(&regexBuffer, &builder); // updates builder.re
+      //   simplified.emplace_back(builder.re);
+      //   offsets.push_back(offset);
+      
+      //   regex_concat += builder.re;
+      //   regex_concat += '\0';  // null terminate each regex
+      //   offset += strlen(builder.re) + 1;
+      
+      //   free(regexBuffer);
       // }
-
-      // // call the cuda api
-      // char *device_regex;
-      // u32 *device_regex_table;
-
-      // cudaMalloc((void **)&device_regex_table, sizeof(u32) * (len));
-      // cudaMalloc((void **)&device_regex, sizeof(char) * (len + 1));
-
-      // cudaMemcpy(device_regex_table, host_regex_table, sizeof(u32) * (len), cudaMemcpyHostToDevice);
-      // cudaMemcpy(device_regex, *regexs, sizeof(char) * (len + 1), cudaMemcpyHostToDevice);
-
-
-
-
-      std::vector<std::string> regex_list;
-      int start = 0;
-      len = strlen(regexs[0]);
-
-      // iter through regexs[0], which is just the entire regex file
-      // sperate into regex list based on \n or \0 terminator
-      for (int i = 0; i <= len; i++) {
-        if (regexs[0][i] == '\n' || regexs[0][i] == 0) {
-          regexs[0][i] = 0;
-          if (i - start > 0) {
-            regex_list.emplace_back(regexs[0] + start);
-          }
-          start = i + 1;
-        }
-      }
       
+      // // Step 3: transfer to GPU
+      // char* device_regex;
+      // u32* device_regex_table;
+      
+      // cudaMalloc((void**)&device_regex_table, sizeof(u32) * num_regexs);
+      // cudaMalloc((void**)&device_regex, sizeof(char) * regex_concat.size());
+      
+      // cudaMemcpy(device_regex_table, offsets.data(), sizeof(u32) * num_regexs, cudaMemcpyHostToDevice);
+      // cudaMemcpy(device_regex, regex_concat.data(), regex_concat.size(), cudaMemcpyHostToDevice);
 
-      int num_regexs = regex_list.size();
-      std::vector<std::string> simplified;
-      std::vector<u32> offsets;
-      
-      std::string regex_concat;
-      u32 offset = 0;
-      
-      // go back through collected regexs and 
-      for (const auto& r : regex_list) {
-        char* regexBuffer = (char*)malloc(r.length() + 1);
-        strcpy(regexBuffer, r.c_str());
-      
-        simplifyRe(&regexBuffer, &builder); // updates builder.re
-        simplified.emplace_back(builder.re);
-        offsets.push_back(offset);
-      
-        regex_concat += builder.re;
-        regex_concat += '\0';  // null terminate each regex
-        offset += strlen(builder.re) + 1;
-      
-        free(regexBuffer);
-      }
-      
-      // Step 3: transfer to GPU
-      char* device_regex;
-      u32* device_regex_table;
-      
-      cudaMalloc((void**)&device_regex_table, sizeof(u32) * num_regexs);
-      cudaMalloc((void**)&device_regex, sizeof(char) * regex_concat.size());
-      
-      cudaMemcpy(device_regex_table, offsets.data(), sizeof(u32) * num_regexs, cudaMemcpyHostToDevice);
-      cudaMemcpy(device_regex, regex_concat.data(), regex_concat.size(), cudaMemcpyHostToDevice);
+      // endCopyStringsToDevice = CycleTimer::currentSeconds();
 
-      endCopyStringsToDevice = CycleTimer::currentSeconds();
+      // // printf("num regex: %d\n", num_regexs);
+      // // for (int i = 0; i < num_regexs; i++) {
+      // //   std::cout << "regex[" << i << "] = " << simplified[i] << std::endl;
+      // // }
 
-      // printf("num regex: %d\n", num_regexs);
-      // for (int i = 0; i < num_regexs; i++) {
-      //   std::cout << "regex[" << i << "] = " << simplified[i] << std::endl;
-      // }
-
-      pMatch(device_line, device_line_table, num_lines, num_regexs, timerOn,
-             device_regex, device_regex_table, lines, host_line_table);
-      endPMatch = CycleTimer::currentSeconds();
+      // pMatch(device_line, device_line_table, num_lines, num_regexs, timerOn,
+      //        device_regex, device_regex_table, lines, table);
+      // endPMatch = CycleTimer::currentSeconds();
     }
   }
 
