@@ -1,7 +1,7 @@
 # THE NAME OF YOUR EXECUTABLE
-TARGET = regex_to_verilog
+TARGET = regex_conversions
 # ALL CPP IMPLEMENTATION FILES THAT MAKE UP THE PROJECT
-SRC_FILES = src/automata_to_verilog.cpp src/regex_to_automata/regex_to_automata.cpp src/regex_to_automata/RETranslator.cpp src/regex_to_automata/Scanner.cpp src/regex_to_automata/CFG.cpp src/regex_to_automata/NFA.cpp src/regex_to_automata/DFA.cpp src/regex_to_automata/utilities.cpp
+SRC_FILES = src/main.cpp src/automata.cpp src/conversions.cpp src/regex/RETranslator.cpp src/regex/Scanner.cpp src/regex/CFG.cpp src/regex/NFA.cpp src/regex/DFA.cpp src/regex/utilities.cpp
 
 # NO EDITS NEEDED BELOW THIS LINE
 
@@ -35,8 +35,9 @@ clean:
 	$(DEL) $(TARGET) $(OBJECTS)
 
 # DEPENDENCIES
-automata_to_verilog.o: automata_to_verilog.cpp automata.h
-regex_to_automata.o: regex_to_automata.cpp RETranslator.h Scanner.h CFG.h utilities.h
+main.o: main.cpp automata.h
+automata.o: automata.cpp
+conversions.o: conversions.cpp automata.h RETranslator.h Scanner.h CFG.h utilities.h
 RETranslator.o: RETranslator.cpp RETranslator.h CFG.h NFA.h
 Scanner.o: Scanner.cpp Scanner.h utilities.h
 CFG.o: CFG.cpp CFG.h utilities.h

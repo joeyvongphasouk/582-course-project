@@ -51,7 +51,7 @@ def process_anml(path):
                 if atm.is_homogeneous is False:
                     atm.make_homogenous()
 
-                minimize_automata(atm)
+                minimize_automata(atm, same_residuals_only = False, same_report_code = False)
 
                 n_s = atm.nodes_count
                 n_e = atm.edges_count

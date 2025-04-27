@@ -15,7 +15,7 @@ import automata.HDL.hdl_generator as hd_gen
 
 out_dir_prefix = './'
 
-dbw = 4
+dbw = 8
 
 
 # the destetnation bitwidth

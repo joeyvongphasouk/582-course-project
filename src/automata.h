@@ -1,16 +1,22 @@
 #ifndef AUTOMATA_H
 #define AUTOMATA_H
 
+#include <vector>
+#include <unordered_set>
+#include <utility>
+
 struct Automata {
 	struct STE {
 		std::vector<std::pair<int, int>> edgeRanges;
-		std::vector<int> parents;
+		std::unordered_set<int> parents = {};
 		bool start;
+		bool reporting;
 	};
 	
 	std::vector<STE> stes;
-	std::vector<int> reportingSTEs;
 	int bytesPerCharacter;
 };
+
+Automata minimizeAutomata(Automata& automata);
 
 #endif
