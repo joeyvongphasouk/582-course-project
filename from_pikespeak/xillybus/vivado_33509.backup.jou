@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Apr 27 06:47:57 2025
+# Process ID         : 33509
+# Current directory  : /home/hkchu/xillybus
+# Command line       : vivado
+# Log file           : /home/hkchu/xillybus/vivado.log
+# Journal file       : /home/hkchu/xillybus/vivado.jou
+# Running On         : pikespeak
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i9-11900K @ 3.50GHz
+# CPU Frequency      : 4427.848 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 67185 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 69332 MB
+# Available Virtual  : 67846 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/hkchu/xillybus/verilog/vivado/xillydemo.xpr
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

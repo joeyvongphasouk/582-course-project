@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Apr 27 10:05:11 2025
+# Process ID         : 46857
+# Current directory  : /home/hkchu/xillybus/verilog/vivado
+# Command line       : vivado
+# Log file           : /home/hkchu/xillybus/verilog/vivado/vivado.log
+# Journal file       : /home/hkchu/xillybus/verilog/vivado/vivado.jou
+# Running On         : pikespeak
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i9-11900K @ 3.50GHz
+# CPU Frequency      : 3712.824 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 67185 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 69332 MB
+# Available Virtual  : 67841 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/hkchu/xillybus/verilog/vivado/xillydemo.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/hkchu/xillybus/verilog/vivado/xillydemo.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 7910.445 ; gain = 259.938 ; free physical = 46134 ; free virtual = 63790
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_8x2048'...
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fifo_8x2048
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_32x512'...
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fifo_32x512
+INFO: [Device 21-403] Loading part xcu50-fsvh2104-2-e
+xit::create_sub_core: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 9275.820 ; gain = 1310.992 ; free physical = 44712 ; free virtual = 62403
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pcie4c_uscale_plus_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'pcie4c_uscale_plus_0'...
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: pcie4c_uscale_plus_0
+[Sun Apr 27 10:10:26 2025] Launched fifo_32x512_synth_1, fifo_8x2048_synth_1, pcie4c_uscale_plus_0_synth_1, synth_1...
+Run output will be captured here:
+fifo_32x512_synth_1: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/fifo_32x512_synth_1/runme.log
+fifo_8x2048_synth_1: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/fifo_8x2048_synth_1/runme.log
+pcie4c_uscale_plus_0_synth_1: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/pcie4c_uscale_plus_0_synth_1/runme.log
+synth_1: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/runme.log
+[Sun Apr 27 10:10:30 2025] Launched impl_1...
+Run output will be captured here: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:16 ; elapsed = 00:00:48 . Memory (MB): peak = 9341.828 ; gain = 1397.836 ; free physical = 43192 ; free virtual = 60891
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8 -scripts_only
+reset_run synth_1
+reset_runs: Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:09 . Memory (MB): peak = 9419.730 ; gain = 0.000 ; free physical = 44668 ; free virtual = 62443
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Apr 27 10:29:58 2025] Launched synth_1...
+Run output will be captured here: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/runme.log
+[Sun Apr 27 10:29:58 2025] Launched impl_1...
+Run output will be captured here: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Apr 27 10:38:57 2025] Launched synth_1...
+Run output will be captured here: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/runme.log
+[Sun Apr 27 10:38:57 2025] Launched impl_1...
+Run output will be captured here: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1160] Copying file /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/xillydemo.dcp to /home/hkchu/xillybus/verilog/vivado/xillydemo.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Apr 27 11:46:10 2025] Launched synth_1...
+Run output will be captured here: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/runme.log
+[Sun Apr 27 11:46:10 2025] Launched impl_1...
+Run output will be captured here: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 27 12:10:50 2025...

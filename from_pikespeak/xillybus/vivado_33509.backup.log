@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Apr 27 06:47:57 2025
+# Process ID         : 33509
+# Current directory  : /home/hkchu/xillybus
+# Command line       : vivado
+# Log file           : /home/hkchu/xillybus/vivado.log
+# Journal file       : /home/hkchu/xillybus/vivado.jou
+# Running On         : pikespeak
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i9-11900K @ 3.50GHz
+# CPU Frequency      : 4427.848 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 67185 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 69332 MB
+# Available Virtual  : 67846 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/hkchu/xillybus/verilog/vivado/xillydemo.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/hkchu/xillybus/verilog/vivado/xillydemo.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_8x2048'...
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fifo_8x2048
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_32x512'...
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fifo_32x512
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pcie_ku'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'pcie_ku'...
+INFO: [Device 21-403] Loading part xcvu095-ffva2104-2-e
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: pcie_ku
+[Sun Apr 27 06:54:53 2025] Launched fifo_8x2048_synth_1, fifo_32x512_synth_1, pcie_ku_synth_1, synth_1...
+Run output will be captured here:
+fifo_8x2048_synth_1: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/fifo_8x2048_synth_1/runme.log
+fifo_32x512_synth_1: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/fifo_32x512_synth_1/runme.log
+pcie_ku_synth_1: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/pcie_ku_synth_1/runme.log
+synth_1: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/runme.log
+[Sun Apr 27 06:54:56 2025] Launched impl_1...
+Run output will be captured here: /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:43 . Memory (MB): peak = 8582.816 ; gain = 665.441 ; free physical = 44076 ; free virtual = 61677
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 27 07:10:57 2025...

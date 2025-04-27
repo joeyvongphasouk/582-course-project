@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xcu50-fsvh2104-2-e" LaunchTime="1745775970">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="xillydemo_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="xillydemo_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="xillydemo.vdi"/>
+  <File Type="BG-DRC" Name="xillydemo.drc"/>
+  <File Type="BG-BGN" Name="xillydemo.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="xillydemo.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="xillydemo.ltx"/>
+  <File Type="RBD_FILE" Name="xillydemo.rbd"/>
+  <File Type="NPI_FILE" Name="xillydemo.npi"/>
+  <File Type="RNPI_FILE" Name="xillydemo.rnpi"/>
+  <File Type="CFI_FILE" Name="xillydemo.cfi"/>
+  <File Type="RCFI_FILE" Name="xillydemo.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="xillydemo_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="xillydemo_boot.pdi"/>
+  <File Type="PDI-FILE" Name="xillydemo.pdi"/>
+  <File Type="BITSTR-MMI" Name="xillydemo.mmi"/>
+  <File Type="BITSTR-BMM" Name="xillydemo_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="xillydemo.nky"/>
+  <File Type="BITSTR-RBT" Name="xillydemo.rbt"/>
+  <File Type="BITSTR-MSK" Name="xillydemo.msk"/>
+  <File Type="BG-BIN" Name="xillydemo.bin"/>
+  <File Type="BG-BIT" Name="xillydemo.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="xillydemo_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="xillydemo_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="xillydemo_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="xillydemo_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="xillydemo_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="xillydemo_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="xillydemo_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="xillydemo_postroute_physopt.dcp"/>
+  <File Type="ROUTE-RQS-PB" Name="xillydemo_rqs_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="xillydemo_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="xillydemo_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="xillydemo_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="xillydemo_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="xillydemo_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="xillydemo_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="xillydemo_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="xillydemo_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="xillydemo_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="xillydemo_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="xillydemo_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="xillydemo_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="xillydemo_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="xillydemo_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="xillydemo_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="xillydemo_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="xillydemo_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="xillydemo_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="xillydemo_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="xillydemo_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="xillydemo_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="xillydemo_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="xillydemo_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="xillydemo_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="xillydemo_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="xillydemo_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="xillydemo_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="xillydemo_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="xillydemo_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="xillydemo_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="xillydemo_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="xillydemo_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="xillydemo_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="xillydemo_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="xillydemo_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="xillydemo_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="xillydemo_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="xillydemo_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="xillydemo_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="xillydemo_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="xillydemo_rqa_opted.pb"/>
+  <File Type="OPT-TIMING" Name="xillydemo_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="xillydemo.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="xillydemo_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="xillydemo_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="xillydemo_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="xillydemo_timing_summary_init.rpt"/>
+  <File Type="REPORTS-TCL" Name="xillydemo_reports.tcl"/>
+  <File Type="PA-TCL" Name="xillydemo.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../src/xillydemo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/xillybus.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/xillybus_core.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../core/xillybus_core.edf">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="xillydemo"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../vivado-essentials/xillydemo.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/xillydemo.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design" EnableStepBool="1"/>
+    <Step Id="write_bitstream" PreStepTclHook="$PPRDIR/../../vivado-essentials/showstopper.tcl"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="pcie4c_uscale_plus_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_8x2048"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_32x512"/>
+</GenRun>

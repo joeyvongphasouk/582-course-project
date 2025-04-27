@@ -1,0 +1,243 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Apr 27 11:09:06 2025
+# Process ID         : 53286
+# Current directory  : /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1
+# Command line       : vivado -mode batch -source xillydemo.tcl
+# Log file           : /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/vivado.log
+# Journal file       : /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/vivado.jou
+# Running On         : pikespeak
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i9-11900K @ 3.50GHz
+# CPU Frequency      : 4700.000 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 67185 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 69332 MB
+# Available Virtual  : 65325 MB
+#-----------------------------------------------------------
+source xillydemo.tcl
+# set TIME_start [clock seconds] 
+# namespace eval ::optrace {
+#   variable script "/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/xillydemo.tcl"
+#   variable category "vivado_synth"
+# }
+# if {![info exists ::dispatch::connected]} {
+#   namespace eval ::dispatch {
+#     variable connected false
+#     if {[llength [array get env XILINX_CD_CONNECT_ID]] > 0} {
+#       set result "true"
+#       if {[catch {
+#         if {[lsearch -exact [package names] DispatchTcl] < 0} {
+#           set result [load librdi_cd_clienttcl[info sharedlibextension]] 
+#         }
+#         if {$result eq "false"} {
+#           puts "WARNING: Could not load dispatch client library"
+#         }
+#         set connect_id [ ::dispatch::init_client -mode EXISTING_SERVER ]
+#         if { $connect_id eq "" } {
+#           puts "WARNING: Could not initialize dispatch client"
+#         } else {
+#           puts "INFO: Dispatch client connection id - $connect_id"
+#           set connected true
+#         }
+#       } catch_res]} {
+#         puts "WARNING: failed to connect to dispatch server - $catch_res"
+#       }
+#     }
+#   }
+# }
+# if {$::dispatch::connected} {
+#   # Remove the dummy proc if it exists.
+#   if { [expr {[llength [info procs ::OPTRACE]] > 0}] } {
+#     rename ::OPTRACE ""
+#   }
+#   proc ::OPTRACE { task action {tags {} } } {
+#     ::vitis_log::op_trace "$task" $action -tags $tags -script $::optrace::script -category $::optrace::category
+#   }
+#   # dispatch is generic. We specifically want to attach logging.
+#   ::vitis_log::connect_client
+# } else {
+#   # Add dummy proc if it doesn't exist.
+#   if { [expr {[llength [info procs ::OPTRACE]] == 0}] } {
+#     proc ::OPTRACE {{arg1 \"\" } {arg2 \"\"} {arg3 \"\" } {arg4 \"\"} {arg5 \"\" } {arg6 \"\"}} {
+#         # Do nothing
+#     }
+#   }
+# }
+# OPTRACE "synth_1" START { ROLLUP_AUTO }
+# set_param chipscope.maxJobs 4
+# set_msg_config  -id {Coretcl 2-1280}  -string {{pcie}}  -new_severity {INFO} 
+# OPTRACE "Creating in-memory project" START { }
+# create_project -in_memory -part xcu50-fsvh2104-2-e
+# set_param project.singleFileAddWarning.threshold 0
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
+# set_property webtalk.parent_dir /home/hkchu/xillybus/verilog/vivado/xillydemo.cache/wt [current_project]
+# set_property parent.project_path /home/hkchu/xillybus/verilog/vivado/xillydemo.xpr [current_project]
+# set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property ip_output_repo /home/hkchu/xillybus/verilog/vivado/xillydemo.cache/ip [current_project]
+# set_property ip_cache_permissions {read write} [current_project]
+# OPTRACE "Creating in-memory project" END { }
+# OPTRACE "Adding files" START { }
+# read_verilog -library xil_defaultlib {
+#   /home/hkchu/xillybus/verilog/src/xillydemo.v
+#   /home/hkchu/xillybus/verilog/src/xillybus.v
+#   /home/hkchu/xillybus/verilog/src/xillybus_core.v
+# }
+# read_ip -quiet /home/hkchu/xillybus/vivado-essentials/fifo_32x512/fifo_32x512.xci
+# set_property used_in_implementation false [get_files -all /home/hkchu/xillybus/vivado-essentials/fifo_32x512/fifo_32x512.xdc]
+# set_property used_in_implementation false [get_files -all /home/hkchu/xillybus/vivado-essentials/fifo_32x512/fifo_32x512_ooc.xdc]
+# read_ip -quiet /home/hkchu/xillybus/vivado-essentials/fifo_8x2048/fifo_8x2048.xci
+# set_property used_in_implementation false [get_files -all /home/hkchu/xillybus/vivado-essentials/fifo_8x2048/fifo_8x2048.xdc]
+# set_property used_in_implementation false [get_files -all /home/hkchu/xillybus/vivado-essentials/fifo_8x2048/fifo_8x2048_ooc.xdc]
+# read_ip -quiet /home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/pcie4c_uscale_plus_0.xci
+# set_property used_in_implementation false [get_files -all /home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt.xdc]
+# set_property used_in_implementation false [get_files -all /home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/pcie4c_uscale_plus_0_board.xdc]
+# set_property used_in_synthesis false [get_files -all /home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/ip_pcie4c_uscale_plus_impl_x1y0.xdc]
+# set_property used_in_implementation false [get_files -all /home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/ip_pcie4c_uscale_plus_impl_x1y0.xdc]
+# set_property used_in_implementation false [get_files -all /home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/synth/pcie4c_uscale_plus_0_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/synth/pcie4c_uscale_plus_0_late.xdc]
+# set_property used_in_implementation false [get_files -all /home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/ip_pcie4c_uscale_plus_x1y0.xdc]
+# read_edif /home/hkchu/xillybus/core/xillybus_core.edf
+# OPTRACE "Adding files" END { }
+# foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
+#   set_property used_in_implementation false $dcp
+# }
+# read_xdc /home/hkchu/xillybus/vivado-essentials/xillydemo.xdc
+# set_property used_in_implementation false [get_files /home/hkchu/xillybus/vivado-essentials/xillydemo.xdc]
+# set_param ips.enableIPCacheLiteLoad 1
+# close [open __synthesis_is_running__ w]
+# OPTRACE "synth_design" START { }
+# synth_design -top xillydemo -part xcu50-fsvh2104-2-e
+Command: synth_design -top xillydemo -part xcu50-fsvh2104-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu50'
+INFO: [Device 21-403] Loading part xcu50-fsvh2104-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 53313
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3121.918 ; gain = 246.773 ; free physical = 42101 ; free virtual = 59956
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'xillydemo' [/home/hkchu/xillybus/verilog/src/xillydemo.v:1]
+INFO: [Synth 8-6157] synthesizing module 'xillybus' [/home/hkchu/xillybus/verilog/src/xillybus.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE3' [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75998]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE3' (0#1) [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75998]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/.Xil/Vivado-53286-pikespeak/realtime/pcie4c_uscale_plus_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0' (0#1) [/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/.Xil/Vivado-53286-pikespeak/realtime/pcie4c_uscale_plus_0_stub.v:6]
+WARNING: [Synth 8-689] width (8) of port connection 'pci_exp_txp' does not match port width (16) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:99]
+WARNING: [Synth 8-689] width (8) of port connection 'pci_exp_txn' does not match port width (16) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:100]
+WARNING: [Synth 8-689] width (8) of port connection 'pci_exp_rxp' does not match port width (16) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:101]
+WARNING: [Synth 8-689] width (8) of port connection 'pci_exp_rxn' does not match port width (16) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:102]
+WARNING: [Synth 8-689] width (64) of port connection 's_axis_rq_tdata' does not match port width (512) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:109]
+WARNING: [Synth 8-689] width (60) of port connection 's_axis_rq_tuser' does not match port width (137) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:110]
+WARNING: [Synth 8-689] width (2) of port connection 's_axis_rq_tkeep' does not match port width (16) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:111]
+WARNING: [Synth 8-689] width (64) of port connection 'm_axis_rc_tdata' does not match port width (512) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:115]
+WARNING: [Synth 8-689] width (2) of port connection 'm_axis_rc_tkeep' does not match port width (16) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:118]
+WARNING: [Synth 8-689] width (22) of port connection 'm_axis_rc_tready' does not match port width (1) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:120]
+WARNING: [Synth 8-689] width (64) of port connection 'm_axis_cq_tdata' does not match port width (512) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:122]
+WARNING: [Synth 8-689] width (2) of port connection 'm_axis_cq_tkeep' does not match port width (16) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:125]
+WARNING: [Synth 8-689] width (22) of port connection 'm_axis_cq_tready' does not match port width (1) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:127]
+ERROR: [Synth 8-11365] for the instance 'pcie' of module 'pcie4c_uscale_plus_0' declared at '/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/.Xil/Vivado-53286-pikespeak/realtime/pcie4c_uscale_plus_0_stub.v:6', named port connection 'pcie_rq_seq_num' does not exist [/home/hkchu/xillybus/verilog/src/xillybus.v:136]
+ERROR: [Synth 8-11365] for the instance 'pcie' of module 'pcie4c_uscale_plus_0' declared at '/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/.Xil/Vivado-53286-pikespeak/realtime/pcie4c_uscale_plus_0_stub.v:6', named port connection 'pcie_rq_seq_num_vld' does not exist [/home/hkchu/xillybus/verilog/src/xillybus.v:137]
+WARNING: [Synth 8-689] width (3) of port connection 'cfg_max_payload' does not match port width (2) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:140]
+WARNING: [Synth 8-689] width (2) of port connection 'cfg_rcb_status' does not match port width (4) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:142]
+ERROR: [Synth 8-11365] for the instance 'pcie' of module 'pcie4c_uscale_plus_0' declared at '/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/.Xil/Vivado-53286-pikespeak/realtime/pcie4c_uscale_plus_0_stub.v:6', named port connection 'cfg_per_function_number' does not exist [/home/hkchu/xillybus/verilog/src/xillybus.v:150]
+ERROR: [Synth 8-11365] for the instance 'pcie' of module 'pcie4c_uscale_plus_0' declared at '/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/.Xil/Vivado-53286-pikespeak/realtime/pcie4c_uscale_plus_0_stub.v:6', named port connection 'cfg_per_function_output_request' does not exist [/home/hkchu/xillybus/verilog/src/xillybus.v:151]
+WARNING: [Synth 8-689] width (64) of port connection 'cfg_interrupt_msi_pending_status' does not match port width (32) of module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/verilog/src/xillybus.v:166]
+ERROR: [Synth 8-11365] for the instance 'pcie' of module 'pcie4c_uscale_plus_0' declared at '/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/.Xil/Vivado-53286-pikespeak/realtime/pcie4c_uscale_plus_0_stub.v:6', named port connection 'cfg_ds_function_number' does not exist [/home/hkchu/xillybus/verilog/src/xillybus.v:188]
+ERROR: [Synth 8-11365] for the instance 'pcie' of module 'pcie4c_uscale_plus_0' declared at '/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/.Xil/Vivado-53286-pikespeak/realtime/pcie4c_uscale_plus_0_stub.v:6', named port connection 'cfg_subsys_vend_id' does not exist [/home/hkchu/xillybus/verilog/src/xillybus.v:190]
+ERROR: [Synth 8-11365] for the instance 'pcie' of module 'pcie4c_uscale_plus_0' declared at '/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/synth_1/.Xil/Vivado-53286-pikespeak/realtime/pcie4c_uscale_plus_0_stub.v:6', named port connection 'pcie_perstn1_in' does not exist [/home/hkchu/xillybus/verilog/src/xillybus.v:192]
+WARNING: [Synth 8-7071] port 'pcie_rq_seq_num0' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'pcie_rq_seq_num_vld0' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'pcie_rq_seq_num1' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'pcie_rq_seq_num_vld1' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'pcie_rq_tag0' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'pcie_rq_tag1' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'pcie_rq_tag_av' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'pcie_rq_tag_vld0' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'pcie_rq_tag_vld1' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'pcie_tfc_nph_av' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'pcie_tfc_npd_av' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'pcie_cq_np_req_count' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_phy_link_down' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_phy_link_status' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_negotiated_width' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_current_speed' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_function_status' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_function_power_state' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_vf_status' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_vf_power_state' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_link_power_state' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_addr' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_function_number' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_write' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_write_data' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_byte_enable' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_read' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_read_data' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_read_write_done' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_debug_access' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_err_cor_out' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_err_nonfatal_out' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_local_error_valid' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_local_error_out' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_ltssm_state' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_rx_pm_state' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_tx_pm_state' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_obff_enable' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_pl_status_change' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_tph_requester_enable' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_tph_st_mode' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_vf_tph_requester_enable' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_vf_tph_st_mode' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_msg_received' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_msg_received_data' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_msg_received_type' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_msg_transmit' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_msg_transmit_type' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_msg_transmit_data' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_msg_transmit_done' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_fc_ph' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_fc_pd' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_fc_nph' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_fc_npd' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_bus_number' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_power_state_change_interrupt' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_flr_in_process' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_vf_flr_in_process' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_vf_flr_func_num' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_interrupt_sent' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_interrupt_msi_enable' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_interrupt_msi_mmenable' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_interrupt_msi_mask_update' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_interrupt_msi_data' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_pm_aspm_l1_entry_reject' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_pm_aspm_tx_l0s_entry_disable' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'cfg_hot_reset_out' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7071] port 'phy_rdy_out' of module 'pcie4c_uscale_plus_0' is unconnected for instance 'pcie' [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+WARNING: [Synth 8-7023] instance 'pcie' of module 'pcie4c_uscale_plus_0' has 137 connections declared, but only 69 given [/home/hkchu/xillybus/verilog/src/xillybus.v:97]
+INFO: [Synth 8-6157] synthesizing module 'xillybus_core' [/home/hkchu/xillybus/verilog/src/xillybus_core.v:1]
+ERROR: [Synth 8-6156] failed synthesizing module 'xillybus_core' [/home/hkchu/xillybus/verilog/src/xillybus_core.v:1]
+ERROR: [Synth 8-6156] failed synthesizing module 'xillybus' [/home/hkchu/xillybus/verilog/src/xillybus.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'xillydemo' [/home/hkchu/xillybus/verilog/src/xillydemo.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3199.887 ; gain = 324.742 ; free physical = 42006 ; free virtual = 59861
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 85 Warnings, 0 Critical Warnings and 11 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 27 11:09:21 2025...

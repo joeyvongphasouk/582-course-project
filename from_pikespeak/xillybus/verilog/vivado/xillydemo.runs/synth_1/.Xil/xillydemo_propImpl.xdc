@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:/home/hkchu/xillybus/vivado-essentials/xillydemo.xdc rfile:../../../../../vivado-essentials/xillydemo.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC [get_package_pins -filter {PIN_FUNC == IO_T3U_N12_PERSTN0_65}] [get_ports PCIE_PERST_B_LS]
+set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC AL9 [get_cells -hier -filter {name=~*/pcieclk_ibuf} ]

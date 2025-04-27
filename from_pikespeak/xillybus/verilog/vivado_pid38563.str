@@ -1,0 +1,563 @@
+/*
+
+AMD Vivado v2024.2 (64-bit) [Major: 2024, Minor: 2]
+SW Build: 5239630 on Fri Nov 08 22:34:34 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+
+Process ID (PID): 38563
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun Apr 27 08:11:40 MDT 2025
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: Ubuntu
+OS Version: 6.8.0-57-generic
+OS Architecture: amd64
+Available processors (cores): 16
+LSB Release Description: DISTRIB_ID=Ubuntu
+
+Display: localhost:11.0
+Screen size: 1536x864
+Local screen bounds: x = 0, y = 0, width = 1536, height = 864
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: true
+
+Java version: 	21.0.1 64-bit
+
+Java home: 	/tools/Xilinx/Vivado/2024.2/tps/lnx64/jre21.0.1_12
+Java executable: 	/tools/Xilinx/Vivado/2024.2/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	hkchu
+User home directory: /home/hkchu
+User working directory: /home/hkchu/xillybus/verilog
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2024.2
+RDI_DATADIR: /tools/Xilinx/SharedData/2024.2/data:/tools/Xilinx/Vivado/2024.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2024.2/bin
+
+Vivado preferences file: /home/hkchu/.Xilinx/Vivado/2024.2/vivado.xml
+Vivado preferences directory: /home/hkchu/.Xilinx/Vivado/2024.2/
+Vivado layouts directory: /home/hkchu/.Xilinx/Vivado/2024.2/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2024.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/hkchu/xillybus/verilog/vivado.log
+Vivado journal file: 	/home/hkchu/xillybus/verilog/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-38563-pikespeak
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: /tools/Xilinx/Vivado/2024.2
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2024.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/SharedData/2024.2/data:/tools/Xilinx/Vivado/2024.2/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2024.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /tools/Xilinx/Vivado/2024.2/lib/lnx64.o/Ubuntu/22:/tools/Xilinx/Vivado/2024.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vivado/2024.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/Vitis/2024.2/bin:/tools/Xilinx/Vivado/2024.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/hkchu/xillybus/verilog:pikespeak_1745763071_38523
+RDI_SHARED_DATA: /tools/Xilinx/SharedData/2024.2/data
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2024.2/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+XILINX: /tools/Xilinx/Vivado/2024.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2024.2/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis/2024.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2024.2
+XILINX_SDK: /tools/Xilinx/Vitis/2024.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2024.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2024.2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,550 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  3633 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,571 MB. GUI used memory: 63 MB. Current time: 4/27/25, 8:11:42 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2441 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5163 ms.
+selectButton(PAResourceEtoH.GettingStartedView_MANAGE_IP, "Manage IP"); // t (PAResourceEtoH.GettingStartedView_MANAGE_IP)
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5175 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2494 ms.
+// Elapsed time: 596 seconds
+selectMenuItem(PAResourceEtoH.GettingStartedView_START_USING_VIVADO_WITH_IP_CATALOG, "New IP Location..."); // aq (PAResourceEtoH.GettingStartedView_START_USING_VIVADO_WITH_IP_CATALOG, New IP Location...)
+// Run Command: PAResourceCommand.PACommandNames_NEW_IP_LOCATION
+// WARNING: HEventQueue.dispatchEvent() is taking  5756 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1488 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3981 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3784 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3495 ms.
+// Elapsed time: 19 seconds
+selectButton("CANCEL", "Cancel", "New IP Location"); // JButton (CANCEL)
+// 'j' command handler elapsed time: 19 seconds
+dismissDialog("New IP Location"); // M (dialog0)
+// WARNING: HEventQueue.dispatchEvent() is taking  4095 ms.
+selectButton(PAResourceEtoH.GettingStartedView_MANAGE_IP, "Manage IP"); // t (PAResourceEtoH.GettingStartedView_MANAGE_IP)
+// WARNING: HEventQueue.dispatchEvent() is taking  4204 ms.
+selectButton(PAResourceEtoH.GettingStartedView_MANAGE_IP, "Manage IP"); // t (PAResourceEtoH.GettingStartedView_MANAGE_IP)
+// WARNING: HEventQueue.dispatchEvent() is taking  1655 ms.
+selectButton(PAResourceEtoH.GettingStartedView_MANAGE_IP, "Manage IP"); // t (PAResourceEtoH.GettingStartedView_MANAGE_IP)
+selectButton(PAResourceEtoH.GettingStartedView_MANAGE_IP, "Manage IP"); // t (PAResourceEtoH.GettingStartedView_MANAGE_IP)
+selectButton(PAResourceEtoH.GettingStartedView_MANAGE_IP, "Manage IP"); // t (PAResourceEtoH.GettingStartedView_MANAGE_IP)
+selectButton(PAResourceEtoH.GettingStartedView_MANAGE_IP, "Manage IP"); // t (PAResourceEtoH.GettingStartedView_MANAGE_IP)
+selectButton(PAResourceEtoH.GettingStartedView_MANAGE_IP, "Manage IP"); // t (PAResourceEtoH.GettingStartedView_MANAGE_IP)
+selectButton(PAResourceEtoH.GettingStartedView_MANAGE_IP, "Manage IP"); // t (PAResourceEtoH.GettingStartedView_MANAGE_IP)
+selectButton(PAResourceEtoH.GettingStartedView_MANAGE_IP, "Manage IP"); // t (PAResourceEtoH.GettingStartedView_MANAGE_IP)
+selectButton(PAResourceEtoH.GettingStartedView_MANAGE_IP, "Manage IP"); // t (PAResourceEtoH.GettingStartedView_MANAGE_IP)
+// WARNING: HEventQueue.dispatchEvent() is taking  1617 ms.
+selectMenuItem(PAResourceEtoH.GettingStartedView_START_USING_VIVADO_WITH_IP_CATALOG, "New IP Location..."); // aq (PAResourceEtoH.GettingStartedView_START_USING_VIVADO_WITH_IP_CATALOG, New IP Location...)
+// Run Command: PAResourceCommand.PACommandNames_NEW_IP_LOCATION
+// WARNING: HEventQueue.dispatchEvent() is taking  5767 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2686 ms.
+// Elapsed time: 20 seconds
+selectButton("NEXT", "Next", "New IP Location"); // JButton (NEXT)
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Elapsed time: 100 seconds
+selectMoreButton(PAResourceItoN.NewIPProjectWizard_PART, (String) null, "New IP Location"); // s (PAResourceItoN.NewIPProjectWizard_PART)
+// [GUI Memory]: 83 MB (+84223kb) [00:13:42]
+// [Engine Memory]: 1,577 MB (+1502005kb) [00:13:42]
+// [GUI Memory]: 92 MB (+5068kb) [00:13:42]
+// [GUI Memory]: 124 MB (+28721kb) [00:13:42]
+// WARNING: HEventQueue.dispatchEvent() is taking  4993 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10612 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,617 MB. GUI used memory: 72 MB. Current time: 4/27/25, 8:25:14 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1326 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1750 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9060 ms.
+// Elapsed time: 39 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Select Device"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Select Device"); // c (dialog2)
+// Elapsed time: 11 seconds
+selectMoreButton(PAResourceItoN.NewIPProjectWizard_PART, (String) null, "New IP Location"); // s (PAResourceItoN.NewIPProjectWizard_PART)
+// WARNING: HEventQueue.dispatchEvent() is taking  5099 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12457 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1666 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5655 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1136 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1096 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2071 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9624 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2133 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5531 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9373 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1110 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1542 ms.
+// Elapsed time: 81 seconds
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "xcu"); // OverlayTextField (PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD)
+// WARNING: HEventQueue.dispatchEvent() is taking  1646 ms.
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xcu50-fsvh2104-2-e ; 2104 ; 416 ; 871680 ; 1743360 ; 1344 ; 640 ; 5952 ; 40960 ; 20 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 20 ; 0 ; 0 ; 0 ; 0 ; 0 ; 5 ; 8 ;  ; 5 ;  ;  ; 2 ;  ;  ; 0 ; 100 ; 100 ; E ; 0.825 ; 0.850 ; 0.876", 2, "xcu50-fsvh2104-2-e", 0); // e (PAResourceEtoH.FPGAChooser_FPGA_TABLE)
+// WARNING: HEventQueue.dispatchEvent() is taking  6281 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2013 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1789 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6562 ms.
+// Elapsed time: 68 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Select Device"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Select Device"); // c (dialog3)
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4683 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1494 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project managed_ip_project /home/hkchu/xillybus/verilog/managed_ip_project -part xcu50-fsvh2104-2-e -ip 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 135 MB (+5187kb) [00:20:54]
+// [Engine Memory]: 1,702 MB (+48588kb) [00:20:54]
+// WARNING: HEventQueue.dispatchEvent() is taking  6469 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,753 MB. GUI used memory: 77 MB. Current time: 4/27/25, 8:32:17 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  4717 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2951 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 7849.312 ; gain = 179.836 ; free physical = 46238 ; free virtual = 63866 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/N': 21s
+// WARNING: HEventQueue.dispatchEvent() is taking  18023 ms.
+// Tcl Message: set_property target_simulator XSim [current_project] 
+// WARNING: HEventQueue.dispatchEvent() is taking  5542 ms.
+// Elapsed time: 259 seconds
+dismissDialog("New IP Location"); // M (dialog1)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/j.a': 23s
+selectButton("FINISH", "Finish", "New IP Location"); // JButton (FINISH)
+// 'j' command handler elapsed time: 591 seconds
+dismissDialog("Opening IP Catalog"); // bh (Opening IP Catalog Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  4923 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3497 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3196 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1968 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1512 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1343 ms.
+// Elapsed time: 38 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "fifo"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Elapsed time: 30 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// WARNING: HEventQueue.dispatchEvent() is taking  1105 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3336 ms.
+// [GUI Memory]: 151 MB (+9678kb) [00:22:45]
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// WARNING: HEventQueue.dispatchEvent() is taking  1941 ms.
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// TclEventType: LOAD_FEATURE
+// WARNING: HEventQueue.dispatchEvent() is taking  2021 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2543 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12406 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6508 ms.
+// Elapsed time: 189 seconds
+setText("Component Name", "fifo_generator_0"); // I (Component Name)
+setText("Component Name", "fifo_generator_0"); // I (Component Name)
+// WARNING: HEventQueue.dispatchEvent() is taking  1807 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1416 ms.
+// Elapsed time: 22 seconds
+setText("Component Name", (String) null); // I (Component Name)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,790 MB. GUI used memory: 85 MB. Current time: 4/27/25, 8:37:37 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  2574 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1007 ms.
+// Elapsed time: 13 seconds
+setText("Component Name", "fifo_8x2048"); // I (Component Name)
+// WARNING: HEventQueue.dispatchEvent() is taking  3576 ms.
+// Elapsed time: 14 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // bd (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+// WARNING: HEventQueue.dispatchEvent() is taking  2861 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2102 ms.
+// Elapsed time: 111 seconds
+setText("Input Data Width", "8"); // I (Input Data Width)
+// Elapsed time: 11 seconds
+selectComboBox("Write Depth (Input_Depth)", "2048", 2); // D (Write Depth (Input_Depth))
+// WARNING: HEventQueue.dispatchEvent() is taking  1527 ms.
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // bd (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+// [Engine Memory]: 1,791 MB (+3743kb) [00:29:50]
+// Elapsed time: 68 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // bd (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+// WARNING: HEventQueue.dispatchEvent() is taking  7048 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1493 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1186 ms.
+// Elapsed time: 27 seconds
+selectComboBox("Write Depth (Input_Depth)", "2048", 2); // D (Write Depth (Input_Depth))
+// Elapsed time: 41 seconds
+selectComboBox("Write Depth (Input_Depth)", "4096", 3); // D (Write Depth (Input_Depth))
+// WARNING: HEventQueue.dispatchEvent() is taking  1144 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7382 ms.
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Customize IP"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Customize IP"); // m (dialog4)
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name fifo_8x2048 -dir /home/hkchu/xillybus/verilog 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// WARNING: HEventQueue.dispatchEvent() is taking  1727 ms.
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list \   CONFIG.Input_Data_Width {8} \   CONFIG.Input_Depth {4096} \ ] [get_ips fifo_8x2048] 
+// WARNING: HEventQueue.dispatchEvent() is taking  8760 ms.
+// TclEventType: COMPOSITE_FILE_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3044 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10182 ms.
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files /home/hkchu/xillybus/verilog/fifo_8x2048/fifo_8x2048.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_8x2048'... 
+// WARNING: HEventQueue.dispatchEvent() is taking  4560 ms.
+// Tcl Message: generate_target: Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:13 . Memory (MB): peak = 7874.258 ; gain = 0.000 ; free physical = 46182 ; free virtual = 63811 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/i': 29s
+// WARNING: HEventQueue.dispatchEvent() is taking  3689 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  27538 ms.
+// Elapsed time: 29 seconds
+dismissDialog("Customize IP"); // bh (Customize IP Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  22947 ms.
+// Elapsed time: 140 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate", "Generate Output Products"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// WARNING: HEventQueue.dispatchEvent() is taking  5377 ms.
+// TclEventType: COMPOSITE_FILE_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  5826 ms.
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target all [get_files  /home/hkchu/xillybus/verilog/fifo_8x2048/fifo_8x2048.xci] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_8x2048'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fifo_8x2048'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fifo_8x2048'... 
+// Elapsed time: 11 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background", "Managing Output Products"); // a (RDIResource.ProgressDialog_BACKGROUND)
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:06 . Memory (MB): peak = 7874.258 ; gain = 0.000 ; free physical = 46144 ; free virtual = 63795 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fifo_8x2048] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fifo_8x2048 
+// Tcl Message: export_ip_user_files -of_objects [get_files /home/hkchu/xillybus/verilog/fifo_8x2048/fifo_8x2048.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// WARNING: HEventQueue.dispatchEvent() is taking  7513 ms.
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /home/hkchu/xillybus/verilog/fifo_8x2048/fifo_8x2048.xci] 
+// WARNING: HEventQueue.dispatchEvent() is taking  2150 ms.
+// Tcl Message: create_ip_run: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:08 . Memory (MB): peak = 7877.227 ; gain = 2.969 ; free physical = 46145 ; free virtual = 63797 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  5271 ms.
+// Tcl Message: launch_runs fifo_8x2048_synth_1 -jobs 8 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fifo_8x2048 
+// Tcl Message: [Sun Apr 27 08:46:00 2025] Launched fifo_8x2048_synth_1... Run output will be captured here: /home/hkchu/xillybus/verilog/managed_ip_project/managed_ip_project.runs/fifo_8x2048_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/W.b': 26s
+// WARNING: HEventQueue.dispatchEvent() is taking  7937 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 84 MB. Current time: 4/27/25, 8:46:14 AM MDT
+// Elapsed time: 23 seconds
+dismissDialog("Managing Output Products"); // bh (Managing Output Products Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  1528 ms.
+// Elapsed time: 14 seconds
+selectButton("OptionPane.button", "OK", "Generate Output Products"); // JButton (OptionPane.button)
+// WARNING: HEventQueue.dispatchEvent() is taking  1305 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  6193 ms.
+// TclEventType: FILE_SET_CHANGE
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1285 ms. Increasing delay to 3855 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1503 ms.
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  7604 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12485 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/g': 20s
+// WARNING: HEventQueue.dispatchEvent() is taking  5951 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6169 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9708 ms.
+// [GUI Memory]: 162 MB (+3937kb) [00:36:04]
+// WARNING: HEventQueue.dispatchEvent() is taking  6455 ms.
+// Elapsed time: 545 seconds
+selectButton("OptionPane.button", "OK", "Background Task"); // JButton (OptionPane.button)
+// WARNING: HEventQueue.dispatchEvent() is taking  2116 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1239 ms.
+// Elapsed time: 35 seconds
+setText("Component Name", "fifo_32*1024"); // I (Component Name)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // bd (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+// WARNING: HEventQueue.dispatchEvent() is taking  1358 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,843 MB. GUI used memory: 97 MB. Current time: 4/27/25, 8:56:23 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1865 ms.
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bd (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // bd (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+setText("Component Name", "fifo_32*1024"); // I (Component Name)
+setText("Component Name", "fifo_32*1024"); // I (Component Name)
+setText("Component Name", "fifo_32*1024"); // I (Component Name)
+// Elapsed time: 17 seconds
+selectComboBox("Write Depth (Input_Depth)", "512", 0); // D (Write Depth (Input_Depth))
+// WARNING: HEventQueue.dispatchEvent() is taking  1525 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2300 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2893 ms.
+// Elapsed time: 12 seconds
+setText("Input Data Width", "32"); // I (Input Data Width)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // bd (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+// WARNING: HEventQueue.dispatchEvent() is taking  1451 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4459 ms.
+// Elapsed time: 12 seconds
+setText("Component Name", "fifo_32*512"); // I (Component Name)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Customize IP"); // a (RDIResource.BaseDialog_OK)
+// WARNING: HEventQueue.dispatchEvent() is taking  5278 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10222 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11546 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  46391 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4131 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1065 ms.
+// Elapsed time: 276 seconds
+selectButton(PAResourceAtoD.CustomizeErrorDialog_OK, "OK", "Error Found"); // a (PAResourceAtoD.CustomizeErrorDialog_OK)
+dismissDialog("Error Found"); // y (dialog7)
+// WARNING: HEventQueue.dispatchEvent() is taking  5010 ms.
+// Elapsed time: 12 seconds
+setText("Component Name", "fifo_32x512"); // I (Component Name)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Customize IP"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Customize IP"); // m (dialog6)
+// TclEventType: CREATE_IP_CORE
+// Tcl Message: create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name fifo_32*512 -dir /home/hkchu/xillybus/verilog 
+// Tcl Message: ERROR: [Common 17-69] Command failed: IP instance name 'fifo_32*512' should contain only A-Z,a-z,0-9 and _ 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-69] Command failed: IP instance name 'fifo_32*512' should contain only A-Z,a-z,0-9 and _  
+// WARNING: HEventQueue.dispatchEvent() is taking  3056 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1222 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1306 ms.
+// Elapsed time: 221 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// WARNING: HEventQueue.dispatchEvent() is taking  3523 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2434 ms.
+// Elapsed time: 61 seconds
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Out-of-Context Module Runs ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE)
+// WARNING: HEventQueue.dispatchEvent() is taking  1769 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3466 ms.
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 14, "FIFO Generator", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+// WARNING: HEventQueue.dispatchEvent() is taking  2635 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1917 ms.
+// WARNING: updateGUI() is taking  10442 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10442 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6173 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1017 ms.
+// Elapsed time: 69 seconds
+setText("Component Name", "fifo_32x512"); // I (Component Name)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // bd (PAResourceEtoH.HACGCTabbedPane_TABBED_PANE)
+// WARNING: HEventQueue.dispatchEvent() is taking  1083 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1512 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2574 ms.
+setText("Input Data Width", "32"); // I (Input Data Width)
+selectComboBox("Write Depth (Input_Depth)", "512", 0); // D (Write Depth (Input_Depth))
+// WARNING: HEventQueue.dispatchEvent() is taking  1605 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK", "Customize IP"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Customize IP"); // m (dialog8)
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name fifo_32x512 -dir /home/hkchu/xillybus/verilog 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list \   CONFIG.Input_Data_Width {32} \   CONFIG.Input_Depth {512} \ ] [get_ips fifo_32x512] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files /home/hkchu/xillybus/verilog/fifo_32x512/fifo_32x512.xci] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_32x512'... 
+// WARNING: HEventQueue.dispatchEvent() is taking  7080 ms.
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:08 . Memory (MB): peak = 7923.820 ; gain = 0.000 ; free physical = 46033 ; free virtual = 63721 
+// WARNING: HEventQueue.dispatchEvent() is taking  4956 ms.
+dismissDialog("Customize IP"); // bh (Customize IP Progress)
+// WARNING: HEventQueue.dispatchEvent() is taking  4662 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3377 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2011 ms.
+// [GUI Memory]: 198 MB (+28857kb) [00:59:15]
+// Elapsed time: 229 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate", "Generate Output Products"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// WARNING: HEventQueue.dispatchEvent() is taking  5384 ms.
+// TclEventType: COMPOSITE_FILE_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4943 ms.
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: generate_target all [get_files  /home/hkchu/xillybus/verilog/fifo_32x512/fifo_32x512.xci] 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_32x512'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fifo_32x512'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fifo_32x512'... 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all fifo_32x512] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fifo_32x512 
+// Tcl Message: export_ip_user_files -of_objects [get_files /home/hkchu/xillybus/verilog/fifo_32x512/fifo_32x512.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// WARNING: HEventQueue.dispatchEvent() is taking  3137 ms.
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /home/hkchu/xillybus/verilog/fifo_32x512/fifo_32x512.xci] 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,896 MB. GUI used memory: 115 MB. Current time: 4/27/25, 9:12:43 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1105 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 1,896 MB (+15935kb) [01:01:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  1176 ms.
+// Tcl Message: launch_runs fifo_32x512_synth_1 -jobs 8 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: fifo_32x512 
+// Tcl Message: [Sun Apr 27 09:12:44 2025] Launched fifo_32x512_synth_1... Run output will be captured here: /home/hkchu/xillybus/verilog/managed_ip_project/managed_ip_project.runs/fifo_32x512_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  7703 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  1315 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5388 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6391 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2318 ms.
+// Elapsed time: 75 seconds
+selectButton("OptionPane.button", "OK", "Generate Output Products"); // JButton (OptionPane.button)
+// Elapsed time: 88 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fifo_8x2048]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1864 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1849 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, fifo_8x2048]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1202 ms.
+// Elapsed time: 10 seconds
+selectMenuItem(PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, "Generate Output Products..."); // aq (PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE, generate_composite_file_menu)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_COMPOSITE_FILE
+// WARNING: HEventQueue.dispatchEvent() is taking  5803 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1628 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4381 ms.
+// Elapsed time: 32 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL, "Cancel", "Generate Output Products"); // a (PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL)
+// 'bD' command handler elapsed time: 32 seconds
+dismissDialog("Generate Output Products"); // W (dialog10)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+// WARNING: HEventQueue.dispatchEvent() is taking  3135 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2320 ms.
+closeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // R (PAResourceOtoP.PAViews_MESSAGES, Messages)
+// WARNING: HEventQueue.dispatchEvent() is taking  2266 ms.
+selectTab((HResource) null, (HResource) null, "Design Runs", 2); // aa
+// WARNING: HEventQueue.dispatchEvent() is taking  1174 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3124 ms.
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "fifo_32x512_synth_1 ; fifo_32x512 ; synth_design Complete! ; 100 ; Off ; Vivado Synthesis Defaults (Vivado Synthesis 2024) ; Vivado Synthesis Default Reports (Vivado Synthesis 2024) ; xcu50-fsvh2104-2-e ; pikespeak ; Vivado Synthesis Defaults", 2, "synth_design Complete!", 2, false); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE)
+// WARNING: HEventQueue.dispatchEvent() is taking  1979 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2735 ms.
+selectTab((HResource) null, (HResource) null, "Log", 1); // aa
+// WARNING: HEventQueue.dispatchEvent() is taking  1111 ms.

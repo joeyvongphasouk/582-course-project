@@ -1,0 +1,1218 @@
+
+*** Running vivado
+    with args -log pcie4c_uscale_plus_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pcie4c_uscale_plus_0.tcl
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Apr 27 10:10:27 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source pcie4c_uscale_plus_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: pcie4c_uscale_plus_0
+Command: synth_design -top pcie4c_uscale_plus_0 -part xcu50-fsvh2104-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu50'
+INFO: [Device 21-403] Loading part xcu50-fsvh2104-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 47567
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3103.941 ; gain = 246.859 ; free physical = 37703 ; free virtual = 55402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'ccix_optimized_tlp_tx_and_rx_enable_i', assumed default net type 'wire' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:2319]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/synth/pcie4c_uscale_plus_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_pcie4c_uscale_core_top' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:58]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_pipe' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:83]
+INFO: [Synth 8-6157] synthesizing module 'PCIE4CE4' [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:108099]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE4CE4' (0#1) [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:108099]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_bram' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram.v:58]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_bram_32k' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram_32k.v:58]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_bram_16k_int' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram_16k_int.v:58]
+INFO: [Synth 8-6157] synthesizing module 'RAMB36E2' [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:143879]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB36E2' (0#1) [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:143879]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_bram_16k_int' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram_16k_int.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_bram_32k' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram_32k.v:58]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_bram_rep' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram_rep.v:58]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_bram_rep_int' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram_rep_int.v:58]
+INFO: [Synth 8-6157] synthesizing module 'RAMB36E2__parameterized0' [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:143879]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB36E2__parameterized0' (0#1) [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:143879]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_bram_rep_int' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram_rep_int.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_bram_rep' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram_rep.v:58]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_bram_16k' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram_16k.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_bram_16k' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram_16k.v:58]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_bram_msix' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram_msix.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_bram_msix' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram_msix.v:58]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_bram_tph' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram_tph.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_bram_tph' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram_tph.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_bram' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_bram.v:58]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_init_ctrl' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_init_ctrl.v:59]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_init_ctrl.v:263]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_init_ctrl.v:312]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_init_ctrl' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_init_ctrl.v:59]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_vf_decode' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_vf_decode.v:58]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_vf_decode_attr' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_vf_decode_attr.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_vf_decode_attr' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_vf_decode_attr.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_vf_decode' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_vf_decode.v:58]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_pl_eq' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pl_eq.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_pl_eq' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pl_eq.v:58]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_512b_intfc' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_intfc.v:57]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_512b_intfc_int' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_intfc_int.v:57]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_512b_cq_intfc' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_cq_intfc.v:57]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_512b_sync_fifo' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_sync_fifo.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_512b_sync_fifo' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_sync_fifo.v:57]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_512b_cq_output_mux' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_cq_output_mux.v:57]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_cq_output_mux.v:404]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_512b_cq_output_mux' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_cq_output_mux.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_512b_cq_intfc' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_cq_intfc.v:57]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_512b_cc_intfc' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_cc_intfc.v:57]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_512b_async_fifo' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_async_fifo.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_512b_async_fifo' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_async_fifo.v:57]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_512b_cc_output_mux' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_cc_output_mux.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_512b_cc_output_mux' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_cc_output_mux.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_512b_cc_intfc' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_cc_intfc.v:57]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_512b_rq_intfc' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_rq_intfc.v:57]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_512b_async_fifo__parameterized0' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_async_fifo.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_512b_async_fifo__parameterized0' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_async_fifo.v:57]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_512b_rq_output_mux' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_rq_output_mux.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_512b_rq_output_mux' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_rq_output_mux.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_512b_rq_intfc' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_rq_intfc.v:57]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_512b_rc_intfc' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_rc_intfc.v:57]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_512b_sync_fifo__parameterized0' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_sync_fifo.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_512b_sync_fifo__parameterized0' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_sync_fifo.v:57]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_512b_rc_output_mux' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_rc_output_mux.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_512b_rc_output_mux' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_rc_output_mux.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_512b_rc_intfc' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_rc_intfc.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_512b_intfc_int' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_intfc_int.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_512b_intfc' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_512b_intfc.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_pipe' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:83]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2853]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (0#1) [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2853]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT_SYNC' [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2875]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT_SYNC' (0#1) [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2875]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_phy_top' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_top.v:110]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_gt_phy_wrapper' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_wrapper.v:141]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_gt_phy_txeq' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_txeq.v:69]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_sync' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_sync.v:65]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_sync_cell' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_sync_cell.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_sync_cell' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_sync_cell.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_sync' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_sync.v:65]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_sync__parameterized0' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_sync.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_sync__parameterized0' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_sync.v:65]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_sync__parameterized1' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_sync.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_sync__parameterized1' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_sync.v:65]
+INFO: [Synth 8-226] default block is never used [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_txeq.v:288]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_gt_phy_txeq' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_txeq.v:69]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_gt_phy_rxeq' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_rxeq.v:65]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_sync__parameterized2' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_sync.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_sync__parameterized2' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_sync.v:65]
+INFO: [Synth 8-226] default block is never used [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_rxeq.v:226]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_gt_phy_rxeq' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_rxeq.v:65]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_gt_receiver_detect_rxterm' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_receiver_detect_rxterm.v:68]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_sync__parameterized3' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_sync.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_sync__parameterized3' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_sync.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_gt_receiver_detect_rxterm' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_receiver_detect_rxterm.v:68]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_gt_cdr_ctrl_on_eidle' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_cdr_ctrl_on_eidle.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_gt_cdr_ctrl_on_eidle' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_cdr_ctrl_on_eidle.v:65]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_gtwizard_top' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gtwizard_top.v:65]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_gt' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt.v:53]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_gt_gtwizard_top' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt_gtwizard_top.v:173]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_gt_gtwizard_gtye4' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt_gtwizard_gtye4.v:141]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_gt_gtye4_common_wrapper' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt_gtye4_common_wrapper.v:56]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_19_gtye4_common' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/gtwizard_ultrascale_v1_7_gtye4_common.v:53]
+INFO: [Synth 8-6157] synthesizing module 'GTYE4_COMMON' [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:57023]
+INFO: [Synth 8-6155] done synthesizing module 'GTYE4_COMMON' (0#1) [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:57023]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_19_gtye4_common' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/gtwizard_ultrascale_v1_7_gtye4_common.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_gt_gtye4_common_wrapper' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt_gtye4_common_wrapper.v:56]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_gt_gtye4_channel_wrapper' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt_gtye4_channel_wrapper.v:56]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_19_gtye4_channel' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/gtwizard_ultrascale_v1_7_gtye4_channel.v:53]
+INFO: [Synth 8-6157] synthesizing module 'GTYE4_CHANNEL' [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:55862]
+INFO: [Synth 8-6155] done synthesizing module 'GTYE4_CHANNEL' (0#1) [/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:55862]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_19_gtye4_channel' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/gtwizard_ultrascale_v1_7_gtye4_channel.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_gt_gtye4_channel_wrapper' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt_gtye4_channel_wrapper.v:56]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_cpll_cal.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_19_reset_synchronizer' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_reset_sync.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_19_reset_synchronizer' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_reset_sync.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_19_bit_synchronizer' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_bit_sync.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_19_bit_synchronizer' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_bit_sync.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_cpll_cal_tx.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_freq_counter' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_cal_freqcnt.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_freq_counter' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_cal_freqcnt.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_cpll_cal_tx.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_rx' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_cpll_cal_rx.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_rx' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_cpll_cal_rx.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_19_gte4_drp_arb' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gte4_drp_arb.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_19_gte4_drp_arb' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gte4_drp_arb.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_cpll_cal.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_19_gtye4_delay_powergood' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_delay_powergood.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_19_gtye4_delay_powergood' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_delay_powergood.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_gt_gtwizard_gtye4' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt_gtwizard_gtye4.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_gt_gtwizard_top' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt_gtwizard_top.v:173]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_gt' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_gtwizard_top' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gtwizard_top.v:65]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_gt_phy_clk' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_clk.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_gt_phy_clk' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_clk.v:65]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_gt_phy_rst' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_rst.v:65]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_sync__parameterized4' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_sync.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_sync__parameterized4' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_sync.v:65]
+INFO: [Synth 8-226] default block is never used [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_rst.v:417]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_gt_phy_rst' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_rst.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_gt_phy_wrapper' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_wrapper.v:141]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_phy_pipeline' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_pipeline.v:77]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized0' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized0' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized1' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized1' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized2' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized2' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized3' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized3' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized4' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized4' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized5' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized5' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized6' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized6' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized7' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized7' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized8' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_phy_ff_chain__parameterized8' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_ff_chain.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_phy_pipeline' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_pipeline.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_phy_top' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_phy_top.v:110]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst__parameterized0' [/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst__parameterized0' (0#1) [/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6157] synthesizing module 'pcie4c_uscale_plus_0_cxs_remap' [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_cxs_remap.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_cxs_remap' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_cxs_remap.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0_pcie4c_uscale_core_top' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'pcie4c_uscale_plus_0' (0#1) [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/synth/pcie4c_uscale_plus_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element hot_reset_timer_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_init_ctrl.v:248]
+WARNING: [Synth 8-6014] Unused sequential element reg_cfg_interrupt_msix_vf_flr_msk_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_vf_decode_attr.v:239]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx00_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1493]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx01_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1494]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx02_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1495]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx03_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1496]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx04_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1497]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx05_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1498]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx06_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1499]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx07_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1500]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx08_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1501]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx09_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1502]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx10_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1503]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx11_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1504]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx12_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1505]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx13_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1506]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx14_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1507]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx15_phy_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1508]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx00_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1509]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx01_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1510]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx02_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1511]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx03_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1512]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx04_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1513]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx05_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1514]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx06_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1515]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx07_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1516]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx08_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1517]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx09_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1518]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx10_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1519]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx11_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1520]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx12_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1521]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx13_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1522]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx14_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1523]
+WARNING: [Synth 8-6014] Unused sequential element pipe_rx15_status_ff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1524]
+WARNING: [Synth 8-3848] Net ccix_tx_credit_gnt in module/entity pcie4c_uscale_plus_0_pipe does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1354]
+WARNING: [Synth 8-3848] Net ccix_tx_active_ack in module/entity pcie4c_uscale_plus_0_pipe does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1357]
+WARNING: [Synth 8-3848] Net ccix_tx_deact_hint in module/entity pcie4c_uscale_plus_0_pipe does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1358]
+WARNING: [Synth 8-3848] Net ccix_rx_credit_return in module/entity pcie4c_uscale_plus_0_pipe does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1373]
+WARNING: [Synth 8-3848] Net ccix_rx_active_req in module/entity pcie4c_uscale_plus_0_pipe does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1375]
+WARNING: [Synth 8-3848] Net s_axis_ccix_tx_tdata_int in module/entity pcie4c_uscale_plus_0_pipe does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1724]
+WARNING: [Synth 8-3848] Net s_axis_ccix_tx_tuser_int in module/entity pcie4c_uscale_plus_0_pipe does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1726]
+WARNING: [Synth 8-3848] Net s_axis_ccix_tx_tvalid_int in module/entity pcie4c_uscale_plus_0_pipe does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pipe.v:1725]
+WARNING: [Synth 8-6014] Unused sequential element txpreset_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_rxeq.v:206]
+WARNING: [Synth 8-6014] Unused sequential element txcoeff_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_rxeq.v:207]
+WARNING: [Synth 8-6014] Unused sequential element rxelecidle_r_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_receiver_detect_rxterm.v:122]
+WARNING: [Synth 8-3848] Net RXTERM_FSM in module/entity pcie4c_uscale_plus_0_gt_receiver_detect_rxterm does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_receiver_detect_rxterm.v:84]
+WARNING: [Synth 8-7137] Register freq_cnt_o_reg in module gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_freq_counter has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_cal_freqcnt.v:188]
+WARNING: [Synth 8-6014] Unused sequential element mask_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_cpll_cal_tx.v:1077]
+WARNING: [Synth 8-3848] Net eyescandataerror_out in module/entity pcie4c_uscale_plus_0_gtwizard_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gtwizard_top.v:580]
+WARNING: [Synth 8-3848] Net USB_POWERPRESENT in module/entity pcie4c_uscale_plus_0_gt_phy_wrapper does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_wrapper.v:289]
+WARNING: [Synth 8-3848] Net GT_RXLPMEN in module/entity pcie4c_uscale_plus_0_gt_phy_wrapper does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_gt_phy_wrapper.v:336]
+WARNING: [Synth 8-6014] Unused sequential element ds_srl_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:5972]
+WARNING: [Synth 8-6014] Unused sequential element flr_cntr_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:5969]
+WARNING: [Synth 8-6014] Unused sequential element np_req_wait_reg was removed.  [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:5976]
+WARNING: [Synth 8-3848] Net ccix_optimized_tlp_tx_and_rx_enable in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1163]
+WARNING: [Synth 8-3848] Net rd_interrupt in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1167]
+WARNING: [Synth 8-3848] Net wr_interrupt in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1168]
+WARNING: [Synth 8-3848] Net s_axi_arready in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1181]
+WARNING: [Synth 8-3848] Net s_axi_awready in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1193]
+WARNING: [Synth 8-3848] Net s_axi_bid in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1197]
+WARNING: [Synth 8-3848] Net s_axi_bresp in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1199]
+WARNING: [Synth 8-3848] Net s_axi_bvalid in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1200]
+WARNING: [Synth 8-3848] Net s_axi_rdata in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1201]
+WARNING: [Synth 8-3848] Net s_axi_rid in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1202]
+WARNING: [Synth 8-3848] Net s_axi_rlast in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1203]
+WARNING: [Synth 8-3848] Net s_axi_rresp in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1205]
+WARNING: [Synth 8-3848] Net s_axi_rvalid in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1206]
+WARNING: [Synth 8-3848] Net s_axi_wready in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1209]
+WARNING: [Synth 8-3848] Net gtrefclk01_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1367]
+WARNING: [Synth 8-3848] Net gtrefclk00_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1368]
+WARNING: [Synth 8-3848] Net pcierateqpll0_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1370]
+WARNING: [Synth 8-3848] Net pcierateqpll1_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1371]
+WARNING: [Synth 8-3848] Net qpll0pd_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1373]
+WARNING: [Synth 8-3848] Net qpll0reset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1374]
+WARNING: [Synth 8-3848] Net qpll1pd_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1375]
+WARNING: [Synth 8-3848] Net qpll1reset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1376]
+WARNING: [Synth 8-3848] Net qpll0freqlock_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1383]
+WARNING: [Synth 8-3848] Net qpll1freqlock_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1384]
+WARNING: [Synth 8-3848] Net rcalenb_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1388]
+WARNING: [Synth 8-3848] Net txpisopd_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1389]
+WARNING: [Synth 8-3848] Net cpllfreqlock_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1395]
+WARNING: [Synth 8-3848] Net cpllpd_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1397]
+WARNING: [Synth 8-3848] Net cpllreset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1398]
+WARNING: [Synth 8-3848] Net dmonfiforeset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1399]
+WARNING: [Synth 8-3848] Net dmonitorclk_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1400]
+WARNING: [Synth 8-3848] Net eyescanreset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1402]
+WARNING: [Synth 8-3848] Net gtrefclk0_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1404]
+WARNING: [Synth 8-3848] Net gtrxreset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1405]
+WARNING: [Synth 8-3848] Net gttxreset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1406]
+WARNING: [Synth 8-3848] Net gtwiz_reset_rx_done_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1408]
+WARNING: [Synth 8-3848] Net gtwiz_reset_tx_done_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1409]
+WARNING: [Synth 8-3848] Net gtwiz_userclk_rx_active_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1410]
+WARNING: [Synth 8-3848] Net gtwiz_userclk_tx_active_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1411]
+WARNING: [Synth 8-3848] Net loopback_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1413]
+WARNING: [Synth 8-3848] Net pcieeqrxeqadaptdone_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1414]
+WARNING: [Synth 8-3848] Net pcierstidle_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1417]
+WARNING: [Synth 8-3848] Net pciersttxsyncstart_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1418]
+WARNING: [Synth 8-3848] Net pcieuserratedone_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1422]
+WARNING: [Synth 8-3848] Net resetovrd_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1425]
+WARNING: [Synth 8-3848] Net rx8b10ben_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1426]
+WARNING: [Synth 8-3848] Net rxbufreset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1427]
+WARNING: [Synth 8-3848] Net rxcdrfreqreset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1431]
+WARNING: [Synth 8-3848] Net rxcdrhold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1432]
+WARNING: [Synth 8-3848] Net rxcdrreset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1434]
+WARNING: [Synth 8-3848] Net rxcommadeten_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1437]
+WARNING: [Synth 8-3848] Net rxdfeagchold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1443]
+WARNING: [Synth 8-3848] Net rxdfecfokhold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1444]
+WARNING: [Synth 8-3848] Net rxdfekhhold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1445]
+WARNING: [Synth 8-3848] Net rxdfelfhold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1446]
+WARNING: [Synth 8-3848] Net rxdfelpmreset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1447]
+WARNING: [Synth 8-3848] Net rxdfetap10hold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1448]
+WARNING: [Synth 8-3848] Net rxdfetap11hold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1449]
+WARNING: [Synth 8-3848] Net rxdfetap12hold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1450]
+WARNING: [Synth 8-3848] Net rxdfetap13hold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1451]
+WARNING: [Synth 8-3848] Net rxdfetap14hold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1452]
+WARNING: [Synth 8-3848] Net rxdfetap15hold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1453]
+WARNING: [Synth 8-3848] Net rxdfetap2hold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1454]
+WARNING: [Synth 8-3848] Net rxdfetap3hold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1455]
+WARNING: [Synth 8-3848] Net rxdfetap4hold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1456]
+WARNING: [Synth 8-3848] Net rxdfetap5hold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1457]
+WARNING: [Synth 8-3848] Net rxdfetap6hold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1458]
+WARNING: [Synth 8-3848] Net rxdfetap7hold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1459]
+WARNING: [Synth 8-3848] Net rxdfetap8hold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1460]
+WARNING: [Synth 8-3848] Net rxdfetap9hold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1461]
+WARNING: [Synth 8-3848] Net rxdfeuthold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1462]
+WARNING: [Synth 8-3848] Net rxdfevphold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1463]
+WARNING: [Synth 8-3848] Net rxlpmen_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1466]
+WARNING: [Synth 8-3848] Net rxlpmgchold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1467]
+WARNING: [Synth 8-3848] Net rxlpmhfhold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1468]
+WARNING: [Synth 8-3848] Net rxlpmlfhold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1469]
+WARNING: [Synth 8-3848] Net rxlpmoshold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1470]
+WARNING: [Synth 8-3848] Net rxmcommaalignen_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1471]
+WARNING: [Synth 8-3848] Net rxoshold_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1472]
+WARNING: [Synth 8-3848] Net rxpcommaalignen_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1476]
+WARNING: [Synth 8-3848] Net rxpcsreset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1477]
+WARNING: [Synth 8-3848] Net rxpd_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1478]
+WARNING: [Synth 8-3848] Net rxpmareset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1480]
+WARNING: [Synth 8-3848] Net rxpolarity_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1482]
+WARNING: [Synth 8-3848] Net rxprbscntreset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1483]
+WARNING: [Synth 8-3848] Net rxprbssel_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1486]
+WARNING: [Synth 8-3848] Net rxprogdivreset_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1487]
+WARNING: [Synth 8-3848] Net rxrate_in in module/entity pcie4c_uscale_plus_0_pcie4c_uscale_core_top does not have driver. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/pcie4c_uscale_plus_0_pcie4c_uscale_core_top.v:1488]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port ccix_rx_credit_av[7] in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ccix_rx_credit_av[6] in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ccix_rx_credit_av[5] in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ccix_rx_credit_av[4] in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ccix_rx_credit_av[3] in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ccix_rx_credit_av[2] in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ccix_rx_credit_av[1] in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ccix_rx_credit_av[0] in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CXS0_VALID_CHK_TX in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CXS0_CRDRTN_CHK_TX in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CXS0_CRDGNT_CHK_RX in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_vc1_en in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cfg_vc1_neg_pend in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ccix_rst in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ccix_clk in module pcie4c_uscale_plus_0_cxs_remap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1023] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1022] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1021] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1020] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1019] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1018] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1017] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1016] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1015] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1014] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1013] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1012] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1011] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1010] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1009] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1008] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1007] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1006] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1005] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1004] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1003] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1002] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1001] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[1000] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[999] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[998] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[997] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[996] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[995] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[994] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[993] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[992] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[959] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[958] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[957] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[956] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[955] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[954] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[953] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[952] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[951] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[950] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[949] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[948] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[947] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[946] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[945] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[944] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[943] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[942] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[941] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[940] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[939] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[938] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[937] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[936] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[935] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[934] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[933] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[932] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[931] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[930] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[929] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[928] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[895] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[894] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[893] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[892] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[891] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[890] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[889] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[888] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[887] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[886] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[885] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[884] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[883] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[882] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[881] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[880] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[879] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[878] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[877] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[876] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port phy_txdata_i[875] in module pcie4c_uscale_plus_0_phy_pipeline is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3362.770 ; gain = 505.688 ; free physical = 36995 ; free virtual = 54701
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3362.770 ; gain = 505.688 ; free physical = 36995 ; free virtual = 54701
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3362.770 ; gain = 505.688 ; free physical = 36995 ; free virtual = 54701
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.67 . Memory (MB): peak = 3370.770 ; gain = 0.000 ; free physical = 37030 ; free virtual = 54735
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/synth/pcie4c_uscale_plus_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/synth/pcie4c_uscale_plus_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt.xdc] for cell 'inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst'
+Finished Parsing XDC File [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt.xdc] for cell 'inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcie4c_uscale_plus_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcie4c_uscale_plus_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/ip_pcie4c_uscale_plus_x1y0.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/ip_pcie4c_uscale_plus_x1y0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/source/ip_pcie4c_uscale_plus_x1y0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcie4c_uscale_plus_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcie4c_uscale_plus_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/pcie4c_uscale_plus_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/pcie4c_uscale_plus_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/pcie4c_uscale_plus_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcie4c_uscale_plus_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcie4c_uscale_plus_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/pcie4c_uscale_plus_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/pcie4c_uscale_plus_0_board.xdc] for cell 'inst'
+Parsing XDC File [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/synth/pcie4c_uscale_plus_0_late.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/synth/pcie4c_uscale_plus_0_late.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/synth/pcie4c_uscale_plus_0_late.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcie4c_uscale_plus_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcie4c_uscale_plus_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 5 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3798.699 ; gain = 0.000 ; free physical = 41774 ; free virtual = 59480
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.28 . Memory (MB): peak = 3817.512 ; gain = 18.812 ; free physical = 41779 ; free virtual = 59486
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:43 . Memory (MB): peak = 3817.512 ; gain = 960.430 ; free physical = 41765 ; free virtual = 59472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu50-fsvh2104-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:43 . Memory (MB): peak = 3825.516 ; gain = 968.434 ; free physical = 41765 ; free virtual = 59472
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property keep_hierarchy = soft for inst. (constraint file  /home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/synth/pcie4c_uscale_plus_0_gt.xdc, line 389).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/pcie4c_uscale_plus_0_gt_top_i/\diablo_gt.diablo_gt_phy_wrapper /\gt_wizard.gtwizard_top_i /pcie4c_uscale_plus_0_gt_i/inst. (constraint file  /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/pcie4c_uscale_plus_0_synth_1/dont_touch.xdc, line 13).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/hkchu/xillybus/verilog/vivado/xillydemo.runs/pcie4c_uscale_plus_0_synth_1/dont_touch.xdc, line 17).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/pcie4c_uscale_plus_0_gt_top_i/\diablo_gt.diablo_gt_phy_wrapper /\gt_wizard.gtwizard_top_i /pcie4c_uscale_plus_0_gt_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sys_reset_in_async_rst_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/user_lnk_up_cdc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sys_or_hot_rst_pclk_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/sys_or_hot_rst_uclk_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/user_reset_cdc. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:43 . Memory (MB): peak = 3825.516 ; gain = 968.434 ; free physical = 41765 ; free virtual = 59472
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'read_state_reg' in module 'pcie4c_uscale_plus_0_512b_cq_intfc'
+INFO: [Synth 8-802] inferred FSM for state register 'read_state_reg' in module 'pcie4c_uscale_plus_0_512b_rc_intfc'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'pcie4c_uscale_plus_0_gt_phy_txeq'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'pcie4c_uscale_plus_0_gt_phy_rxeq'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_fsm_reg' in module 'pcie4c_uscale_plus_0_gt_receiver_detect_rxterm'
+INFO: [Synth 8-802] inferred FSM for state register 'non_sris.fsm_reg' in module 'pcie4c_uscale_plus_0_gt_cdr_ctrl_on_eidle'
+WARNING: [Synth 8-3936] Found unconnected internal register 'progclk_sel_store_reg' and it is trimmed from '16' to '15' bits. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_cpll_cal_tx.v:705]
+WARNING: [Synth 8-3936] Found unconnected internal register 'x0e1_store_reg' and it is trimmed from '16' to '15' bits. [/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/ip_0/hdl/gtwizard_ultrascale_v1_7_gtye4_cpll_cal_tx.v:778]
+INFO: [Synth 8-802] inferred FSM for state register 'arb_state_reg' in module 'gtwizard_ultrascale_v1_7_19_gte4_drp_arb'
+INFO: [Synth 8-802] inferred FSM for state register 'pwr_on_fsm_reg' in module 'pcie4c_uscale_plus_0_gt_phy_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'pcie4c_uscale_plus_0_gt_phy_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+     WAIT_FOR_UPPER_HALF |                               01 |                               11
+         EXPECT_NEW_WORD |                               10 |                               01
+    SEND_SAVED_HALF_WORD |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'read_state_reg' using encoding 'sequential' in module 'pcie4c_uscale_plus_0_512b_cq_intfc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+     WAIT_FOR_UPPER_HALF |                               01 |                               11
+         EXPECT_NEW_WORD |                               10 |                               01
+    SEND_SAVED_HALF_WORD |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'read_state_reg' using encoding 'sequential' in module 'pcie4c_uscale_plus_0_512b_rc_intfc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                FSM_IDLE |                              000 |                              000
+              FSM_PRESET |                              001 |                              001
+               FSM_COEFF |                              010 |                              010
+               FSM_REMAP |                              011 |                              011
+               FSM_QUERY |                              100 |                              100
+                FSM_DONE |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'sequential' in module 'pcie4c_uscale_plus_0_gt_phy_txeq'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                FSM_IDLE |                            00001 |                              000
+              FSM_PRESET |                            00010 |                              001
+             FSM_TXCOEFF |                            00100 |                              010
+               FSM_ADAPT |                            01000 |                              011
+                FSM_DONE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'one-hot' in module 'pcie4c_uscale_plus_0_gt_phy_rxeq'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         FSM_ASSERT_AVTT |                              000 |                              001
+FSM_CHECK_RXELECIDLE_ASSERTED |                              001 |                              010
+FSM_CHECK_RXELECIDLE_SOLID_DEASSERT |                              010 |                              011
+         FSM_ASSERT_PROG |                              011 |                              100
+           FSM_CTRL_IDLE |                              100 |                              000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_fsm_reg' using encoding 'sequential' in module 'pcie4c_uscale_plus_0_gt_receiver_detect_rxterm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                FSM_IDLE |                               00 |                              000
+FSM_GEN12_RXELECIDLE_EXIT |                               01 |                              001
+FSM_GEN34_RXELECIDLE_EXIT |                               10 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'non_sris.fsm_reg' using encoding 'sequential' in module 'pcie4c_uscale_plus_0_gt_cdr_ctrl_on_eidle'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               ARB_START |                             0001 |                             0001
+                ARB_WAIT |                             0010 |                             0010
+              ARB_REPORT |                             0100 |                             0100
+                 ARB_INC |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'arb_state_reg' in module 'gtwizard_ultrascale_v1_7_19_gte4_drp_arb'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         PWR_ON_WAIT_CNT |                                0 |                               00
+             PWR_ON_DONE |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pwr_on_fsm_reg' using encoding 'sequential' in module 'pcie4c_uscale_plus_0_gt_phy_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         FSM_GTPOWERGOOD |                         00000001 |                              001
+             FSM_PLLLOCK |                         00000010 |                              010
+  FSM_TXPROGDIVRESETDONE |                         00000100 |                              011
+           FSM_RESETDONE |                         00001000 |                              100
+        FSM_TXSYNC_START |                         00010000 |                              101
+         FSM_TXSYNC_DONE |                         00100000 |                              110
+           FSM_PHYSTATUS |                         01000000 |                              111
+                FSM_IDLE |                         10000000 |                              000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'one-hot' in module 'pcie4c_uscale_plus_0_gt_phy_rst'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:48 . Memory (MB): peak = 3825.516 ; gain = 968.434 ; free physical = 41785 ; free virtual = 59498
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   25 Bit       Adders := 16    
+	   2 Input   19 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 16    
+	   3 Input   18 Bit       Adders := 16    
+	   2 Input   16 Bit       Adders := 16    
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 17    
+	   2 Input    7 Bit       Adders := 32    
+	   2 Input    6 Bit       Adders := 20    
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 22    
+	   2 Input    3 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 59    
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---XORs : 
+	                2 Bit    Wide XORs := 16    
++---Registers : 
+	              756 Bit    Registers := 1     
+	              708 Bit    Registers := 2     
+	              684 Bit    Registers := 1     
+	              512 Bit    Registers := 8     
+	              504 Bit    Registers := 1     
+	              354 Bit    Registers := 1     
+	              342 Bit    Registers := 1     
+	              327 Bit    Registers := 1     
+	              298 Bit    Registers := 1     
+	              256 Bit    Registers := 14    
+	              252 Bit    Registers := 4     
+	              183 Bit    Registers := 3     
+	              161 Bit    Registers := 3     
+	              144 Bit    Registers := 8     
+	              137 Bit    Registers := 1     
+	               88 Bit    Registers := 2     
+	               81 Bit    Registers := 1     
+	               75 Bit    Registers := 4     
+	               64 Bit    Registers := 32    
+	               62 Bit    Registers := 3     
+	               48 Bit    Registers := 32    
+	               33 Bit    Registers := 3     
+	               32 Bit    Registers := 33    
+	               30 Bit    Registers := 16    
+	               25 Bit    Registers := 16    
+	               22 Bit    Registers := 2     
+	               20 Bit    Registers := 2     
+	               19 Bit    Registers := 32    
+	               18 Bit    Registers := 64    
+	               16 Bit    Registers := 120   
+	               15 Bit    Registers := 32    
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 32    
+	                9 Bit    Registers := 9     
+	                8 Bit    Registers := 56    
+	                7 Bit    Registers := 80    
+	                6 Bit    Registers := 37    
+	                5 Bit    Registers := 50    
+	                4 Bit    Registers := 864   
+	                3 Bit    Registers := 90    
+	                2 Bit    Registers := 239   
+	                1 Bit    Registers := 1733  
++---Muxes : 
+	   2 Input  756 Bit        Muxes := 6     
+	   4 Input  708 Bit        Muxes := 1     
+	   4 Input  684 Bit        Muxes := 1     
+	   2 Input  512 Bit        Muxes := 2     
+	   2 Input  504 Bit        Muxes := 3     
+	   3 Input  504 Bit        Muxes := 1     
+	   2 Input  354 Bit        Muxes := 3     
+	   4 Input  354 Bit        Muxes := 1     
+	   2 Input  342 Bit        Muxes := 3     
+	   4 Input  342 Bit        Muxes := 1     
+	   2 Input  327 Bit        Muxes := 1     
+	   2 Input  298 Bit        Muxes := 1     
+	   2 Input  256 Bit        Muxes := 4     
+	   2 Input  252 Bit        Muxes := 15    
+	   2 Input  183 Bit        Muxes := 1     
+	   2 Input  161 Bit        Muxes := 1     
+	   2 Input  144 Bit        Muxes := 2     
+	   2 Input  137 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 4     
+	   2 Input   75 Bit        Muxes := 2     
+	   2 Input   62 Bit        Muxes := 1     
+	   5 Input   48 Bit        Muxes := 16    
+	   2 Input   48 Bit        Muxes := 32    
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 16    
+	  33 Input   32 Bit        Muxes := 16    
+	   3 Input   32 Bit        Muxes := 16    
+	   2 Input   30 Bit        Muxes := 48    
+	   2 Input   28 Bit        Muxes := 16    
+	   2 Input   27 Bit        Muxes := 16    
+	   2 Input   26 Bit        Muxes := 16    
+	  33 Input   25 Bit        Muxes := 16    
+	   2 Input   25 Bit        Muxes := 16    
+	   2 Input   24 Bit        Muxes := 16    
+	   2 Input   23 Bit        Muxes := 16    
+	   4 Input   22 Bit        Muxes := 16    
+	   2 Input   21 Bit        Muxes := 16    
+	   2 Input   20 Bit        Muxes := 16    
+	   3 Input   20 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 48    
+	   6 Input   19 Bit        Muxes := 16    
+	   2 Input   18 Bit        Muxes := 16    
+	   2 Input   17 Bit        Muxes := 16    
+	   2 Input   16 Bit        Muxes := 71    
+	  33 Input   16 Bit        Muxes := 32    
+	   4 Input   16 Bit        Muxes := 16    
+	   2 Input   15 Bit        Muxes := 16    
+	   2 Input   13 Bit        Muxes := 16    
+	   2 Input   12 Bit        Muxes := 19    
+	   2 Input   11 Bit        Muxes := 16    
+	   2 Input   10 Bit        Muxes := 80    
+	   4 Input   10 Bit        Muxes := 16    
+	   2 Input    9 Bit        Muxes := 16    
+	   2 Input    8 Bit        Muxes := 59    
+	   3 Input    8 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 16    
+	   8 Input    7 Bit        Muxes := 16    
+	   2 Input    7 Bit        Muxes := 64    
+	   3 Input    7 Bit        Muxes := 16    
+	   2 Input    6 Bit        Muxes := 37    
+	   3 Input    6 Bit        Muxes := 2     
+	   6 Input    5 Bit        Muxes := 16    
+	   3 Input    5 Bit        Muxes := 32    
+	   2 Input    5 Bit        Muxes := 64    
+	   5 Input    5 Bit        Muxes := 16    
+	   4 Input    5 Bit        Muxes := 16    
+	   2 Input    4 Bit        Muxes := 61    
+	   3 Input    4 Bit        Muxes := 1     
+	  33 Input    4 Bit        Muxes := 16    
+	   5 Input    4 Bit        Muxes := 16    
+	   2 Input    3 Bit        Muxes := 232   
+	   5 Input    3 Bit        Muxes := 64    
+	   6 Input    3 Bit        Muxes := 32    
+	   4 Input    3 Bit        Muxes := 16    
+	   2 Input    2 Bit        Muxes := 172   
+	   3 Input    2 Bit        Muxes := 19    
+	   4 Input    2 Bit        Muxes := 2     
+	  29 Input    2 Bit        Muxes := 2     
+	   6 Input    2 Bit        Muxes := 16    
+	   5 Input    2 Bit        Muxes := 16    
+	   2 Input    1 Bit        Muxes := 339   
+	   5 Input    1 Bit        Muxes := 195   
+	   4 Input    1 Bit        Muxes := 44    
+	   3 Input    1 Bit        Muxes := 17    
+	  33 Input    1 Bit        Muxes := 288   
+	   8 Input    1 Bit        Muxes := 50    
+	   6 Input    1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 5952 (col length:93)
+BRAMs: 2688 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[251]' (FDRE) to 'reg_cfg_vf_active_reg[250]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[250]' (FDRE) to 'reg_cfg_vf_active_reg[249]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[249]' (FDRE) to 'reg_cfg_vf_active_reg[248]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[248]' (FDRE) to 'reg_cfg_vf_active_reg[247]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[247]' (FDRE) to 'reg_cfg_vf_active_reg[246]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[246]' (FDRE) to 'reg_cfg_vf_active_reg[245]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[245]' (FDRE) to 'reg_cfg_vf_active_reg[244]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[244]' (FDRE) to 'reg_cfg_vf_active_reg[243]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[243]' (FDRE) to 'reg_cfg_vf_active_reg[242]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[242]' (FDRE) to 'reg_cfg_vf_active_reg[241]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[241]' (FDRE) to 'reg_cfg_vf_active_reg[240]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[240]' (FDRE) to 'reg_cfg_vf_active_reg[239]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[239]' (FDRE) to 'reg_cfg_vf_active_reg[238]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[238]' (FDRE) to 'reg_cfg_vf_active_reg[237]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[237]' (FDRE) to 'reg_cfg_vf_active_reg[236]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[236]' (FDRE) to 'reg_cfg_vf_active_reg[235]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[235]' (FDRE) to 'reg_cfg_vf_active_reg[234]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[234]' (FDRE) to 'reg_cfg_vf_active_reg[233]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[233]' (FDRE) to 'reg_cfg_vf_active_reg[232]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[232]' (FDRE) to 'reg_cfg_vf_active_reg[231]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[231]' (FDRE) to 'reg_cfg_vf_active_reg[230]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[230]' (FDRE) to 'reg_cfg_vf_active_reg[229]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[229]' (FDRE) to 'reg_cfg_vf_active_reg[228]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[228]' (FDRE) to 'reg_cfg_vf_active_reg[227]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[227]' (FDRE) to 'reg_cfg_vf_active_reg[226]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[226]' (FDRE) to 'reg_cfg_vf_active_reg[225]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[225]' (FDRE) to 'reg_cfg_vf_active_reg[224]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[224]' (FDRE) to 'reg_cfg_vf_active_reg[223]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[223]' (FDRE) to 'reg_cfg_vf_active_reg[222]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[222]' (FDRE) to 'reg_cfg_vf_active_reg[221]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[221]' (FDRE) to 'reg_cfg_vf_active_reg[220]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[220]' (FDRE) to 'reg_cfg_vf_active_reg[219]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[219]' (FDRE) to 'reg_cfg_vf_active_reg[218]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[218]' (FDRE) to 'reg_cfg_vf_active_reg[217]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[217]' (FDRE) to 'reg_cfg_vf_active_reg[216]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[216]' (FDRE) to 'reg_cfg_vf_active_reg[215]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[215]' (FDRE) to 'reg_cfg_vf_active_reg[214]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[214]' (FDRE) to 'reg_cfg_vf_active_reg[213]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[213]' (FDRE) to 'reg_cfg_vf_active_reg[212]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[212]' (FDRE) to 'reg_cfg_vf_active_reg[211]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[211]' (FDRE) to 'reg_cfg_vf_active_reg[210]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[210]' (FDRE) to 'reg_cfg_vf_active_reg[209]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[209]' (FDRE) to 'reg_cfg_vf_active_reg[208]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[208]' (FDRE) to 'reg_cfg_vf_active_reg[207]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[207]' (FDRE) to 'reg_cfg_vf_active_reg[206]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[206]' (FDRE) to 'reg_cfg_vf_active_reg[205]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[205]' (FDRE) to 'reg_cfg_vf_active_reg[204]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[204]' (FDRE) to 'reg_cfg_vf_active_reg[203]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[203]' (FDRE) to 'reg_cfg_vf_active_reg[202]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[202]' (FDRE) to 'reg_cfg_vf_active_reg[201]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[201]' (FDRE) to 'reg_cfg_vf_active_reg[200]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[200]' (FDRE) to 'reg_cfg_vf_active_reg[199]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[199]' (FDRE) to 'reg_cfg_vf_active_reg[198]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[198]' (FDRE) to 'reg_cfg_vf_active_reg[197]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[197]' (FDRE) to 'reg_cfg_vf_active_reg[196]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[196]' (FDRE) to 'reg_cfg_vf_active_reg[195]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[195]' (FDRE) to 'reg_cfg_vf_active_reg[194]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[194]' (FDRE) to 'reg_cfg_vf_active_reg[193]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[193]' (FDRE) to 'reg_cfg_vf_active_reg[192]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[192]' (FDRE) to 'reg_cfg_vf_active_reg[191]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[191]' (FDRE) to 'reg_cfg_vf_active_reg[190]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[190]' (FDRE) to 'reg_cfg_vf_active_reg[189]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[189]' (FDRE) to 'reg_cfg_vf_active_reg[188]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[188]' (FDRE) to 'reg_cfg_vf_active_reg[187]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[187]' (FDRE) to 'reg_cfg_vf_active_reg[186]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[186]' (FDRE) to 'reg_cfg_vf_active_reg[185]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[185]' (FDRE) to 'reg_cfg_vf_active_reg[184]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[184]' (FDRE) to 'reg_cfg_vf_active_reg[183]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[183]' (FDRE) to 'reg_cfg_vf_active_reg[182]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[182]' (FDRE) to 'reg_cfg_vf_active_reg[181]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[181]' (FDRE) to 'reg_cfg_vf_active_reg[180]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[180]' (FDRE) to 'reg_cfg_vf_active_reg[179]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[179]' (FDRE) to 'reg_cfg_vf_active_reg[178]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[178]' (FDRE) to 'reg_cfg_vf_active_reg[177]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[177]' (FDRE) to 'reg_cfg_vf_active_reg[176]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[176]' (FDRE) to 'reg_cfg_vf_active_reg[175]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[175]' (FDRE) to 'reg_cfg_vf_active_reg[174]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[174]' (FDRE) to 'reg_cfg_vf_active_reg[173]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[173]' (FDRE) to 'reg_cfg_vf_active_reg[172]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[172]' (FDRE) to 'reg_cfg_vf_active_reg[171]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[171]' (FDRE) to 'reg_cfg_vf_active_reg[170]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[170]' (FDRE) to 'reg_cfg_vf_active_reg[169]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[169]' (FDRE) to 'reg_cfg_vf_active_reg[168]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[168]' (FDRE) to 'reg_cfg_vf_active_reg[167]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[167]' (FDRE) to 'reg_cfg_vf_active_reg[166]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[166]' (FDRE) to 'reg_cfg_vf_active_reg[165]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[165]' (FDRE) to 'reg_cfg_vf_active_reg[164]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[164]' (FDRE) to 'reg_cfg_vf_active_reg[163]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[163]' (FDRE) to 'reg_cfg_vf_active_reg[162]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[162]' (FDRE) to 'reg_cfg_vf_active_reg[161]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[161]' (FDRE) to 'reg_cfg_vf_active_reg[160]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[160]' (FDRE) to 'reg_cfg_vf_active_reg[159]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[159]' (FDRE) to 'reg_cfg_vf_active_reg[158]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[158]' (FDRE) to 'reg_cfg_vf_active_reg[157]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[157]' (FDRE) to 'reg_cfg_vf_active_reg[156]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[156]' (FDRE) to 'reg_cfg_vf_active_reg[155]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[155]' (FDRE) to 'reg_cfg_vf_active_reg[154]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[154]' (FDRE) to 'reg_cfg_vf_active_reg[153]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[153]' (FDRE) to 'reg_cfg_vf_active_reg[152]'
+INFO: [Synth 8-3886] merging instance 'reg_cfg_vf_active_reg[152]' (FDRE) to 'reg_cfg_vf_active_reg[151]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_cfg_vf_active_reg[0] )
+INFO: [Synth 8-5544] ROM "pcie_4_0_512b_intfc_int_mod/pcie_4_0_512b_cc_intfc_mod/s_axis_cc_tkeep_reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pcie_4_0_512b_intfc_int_mod/pcie_4_0_512b_rq_intfc_mod/s_axis_rq_tkeep_reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcie4_0_512b_intfc_mod/pcie_4_0_512b_intfc_int_mod/pcie_4_0_512b_rq_intfc_mod/pcie_4_0_512b_async_fifo_blk/write_data_reg_reg[279] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcie4_0_512b_intfc_mod/pcie_4_0_512b_intfc_int_mod/pcie_4_0_512b_rc_intfc_mod /pcie_4_0_512b_rc_output_mux_blk/m_axis_rc_tlast_second_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcie4_0_512b_intfc_mod/pcie_4_0_512b_intfc_int_mod/pcie_4_0_512b_rc_intfc_mod /pcie_4_0_512b_rc_output_mux_blk/m_axis_rc_tlast_first_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcie4_0_512b_intfc_mod/pcie_4_0_512b_intfc_int_mod/pcie_4_0_512b_cq_intfc_mod /pcie_4_0_512b_cq_output_mux_blk/\m_axis_cq_tuser_second_reg_reg[118] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcie4_0_512b_intfc_mod/pcie_4_0_512b_intfc_int_mod/pcie_4_0_512b_cq_intfc_mod /pcie_4_0_512b_cq_output_mux_blk/\m_axis_cq_tuser_first_reg_reg[118] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcie4_0_512b_intfc_mod/pcie_4_0_512b_intfc_int_mod/pcie_4_0_512b_cq_intfc_mod /pcie_4_0_512b_cq_output_mux_blk/\out_tuser_o_reg[118] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcie4_0_512b_intfc_mod/pcie_4_0_512b_intfc_int_mod/pcie_4_0_512b_cq_intfc_mod /pcie_4_0_512b_cq_output_mux_blk/m_axis_cq_sop1_last_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcie4_0_512b_intfc_mod/pcie_4_0_512b_intfc_int_mod/pcie_4_0_512b_rq_intfc_mod/pcie_4_0_512b_rq_output_mux_blk/m_axis_rq_tuser_second_reg_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcie4_0_512b_intfc_mod/pcie_4_0_512b_intfc_int_mod/pcie_4_0_512b_rq_intfc_mod/pcie_4_0_512b_rq_output_mux_blk/m_axis_rq_tuser_first_reg_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcie4_0_512b_intfc_mod/pcie_4_0_512b_intfc_int_mod/pcie_4_0_512b_cq_intfc_mod /pcie_4_0_512b_cq_output_mux_blk/\posted_req_delivered_o_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pcie4_0_512b_intfc_mod/pcie_4_0_512b_intfc_int_mod/pcie_4_0_512b_rq_intfc_mod/pcie_4_0_512b_rq_output_mux_blk/out_tuser_o_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[5].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[5].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/data_i_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[6].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[6].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/data_i_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[7].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[7].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/data_i_reg[31] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[8].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[8].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/data_i_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[9].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[9].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/data_i_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[10].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[10].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/data_i_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[12].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[12].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/data_i_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[13].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[13].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/data_i_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[14].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[14].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/data_i_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[5].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[6].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[7].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[8].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[9].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[10].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[12].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[13].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[14].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[5].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[6].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[7].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[8].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[9].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[10].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[12].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[13].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[14].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[5].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclksel_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[6].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclksel_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[7].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclksel_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[8].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclksel_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[9].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclksel_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[10].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclksel_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[12].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclksel_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[13].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclksel_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[14].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclksel_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[5].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_rx_i/gen_cal_rx_dis.USER_CPLLLOCK_OUT_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[6].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_rx_i/gen_cal_rx_dis.USER_CPLLLOCK_OUT_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[7].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_rx_i/gen_cal_rx_dis.USER_CPLLLOCK_OUT_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[8].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_rx_i/gen_cal_rx_dis.USER_CPLLLOCK_OUT_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[9].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_rx_i/gen_cal_rx_dis.USER_CPLLLOCK_OUT_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[10].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_rx_i/gen_cal_rx_dis.USER_CPLLLOCK_OUT_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[12].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_rx_i/gen_cal_rx_dis.USER_CPLLLOCK_OUT_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[13].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_rx_i/gen_cal_rx_dis.USER_CPLLLOCK_OUT_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[14].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_rx_i/gen_cal_rx_dis.USER_CPLLLOCK_OUT_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/data_i_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[4].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[4].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[11].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[11].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[4].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[11].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[4].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[11].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclksel_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[4].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclksel_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[11].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/txoutclksel_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_rx_i/gen_cal_rx_dis.USER_CPLLLOCK_OUT_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[4].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_rx_i/gen_cal_rx_dis.USER_CPLLLOCK_OUT_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[11].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_rx_i/gen_cal_rx_dis.USER_CPLLLOCK_OUT_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[15].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[15].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/addr_i_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[15].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/en_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[15].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst /\gtwizard_ultrascale_v1_7_19_gte4_drp_arb_i/drp_state_reg[3] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "preset" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3917] design pcie4c_uscale_plus_0_gt_phy_wrapper__GC0 has port GT_DRP_CLK_125M driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:21 . Memory (MB): peak = 3853.449 ; gain = 996.367 ; free physical = 35172 ; free virtual = 52890
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'sys_reset_in_async_rst_inst/src_arst' to pin 'sys_reset'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:55 ; elapsed = 00:01:30 . Memory (MB): peak = 5183.312 ; gain = 2326.230 ; free physical = 31172 ; free virtual = 48891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:01:40 . Memory (MB): peak = 5275.352 ; gain = 2418.270 ; free physical = 31097 ; free virtual = 48819
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:13 ; elapsed = 00:01:54 . Memory (MB): peak = 5303.285 ; gain = 2446.203 ; free physical = 28071 ; free virtual = 45810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:19 ; elapsed = 00:02:00 . Memory (MB): peak = 5354.176 ; gain = 2497.094 ; free physical = 28062 ; free virtual = 45800
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:19 ; elapsed = 00:02:00 . Memory (MB): peak = 5354.176 ; gain = 2497.094 ; free physical = 28062 ; free virtual = 45800
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:22 ; elapsed = 00:02:03 . Memory (MB): peak = 5410.598 ; gain = 2553.516 ; free physical = 27998 ; free virtual = 45737
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:22 ; elapsed = 00:02:03 . Memory (MB): peak = 5410.598 ; gain = 2553.516 ; free physical = 27998 ; free virtual = 45737
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:23 ; elapsed = 00:02:05 . Memory (MB): peak = 5413.738 ; gain = 2556.656 ; free physical = 28015 ; free virtual = 45754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:23 ; elapsed = 00:02:05 . Memory (MB): peak = 5413.738 ; gain = 2556.656 ; free physical = 28020 ; free virtual = 45759
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------------------------------+----------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                                 | RTL Name                                                                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------------------------------+----------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|pcie4c_uscale_plus_0_pcie4c_uscale_core_top | pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/cpllpd_r_reg[3]            | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|pcie4c_uscale_plus_0_pcie4c_uscale_core_top | pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/cpllreset_r_reg[3]         | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|pcie4c_uscale_plus_0_pcie4c_uscale_core_top | pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/qpllpd_r_reg[3]            | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|pcie4c_uscale_plus_0_pcie4c_uscale_core_top | pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/qpllreset_r_reg[3]         | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|pcie4c_uscale_plus_0_pcie4c_uscale_core_top | pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/txprogdivreset_r_reg[3]    | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|pcie4c_uscale_plus_0_pcie4c_uscale_core_top | pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/gtreset_r_reg[3]           | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|pcie4c_uscale_plus_0_pcie4c_uscale_core_top | pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/userrdy_r_reg[3]           | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|pcie4c_uscale_plus_0_pcie4c_uscale_core_top | pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].cdrhold_shift_reg[0][31] | 32     | 16    | NO           | NO                 | YES               | 0      | 16      | 
++--------------------------------------------+----------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+---------------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name                        | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+---------------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | srl_style_fifo.ram_array_reg[7] | 708    | 708        | 708    | 0       | 0      | 0      | 0      | 
+|dsrl__1     | ram_array_reg[15]               | 298    | 298        | 298    | 0       | 0      | 0      | 0      | 
+|dsrl__2     | ram_array_reg[15]               | 327    | 327        | 327    | 0       | 0      | 0      | 0      | 
+|dsrl__3     | srl_style_fifo.ram_array_reg[7] | 684    | 684        | 684    | 0       | 0      | 0      | 0      | 
++------------+---------------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG_GT       |    22|
+|2     |BUFG_GT_SYNC  |     1|
+|3     |CARRY8        |   339|
+|4     |GTYE4_CHANNEL |    16|
+|5     |GTYE4_COMMON  |     4|
+|6     |LUT1          |   214|
+|7     |LUT2          |  1597|
+|8     |LUT3          |  3191|
+|9     |LUT4          |  3293|
+|10    |LUT5          |  2685|
+|11    |LUT6          |  1741|
+|12    |MUXF7         |    18|
+|13    |PCIE4CE4      |     1|
+|14    |RAMB36E2      |    22|
+|16    |SRL16E        |  2004|
+|17    |SRLC32E       |    16|
+|18    |FDCE          |   814|
+|19    |FDPE          |   300|
+|20    |FDRE          | 26916|
+|21    |FDSE          |   327|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:23 ; elapsed = 00:02:05 . Memory (MB): peak = 5413.738 ; gain = 2556.656 ; free physical = 28020 ; free virtual = 45759
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14383 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:50 ; elapsed = 00:01:38 . Memory (MB): peak = 5413.738 ; gain = 2101.914 ; free physical = 40255 ; free virtual = 57994
+Synthesis Optimization Complete : Time (s): cpu = 00:02:24 ; elapsed = 00:02:08 . Memory (MB): peak = 5413.738 ; gain = 2556.656 ; free physical = 40255 ; free virtual = 57970
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.27 . Memory (MB): peak = 5413.738 ; gain = 0.000 ; free physical = 40270 ; free virtual = 57984
+INFO: [Netlist 29-17] Analyzing 357 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[24].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[24].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1 for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[24].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_2 for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[24].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_3 for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[3].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[25].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[4].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[25].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1 for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[5].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[25].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_2 for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[6].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[25].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_3 for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[7].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[26].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[10].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[26].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1 for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[11].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[26].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_2 for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[8].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[26].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_3 for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[9].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[27].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[12].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[27].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1 for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[13].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[27].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_2 for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[14].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[27].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_3 for BUFG_GT inst/pcie4c_uscale_plus_0_gt_top_i/diablo_gt.diablo_gt_phy_wrapper/gt_wizard.gtwizard_top_i/pcie4c_uscale_plus_0_gt_i/inst/gen_gtwizard_gtye4_top.pcie4c_uscale_plus_0_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_cpll_cal_gtye4.gen_cpll_cal_inst[15].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_inst/gtwizard_ultrascale_v1_7_19_gtye4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_0_int/ECC_RAM.RAMB36E2[0].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_0_int/ECC_RAM.RAMB36E2[1].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_0_int/ECC_RAM.RAMB36E2[2].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_0_int/ECC_RAM.RAMB36E2[3].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_0_int/ECC_RAM.RAMB36E2[4].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_0_int/ECC_RAM.RAMB36E2[5].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_1_int/ECC_RAM.RAMB36E2[0].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_1_int/ECC_RAM.RAMB36E2[1].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_1_int/ECC_RAM.RAMB36E2[2].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_1_int/ECC_RAM.RAMB36E2[3].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_1_int/ECC_RAM.RAMB36E2[4].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/RAM32K.bram_comp_inst/bram_16k_1_int/ECC_RAM.RAMB36E2[5].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_post_inst/bram_16k_int/ECC_RAM.RAMB36E2[0].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_post_inst/bram_16k_int/ECC_RAM.RAMB36E2[1].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_post_inst/bram_16k_int/ECC_RAM.RAMB36E2[2].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_post_inst/bram_16k_int/ECC_RAM.RAMB36E2[3].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_post_inst/bram_16k_int/ECC_RAM.RAMB36E2[4].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_post_inst/bram_16k_int/ECC_RAM.RAMB36E2[5].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_repl_inst/bram_rep_int_0/ECC_RAM.RAMB36E2[0].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_repl_inst/bram_rep_int_0/ECC_RAM.RAMB36E2[1].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_repl_inst/bram_rep_int_0/ECC_RAM.RAMB36E2[2].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/pcie4c_uscale_plus_0_pcie_4_0_pipe_inst/pcie_4_0_bram_inst/bram_repl_inst/bram_rep_int_0/ECC_RAM.RAMB36E2[3].ramb36e2_inst has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5434.023 ; gain = 0.000 ; free physical = 40308 ; free virtual = 58023
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 23c77628
+INFO: [Common 17-83] Releasing license: Synthesis
+480 Infos, 244 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:33 ; elapsed = 00:02:18 . Memory (MB): peak = 5434.023 ; gain = 3898.758 ; free physical = 40310 ; free virtual = 58024
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 9880.473; main = 4582.329; forked = 7100.670
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 18284.832; main = 5434.027; forked = 14435.297
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.03 . Memory (MB): peak = 5458.035 ; gain = 0.000 ; free physical = 40306 ; free virtual = 58025
+INFO: [Common 17-1381] The checkpoint '/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/pcie4c_uscale_plus_0_synth_1/pcie4c_uscale_plus_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP pcie4c_uscale_plus_0, cache-ID = cc34b83458a582c0
+INFO: [Coretcl 2-1174] Renamed 237 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5458.035 ; gain = 0.000 ; free physical = 40251 ; free virtual = 58017
+INFO: [Common 17-1381] The checkpoint '/home/hkchu/xillybus/verilog/vivado/xillydemo.runs/pcie4c_uscale_plus_0_synth_1/pcie4c_uscale_plus_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file pcie4c_uscale_plus_0_utilization_synth.rpt -pb pcie4c_uscale_plus_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 27 10:13:00 2025...

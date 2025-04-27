@@ -1,0 +1,142 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Apr 27 10:04:39 2025
+# Process ID         : 46809
+# Current directory  : /home/hkchu/xillybus/verilog
+# Command line       : vivado -mode batch -source xillydemo-vivado.tcl
+# Log file           : /home/hkchu/xillybus/verilog/vivado.log
+# Journal file       : /home/hkchu/xillybus/verilog/vivado.jou
+# Running On         : pikespeak
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i9-11900K @ 3.50GHz
+# CPU Frequency      : 4685.660 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 67185 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 69332 MB
+# Available Virtual  : 67842 MB
+#-----------------------------------------------------------
+source xillydemo-vivado.tcl
+# set proj_dir [file normalize [file dirname [info script]]/vivado]
+# set essentials_dir [file normalize "$proj_dir/../../vivado-essentials"]
+# set proj_lang Verilog
+# set proj_suffix v
+# set blockbundle 0
+# source $essentials_dir/main.tcl
+## set proj_name xillydemo
+## set thepart [ get_parts -filter { NAME =~ xcu50-fsvh2104-2-e* } ]
+## set pcie_vivado pcie4c_uscale_plus_0
+## if {[string first { } $proj_dir] >= 0} {
+## send_msg_id xillydemo-1 error "The path to the the project directory contains white space(s): \"$proj_dir\". This is known to cause problems with Vivado. Please move the project to a path without white spaces, and try again."
+## }
+## create_project $proj_name "$proj_dir/"
+## set obj [get_projects $proj_name]
+## set_property "default_lib" "xil_defaultlib" $obj
+## set_property "part" $thepart $obj
+WARNING: [Ipconfig 75-871] Could not load NoC clock tree from device
+WARNING: [Ipconfig 75-570] Unable to create NoC or AIE Models.
+## set_property "simulator_language" "Mixed" $obj
+## set_property "source_mgmt_mode" "DisplayOnly" $obj
+## set_property target_language $proj_lang $obj
+## if {[string equal [get_filesets sources_1] ""]} {
+##   create_fileset -srcset sources_1
+## }
+## set obj [get_filesets sources_1]
+## set_property "top" "xillydemo" $obj
+## set_msg_config -new_severity "INFO" -id {Coretcl 2-1280} -string {{pcie}}
+## if $blockbundle {
+##   set_msg_config -new_severity "INFO" -id {IP_Flow 19-3298} -string {{fifo_xillybus_}}
+##   set_msg_config -new_severity "INFO" -id {filemgmt 20-1440} -string {{core/xillybus}}
+## 
+##   set_property "ip_repo_paths" "[file normalize "$proj_dir/../xillybus_block"]" [current_fileset]
+##   update_ip_catalog
+## 
+##   set files [list \
+##    "[file normalize "$proj_dir/../src/xillydemo.v"]"\
+##    "[file normalize "$essentials_dir/$pcie_vivado/$pcie_vivado.xci"]"\
+##    "[file normalize "$proj_dir/../blockdesign/blockdesign.bd"]"\
+##   ]
+## } else {
+##   set files [list \
+##    "[file normalize "$proj_dir/../src/xillydemo.$proj_suffix"]"\
+##    "[file normalize "$proj_dir/../src/xillybus.v"]"\
+##    "[file normalize "$proj_dir/../src/xillybus_core.v"]"\
+##    "[file normalize "$essentials_dir/fifo_8x2048/fifo_8x2048.xci"]"\
+##    "[file normalize "$essentials_dir/fifo_32x512/fifo_32x512.xci"]"\
+##    "[file normalize "$essentials_dir/$pcie_vivado/$pcie_vivado.xci"]"\
+##    "[file normalize "$proj_dir/../../core/xillybus_core.edf"]"\
+##   ]
+## }
+## set obj [get_filesets sources_1]
+## add_files -norecurse -fileset $obj $files
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [Vivado 12-13650] The IP file '/home/hkchu/xillybus/vivado-essentials/fifo_8x2048/fifo_8x2048.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '/home/hkchu/xillybus/vivado-essentials/fifo_8x2048'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+WARNING: [Vivado 12-13650] The IP file '/home/hkchu/xillybus/vivado-essentials/fifo_32x512/fifo_32x512.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '/home/hkchu/xillybus/vivado-essentials/fifo_32x512'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+WARNING: [Vivado 12-13650] The IP file '/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0/pcie4c_uscale_plus_0.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '/home/hkchu/xillybus/vivado-essentials/pcie4c_uscale_plus_0'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+## upgrade_ip [get_ips]
+WARNING: [Coretcl 2-1042] No IP was identified for upgrade.
+## if {[string equal [get_filesets constrs_1] ""]} {
+##   create_fileset -constrset constrs_1
+## }
+## set obj [get_filesets constrs_1]
+## add_files -fileset $obj -norecurse "[file normalize "$essentials_dir/xillydemo.xdc"]"
+## if $blockbundle {
+##   add_files -fileset $obj -norecurse "[file normalize "$proj_dir/../src/detach_clocks.xdc"]"
+## }
+## if {[string equal [get_filesets sim_1] ""]} {
+##   create_fileset -simset sim_1
+## }
+## if {[string equal [get_runs synth_1] ""]} {
+##   create_run -name synth_1 -part $thepart -flow {Vivado Synthesis 2014} -strategy "Vivado Synthesis Defaults" -constrset constrs_1
+## }
+## set obj [get_runs synth_1]
+## set_property "part" $thepart $obj
+## if {[string equal [get_runs impl_1] ""]} {
+##   create_run -name impl_1 -part $thepart -flow {Vivado Implementation 2014} -strategy "Vivado Implementation Defaults" -constrset constrs_1 -parent_run synth_1
+## }
+## set obj [get_runs impl_1]
+## set_property "part" $thepart $obj
+## set_property STEPS.PHYS_OPT_DESIGN.IS_ENABLED true $obj
+## set_property STEPS.POST_ROUTE_PHYS_OPT_DESIGN.IS_ENABLED true $obj
+## set_property STEPS.WRITE_BITSTREAM.TCL.PRE "$essentials_dir/showstopper.tcl" $obj
+WARNING: [Runs 36-537] File /home/hkchu/xillybus/vivado-essentials/showstopper.tcl is not part of fileset utils_1, but has specified as a Tcl hook script for run(s) impl_1. This file will not be handled as part of the project for archive and other project based functionality.
+## if $blockbundle {
+##     # The clocking wizard can't be part of blockdesign.bd, because the VLNV
+##     # definition requires a specific version. So grab the VLNV from the list
+##     # of IPs using wildcards, insert, configure and connect in Tcl.
+## 
+##     open_bd_design $proj_dir/../blockdesign/blockdesign.bd
+## 
+##     startgroup
+## 
+##     create_bd_cell -type ip -vlnv [get_ipdefs *:clk_wiz:*] stream_clk_gen
+##     set_property -dict [list CONFIG.PRIM_IN_FREQ.VALUE_SRC USER] \
+## 	[get_bd_cells stream_clk_gen]
+## 
+##     set_property -dict [list \
+## 			    CONFIG.PRIM_IN_FREQ {250} \
+## 			    CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {100} ] \
+## 	[get_bd_cells stream_clk_gen]
+## 
+##     connect_bd_net [get_bd_pins stream_clk_gen/clk_in1] [get_bd_pins xillybus_bundled_0/bus_clk]
+##     connect_bd_net [get_bd_pins stream_clk_gen/clk_out1] [get_bd_pins xillybus_bundled_0/ap_clk]
+##     connect_bd_net [get_bd_pins stream_clk_gen/reset] [get_bd_pins xillybus_bundled_0/quiesce]
+## 
+##     endgroup
+## 
+##     # Improve the graphic layout (hopefully)
+##     regenerate_bd_layout
+## 
+##     save_bd_design
+##     close_bd_design [get_bd_designs blockdesign]
+## }
+## puts "INFO: Project created: $proj_name"
+INFO: Project created: xillydemo
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 27 10:04:48 2025...
