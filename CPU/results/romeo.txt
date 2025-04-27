@@ -1,5 +1,4 @@
 ROMEO
-JULIET
 ROMEO  Is the day so young?
 ROMEO  Ay me, sad hours seem long.
 ROMEO
@@ -27,11 +26,6 @@ ROMEO  Whose house?
 ROMEO
 ROMEO
 ROMEO
-JULIET  How now, who calls?
-JULIET
-JULIET
-JULIET
-JULIET
 ROMEO
 ROMEO
 ROMEO
@@ -48,77 +42,39 @@ ROMEO
 ROMEO, [to a Servingman]
 ROMEO
 ROMEO, [taking Juliet's hand]
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET  You kiss by th' book.
 ROMEO
 ROMEO, [aside]  Is she a Capulet?
 ROMEO
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET  A rhyme I learned even now
 ROMEO
 ROMEO
-JULIET  Ay me.
 ROMEO, [aside]  She speaks.
-JULIET
 ROMEO, [aside]
-JULIET
 ROMEO  I take thee at thy word.
-JULIET
 ROMEO  By a name
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET  Do not swear at all.
 ROMEO  If my heart's dear love--
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET
-JULIET
-JULIET  By and by, I come.--
 ROMEO  So thrive my soul--
-JULIET  A thousand times good night.	[She exits.]
 ROMEO
-JULIET
 ROMEO
-JULIET
 ROMEO  My dear.
-JULIET  What o'clock tomorrow
 ROMEO  By the hour of nine.
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET  Sweet, so would I.
 ROMEO
 ROMEO
 ROMEO
@@ -156,21 +112,8 @@ ROMEO  What sayst thou, my dear nurse?
 ROMEO
 ROMEO  Ay, nurse, what of that? Both with an R.
 ROMEO  Commend me to thy lady.
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET  I have.
-JULIET
 ROMEO
-JULIET
-JULIET
 ROMEO
-JULIET
 ROMEO
 ROMEO
 ROMEO
@@ -182,18 +125,6 @@ ROMEO
 ROMEO
 ROMEO  This shall determine that.
 ROMEO
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET  Blistered be thy tongue
-JULIET
-JULIET
-JULIET
 ROMEO
 ROMEO
 ROMEO
@@ -210,60 +141,13 @@ ROMEO  As if that name,
 ROMEO
 ROMEO
 ROMEO
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET  Nurse?
-JULIET
 ROMEO
-JULIET
 ROMEO  Farewell.
-JULIET
 ROMEO
-JULIET
 ROMEO
-JULIET
-JULIET
-JULIET  Madam, I am not well.
-JULIET
-JULIET  Feeling so the loss,
-JULIET
-JULIET, [aside]
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET, [kneeling]
-JULIET
-JULIET, [rising]
-JULIET
-JULIET  Amen.
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
-JULIET
 ROMEO
 ROMEO
 ROMEO  Tush, thou art deceived.
@@ -278,7 +162,4 @@ ROMEO, [beginning to force open the tomb]
 ROMEO
 ROMEO
 ROMEO
-JULIET
-JULIET
-JULIET
 
