@@ -501,23 +501,28 @@ __device__ inline int pmatch(State *start, char *s, List *dl1, List *dl2) {
     nlist = t; // swap clist, nlist
 
     // check for a match in the middle of the string
-    //	if (ispmatch(clist))
-    // return 1;
+    if (ispmatch(clist))
+      return 1;
   }
-  return ispmatch(clist);
+  return 0;
 }
 
 /* Check for a string match at all possible start positions */
 __device__ inline int panypmatch(State *start, char *s, List *dl1, List *dl2) {
-  int isMatch = pmatch(start, s, dl1, dl2);
-  /*	int index = 0;
-          int len = pstrlen(s);
-          while (!isMatch && index < len) {
-                  isMatch = pmatch(start, s + index, dl1, dl2);
-                  index ++;
-          }
-  */
-  return isMatch;
+  // int isMatch = pmatch(start, s, dl1, dl2);
+
+
+  // loop through each char and attempt pmatch on it
+  // if successful, then we can break out early
+  int index = 0;
+  int len = pstrlen(s);
+  while (index < len) {
+    if (pmatch(start, s + index, dl1, dl2)) {
+      return 1;
+    }
+    index ++;
+  }
+  return 0;
 }
 
 __device__ __shared__ State *st;
@@ -533,9 +538,7 @@ __global__ void parallelMatch(char *bigLine, u32 *tableOfLineStarts,
 
     if (threadIdx.x == 0) {
       pre2post(regexLines + regexTable[j]);
-
       char *postfix = buf;
-
       pnstate = 0;
       states = s;
 
@@ -550,20 +553,45 @@ __global__ void parallelMatch(char *bigLine, u32 *tableOfLineStarts,
     int i;
     for (i = blockIdx.x * blockDim.x + threadIdx.x; i < numLines;
          i += gridDim.x * blockDim.x) {
-      
-      // modified so that the devResult would pass if already matched
-      // ensures ruleset matches over everything
-      if (devResult[i] == 1) continue;
+          
       char *lineSegment = bigLine + tableOfLineStarts[i];
       if (panypmatch(st, lineSegment, &d1, &d2))
         devResult[i] = 1;
     }
-
-    if (!(j == 0 || j == numRegexs - 1)) {
-      __syncthreads();
-    }
   }
 }
+
+      // printf("%s\n", regexLines + regexTable[i]);
+
+  // if (threadIdx.x == 0) {
+  //   pre2post(regexLines + regexTable[j]);
+
+  //   char *postfix = buf;
+
+  //   pnstate = 0;
+  //   states = s;
+
+  //   st = ppost2nfa(postfix);
+  // }
+
+  // __syncthreads();
+
+  // List d1;
+  // List d2;
+
+  // int i;
+  // for (i = blockIdx.x * blockDim.x + threadIdx.x; i < numLines;
+  //       i += gridDim.x * blockDim.x) {
+    
+  //   // modified so that the devResult would pass if already matched
+  //   // ensures ruleset matches over everything
+  //   if (devResult[i] == 1) continue;
+  //   char *lineSegment = bigLine + tableOfLineStarts[i];
+  //   if (panypmatch(st, lineSegment, &d1, &d2))
+  //     devResult[i] = 1;
+  // }
+
+
 
 __global__ void test(char *bigLine, u32 *tableOfLineStarts, int numLines,
                      unsigned char *devResult) {
@@ -590,6 +618,9 @@ void pMatch(char *bigLine, u32 *tableOfLineStarts, int numLines, int numRegexs,
 
   unsigned char *devResult;
   cudaMalloc(&devResult, numLines * sizeof(unsigned char));
+
+  // State *dev_states;  
+  // cudaMalloc(&dev_states, 10000 * sizeof(State)); // 10,000 nfa states as a max
 
   parallelMatch<<<512, 160>>>(bigLine, tableOfLineStarts, numLines, numRegexs,
                               time, regexLines, regexTable, devResult);
