@@ -12,3 +12,6 @@ report_power -file power_report.txt
 report_utilization -file utilization_report.txt
 
 write_bitstream "ACTG.bit" -force
+
+# write_cfgmem -force -format mcs -interface spix4 -size 128 -loadbit "up 0x01002000 xillydemo.runs/impl_1/xillydemo.bit" -file test.mcs
+# sudo xbflash2 program --spi --device 02:00.0 --bar-offset 0x1F50000 --verbose --image test.mcs

@@ -12,8 +12,8 @@ module xillybus(PCIE_TX_P, PCIE_TX_N, PCIE_RX_P, PCIE_RX_N, PCIE_REFCLK_P,
   user_r_mem_8_open, user_w_mem_8_wren, user_w_mem_8_data, user_w_mem_8_full,
   user_w_mem_8_open, user_mem_8_addr, user_mem_8_addr_update);
 
-  input [15:0] PCIE_RX_P;
-  input [15:0] PCIE_RX_N;
+  input [7:0] PCIE_RX_P;
+  input [7:0] PCIE_RX_N;
   input  PCIE_REFCLK_P;
   input  PCIE_REFCLK_N;
   input  PCIE_PERST_B_LS;
@@ -29,8 +29,8 @@ module xillybus(PCIE_TX_P, PCIE_TX_N, PCIE_RX_P, PCIE_RX_N, PCIE_REFCLK_P,
   input  user_r_mem_8_empty;
   input  user_r_mem_8_eof;
   input  user_w_mem_8_full;
-  output [15:0] PCIE_TX_P;
-  output [15:0] PCIE_TX_N;
+  output [7:0] PCIE_TX_P;
+  output [7:0] PCIE_TX_N;
   output  bus_clk;
   output  quiesce;
   output  user_r_read_32_rden;
@@ -53,23 +53,23 @@ module xillybus(PCIE_TX_P, PCIE_TX_N, PCIE_RX_P, PCIE_RX_N, PCIE_REFCLK_P,
   wire  trn_reset_n;
   wire  trn_lnk_up_n;
   wire [3:0] s_axis_rq_tready;
-  wire [511:0] s_axis_rq_tdata;
-  wire [15:0] s_axis_rq_tkeep;
+  wire [63:0] s_axis_rq_tdata;
+  wire [1:0] s_axis_rq_tkeep;
   wire  s_axis_rq_tlast;
   wire  s_axis_rq_tvalid;
-  wire [136:0] s_axis_rq_tuser;
-  wire [511:0] m_axis_rc_tdata;
-  wire [15:0] m_axis_rc_tkeep;
+  wire [61:0] s_axis_rq_tuser;
+  wire [63:0] m_axis_rc_tdata;
+  wire [1:0] m_axis_rc_tkeep;
   wire  m_axis_rc_tlast;
   wire  m_axis_rc_tvalid;
   wire  m_axis_rc_tready;
-  wire [511:0] m_axis_cq_tdata;
-  wire [15:0] m_axis_cq_tkeep;
+  wire [63:0] m_axis_cq_tdata;
+  wire [1:0] m_axis_cq_tkeep;
   wire  m_axis_cq_tlast;
   wire  m_axis_cq_tvalid;
   wire  m_axis_cq_tready;
   wire [31:0] cfg_interrupt_msi_int;
-  wire [31:0] cfg_interrupt_msi_pending_status;
+  wire [63:0] cfg_interrupt_msi_pending_status;
   wire  cfg_interrupt_msi_sent;
   wire  cfg_interrupt_msi_fail;
   wire [7:0] trn_fc_cplh;
@@ -184,7 +184,7 @@ module xillybus(PCIE_TX_P, PCIE_TX_N, PCIE_RX_P, PCIE_RX_N, PCIE_REFCLK_P,
       .cfg_interrupt_msi_tph_present(1'b0),
       .cfg_interrupt_msi_tph_type(2'd0),
       .cfg_interrupt_msi_tph_st_tag(8'd0),
-      .cfg_interrupt_msi_pending_status_function_num(1'd0),
+      .cfg_interrupt_msi_pending_status_function_num(2'd0),
       .cfg_interrupt_msi_pending_status_data_enable( 1'b0),
 
       .cfg_interrupt_msi_function_number(8'd0), // PF0
@@ -212,6 +212,7 @@ module xillybus(PCIE_TX_P, PCIE_TX_N, PCIE_RX_P, PCIE_RX_N, PCIE_REFCLK_P,
     .user_w_mem_8_full_w(user_w_mem_8_full), .user_w_mem_8_open_w(user_w_mem_8_open),
     .trn_lnk_up_n_w(trn_lnk_up_n), .user_mem_8_addr_w(user_mem_8_addr),
     .user_mem_8_addr_update_w(user_mem_8_addr_update), .quiesce_w(quiesce),
+    .s_axis_rq_tready_w(s_axis_rq_tready),
     .s_axis_rq_tdata_w(s_axis_rq_tdata), .s_axis_rq_tkeep_w(s_axis_rq_tkeep),
     .s_axis_rq_tlast_w(s_axis_rq_tlast), .s_axis_rq_tvalid_w(s_axis_rq_tvalid),
     .s_axis_rq_tuser_w(s_axis_rq_tuser), .m_axis_rc_tdata_w(m_axis_rc_tdata),

@@ -3,10 +3,11 @@ module xillydemo
    input  PCIE_PERST_B_LS,
    input  PCIE_REFCLK_N,
    input  PCIE_REFCLK_P,
-   input [15:0] PCIE_RX_N,
-   input [15:0] PCIE_RX_P,
-   output [15:0] PCIE_TX_N,
-   output [15:0] PCIE_TX_P
+   input [7:0] PCIE_RX_N,
+   input [7:0] PCIE_RX_P,
+   output [7:0] PCIE_TX_N,
+   output [7:0] PCIE_TX_P,
+   output HBM_CATTRIP
    );
    // Clock and quiesce
    wire 	bus_clk;
@@ -162,5 +163,7 @@ module xillydemo
       );
 
    assign  user_r_read_8_eof = 0;
+   
+   assign HBM_CATTRIP = 1'b0;
    
 endmodule
