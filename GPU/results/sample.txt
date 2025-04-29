@@ -1,4 +1,3 @@
-DEBUG: Total lines parsed: 5
-a
-B
+This line has Prince Andrew in it.
+Nothing special here.
 
