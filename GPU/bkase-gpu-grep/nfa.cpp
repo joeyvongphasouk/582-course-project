@@ -311,12 +311,12 @@ int main(int argc, char **argv) {
   if (timerOn && !parallel) {
     printf("\nSequential Time taken %.4f \n\n", (endTime - startTime));
   } else if (timerOn && parallel) {
+    printf("\nParallel Total Time taken %.4f \n\n", (endPMatch - startTime));
+    printf("\nParallel pMatch Time taken %.4f \n\n",
+           (endPMatch - endCopyStringsToDevice));
     printf("\nParallel ReadFile Time taken %.4f \n", (endReadFile - startTime));
     printf("\nParallel CopyStringsToDevice Time taken %.4f \n",
            (endCopyStringsToDevice - endReadFile));
-    printf("\nParallel pMatch Time taken %.4f \n\n",
-           (endPMatch - endCopyStringsToDevice));
-    printf("\nParallel Total Time taken %.4f \n\n", (endPMatch - startTime));
   }
 
   return EXIT_SUCCESS;
