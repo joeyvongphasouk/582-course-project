@@ -1,0 +1,657 @@
+romeo.regex graph outputs
+=====================================================================================================================
+power_100KB_romeo output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel ReadFile Time taken 0.0003 
+
+Parallel CopyStringsToDevice Time taken 0.0899 
+
+Parallel pMatch Time taken 0.0141 
+
+
+Parallel Total Time taken 0.1044 
+
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.98s to 9.03s
+Idle Baseline: 25.87 W
+Effective Measurement Duration: 5.04 seconds
+Average Power: 33.39 W
+Total Energy: 168.46 Joules
+Idle stabilized at: 9.06 seconds
+$ 
+
+power_200KB_romeo output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel ReadFile Time taken 0.0004 
+
+Parallel CopyStringsToDevice Time taken 0.0823 
+
+Parallel pMatch Time taken 0.0125 
+
+
+Parallel Total Time taken 0.0952 
+
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 4.00s to 8.96s
+Idle Baseline: 25.88 W
+Effective Measurement Duration: 4.95 seconds
+Average Power: 34.47 W
+Total Energy: 170.67 Joules
+Idle stabilized at: 8.99 seconds
+$ 
+
+power_500KB_romeo output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel ReadFile Time taken 0.0007 
+
+Parallel CopyStringsToDevice Time taken 0.0792 
+
+Parallel pMatch Time taken 0.0125 
+
+
+Parallel Total Time taken 0.0925 
+
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.99s to 10.03s
+Idle Baseline: 25.60 W
+Effective Measurement Duration: 6.03 seconds
+Average Power: 31.45 W
+Total Energy: 189.71 Joules
+Idle stabilized at: 10.05 seconds
+$ 
+
+power_1MB_romeo output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel ReadFile Time taken 0.0013 
+
+Parallel CopyStringsToDevice Time taken 0.0770 
+
+Parallel pMatch Time taken 0.0128 
+
+
+Parallel Total Time taken 0.0910 
+
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.99s to 8.87s
+Idle Baseline: 27.83 W
+Effective Measurement Duration: 4.88 seconds
+Average Power: 36.12 W
+Total Energy: 176.28 Joules
+Idle stabilized at: 8.90 seconds
+$ 
+
+power_2MB_romeo output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.0993 
+
+
+Parallel pMatch Time taken 0.0132 
+
+
+Parallel ReadFile Time taken 0.0025 
+
+Parallel CopyStringsToDevice Time taken 0.0836 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.99s to 9.03s
+Idle Baseline: 25.61 W
+Effective Measurement Duration: 5.04 seconds
+Average Power: 33.26 W
+Total Energy: 167.75 Joules
+Idle stabilized at: 9.07 seconds
+$ 
+
+power_5MB_romeo output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.0998 
+
+
+Parallel pMatch Time taken 0.0170 
+
+
+Parallel ReadFile Time taken 0.0048 
+
+Parallel CopyStringsToDevice Time taken 0.0780 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 4.00s to 9.99s
+Idle Baseline: 25.59 W
+Effective Measurement Duration: 6.00 seconds
+Average Power: 35.19 W
+Total Energy: 210.99 Joules
+Idle stabilized at: 10.02 seconds
+$
+
+power_10MB_romeo output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.1294 
+
+
+Parallel pMatch Time taken 0.0237 
+
+
+Parallel ReadFile Time taken 0.0127 
+
+Parallel CopyStringsToDevice Time taken 0.0930 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.98s to 9.36s
+Idle Baseline: 26.65 W
+Effective Measurement Duration: 5.38 seconds
+Average Power: 36.12 W
+Total Energy: 194.28 Joules
+Idle stabilized at: 9.38 seconds
+$ 
+
+power_20MB_romeo output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.1344 
+
+
+Parallel pMatch Time taken 0.0361 
+
+
+Parallel ReadFile Time taken 0.0192 
+
+Parallel CopyStringsToDevice Time taken 0.0790 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.98s to 10.34s
+Idle Baseline: 25.83 W
+Effective Measurement Duration: 6.37 seconds
+Average Power: 35.42 W
+Total Energy: 225.48 Joules
+Idle stabilized at: 10.37 seconds
+$ 
+
+power_50MB_romeo output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.2112 
+
+
+Parallel pMatch Time taken 0.0742 
+
+
+Parallel ReadFile Time taken 0.0182 
+
+Parallel CopyStringsToDevice Time taken 0.1189 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.98s to 9.06s
+Idle Baseline: 27.63 W
+Effective Measurement Duration: 5.08 seconds
+Average Power: 45.41 W
+Total Energy: 230.51 Joules
+Idle stabilized at: 9.09 seconds
+$ 
+
+power_100MB_romeo output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.3527 
+
+
+Parallel pMatch Time taken 0.1394 
+
+
+Parallel ReadFile Time taken 0.0397 
+
+Parallel CopyStringsToDevice Time taken 0.1735 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.99s to 10.40s
+Idle Baseline: 29.01 W
+Effective Measurement Duration: 6.41 seconds
+Average Power: 51.19 W
+Total Energy: 328.22 Joules
+Idle stabilized at: 10.42 seconds
+$ 
+
+power_200MB_romeo output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.6197 
+
+
+Parallel pMatch Time taken 0.2650 
+
+
+Parallel ReadFile Time taken 0.0758 
+
+Parallel CopyStringsToDevice Time taken 0.2790 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.99s to 14.62s
+Idle Baseline: 26.07 W
+Effective Measurement Duration: 10.63 seconds
+Average Power: 46.12 W
+Total Energy: 490.30 Joules
+$ 
+
+power_500MB_romeo output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 1.3697 
+
+
+Parallel pMatch Time taken 0.6458 
+
+
+Parallel ReadFile Time taken 0.1468 
+
+Parallel CopyStringsToDevice Time taken 0.5771 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.98s to 15.35s
+Idle Baseline: 29.12 W
+Effective Measurement Duration: 11.37 seconds
+Average Power: 50.45 W
+Total Energy: 573.55 Joules
+$
+
+power_1GB_romeo output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 2.7236 
+
+
+Parallel pMatch Time taken 1.3140 
+
+
+Parallel ReadFile Time taken 0.3041 
+
+Parallel CopyStringsToDevice Time taken 1.1055 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.99s to 13.20s
+Idle Baseline: 28.22 W
+Effective Measurement Duration: 9.21 seconds
+Average Power: 75.83 W
+Total Energy: 698.35 Joules
+Idle stabilized at: 13.22 seconds
+$
+
+
+
+
+
+
+
+romeo_simple.regex graph outputs
+=====================================================================================================================
+power_100KB_simple output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.1041 
+
+
+Parallel pMatch Time taken 0.0113 
+
+
+Parallel ReadFile Time taken 0.0002 
+
+Parallel CopyStringsToDevice Time taken 0.0926 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 4.00s to 8.57s
+Idle Baseline: 25.89 W
+Effective Measurement Duration: 4.57 seconds
+Average Power: 30.58 W
+Total Energy: 139.64 Joules
+Idle stabilized at: 8.60 seconds
+$ 
+
+power_200KB_simple output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.0881 
+
+
+Parallel pMatch Time taken 0.0097 
+
+
+Parallel ReadFile Time taken 0.0003 
+
+Parallel CopyStringsToDevice Time taken 0.0780 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.98s to 8.39s
+Idle Baseline: 25.86 W
+Effective Measurement Duration: 4.40 seconds
+Average Power: 33.66 W
+Total Energy: 148.25 Joules
+Idle stabilized at: 8.42 seconds
+$
+
+power_500KB_simple output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.0731 
+
+
+Parallel pMatch Time taken 0.0094 
+
+
+Parallel ReadFile Time taken 0.0005 
+
+Parallel CopyStringsToDevice Time taken 0.0631 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 4.00s to 9.02s
+Idle Baseline: 27.98 W
+Effective Measurement Duration: 5.02 seconds
+Average Power: 45.49 W
+Total Energy: 228.24 Joules
+Idle stabilized at: 9.05 seconds
+$ 
+
+power_1MB_simple output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.0815 
+
+
+Parallel pMatch Time taken 0.0096 
+
+
+Parallel ReadFile Time taken 0.0015 
+
+Parallel CopyStringsToDevice Time taken 0.0704 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 4.00s to 8.98s
+Idle Baseline: 26.73 W
+Effective Measurement Duration: 4.97 seconds
+Average Power: 38.15 W
+Total Energy: 189.76 Joules
+Idle stabilized at: 9.01 seconds
+$ 
+
+power_2MB_simple output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.0794 
+
+
+Parallel pMatch Time taken 0.0105 
+
+
+Parallel ReadFile Time taken 0.0023 
+
+Parallel CopyStringsToDevice Time taken 0.0666 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.98s to 8.97s
+Idle Baseline: 25.66 W
+Effective Measurement Duration: 4.98 seconds
+Average Power: 42.10 W
+Total Energy: 209.82 Joules
+Idle stabilized at: 8.99 seconds
+$
+
+power_5MB_simple output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.0950 
+
+
+Parallel pMatch Time taken 0.0106 
+
+
+Parallel ReadFile Time taken 0.0056 
+
+Parallel CopyStringsToDevice Time taken 0.0788 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.98s to 9.00s
+Idle Baseline: 27.72 W
+Effective Measurement Duration: 5.02 seconds
+Average Power: 46.95 W
+Total Energy: 235.64 Joules
+Idle stabilized at: 9.01 seconds
+$
+
+power_10MB_simple output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.1124 
+
+
+Parallel pMatch Time taken 0.0103 
+
+
+Parallel ReadFile Time taken 0.0101 
+
+Parallel CopyStringsToDevice Time taken 0.0921 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 4.00s to 8.05s
+Idle Baseline: 28.76 W
+Effective Measurement Duration: 4.04 seconds
+Average Power: 32.62 W
+Total Energy: 131.91 Joules
+Idle stabilized at: 8.08 seconds
+$ 
+
+power_20MB_simple output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.1254 
+
+
+Parallel pMatch Time taken 0.0134 
+
+
+Parallel ReadFile Time taken 0.0213 
+
+Parallel CopyStringsToDevice Time taken 0.0907 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.97s to 8.93s
+Idle Baseline: 26.27 W
+Effective Measurement Duration: 4.96 seconds
+Average Power: 36.10 W
+Total Energy: 179.00 Joules
+Idle stabilized at: 8.96 seconds
+$
+
+power_50MB_simple output
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.1700 
+
+
+Parallel pMatch Time taken 0.0152 
+
+
+Parallel ReadFile Time taken 0.0286 
+
+Parallel CopyStringsToDevice Time taken 0.1263 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.98s to 8.12s
+Idle Baseline: 28.40 W
+Effective Measurement Duration: 4.14 seconds
+Average Power: 33.65 W
+Total Energy: 139.28 Joules
+Idle stabilized at: 8.14 seconds
+$
+
+power_100MB_simple output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.2443 
+
+
+Parallel pMatch Time taken 0.0220 
+
+
+Parallel ReadFile Time taken 0.0566 
+
+Parallel CopyStringsToDevice Time taken 0.1656 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.99s to 9.16s
+Idle Baseline: 27.97 W
+Effective Measurement Duration: 5.17 seconds
+Average Power: 45.20 W
+Total Energy: 233.46 Joules
+Idle stabilized at: 9.18 seconds
+$ 
+
+power_200MB_simple output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.3610 
+
+
+Parallel pMatch Time taken 0.0348 
+
+
+Parallel ReadFile Time taken 0.0639 
+
+Parallel CopyStringsToDevice Time taken 0.2623 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.98s to 10.26s
+Idle Baseline: 25.92 W
+Effective Measurement Duration: 6.29 seconds
+Average Power: 40.40 W
+Total Energy: 254.04 Joules
+Idle stabilized at: 10.28 seconds
+$ 
+
+power_500MB_simple output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 0.8076 
+
+
+Parallel pMatch Time taken 0.0769 
+
+
+Parallel ReadFile Time taken 0.1511 
+
+Parallel CopyStringsToDevice Time taken 0.5796 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 4.00s to 9.71s
+Idle Baseline: 27.42 W
+Effective Measurement Duration: 5.71 seconds
+Average Power: 51.20 W
+Total Energy: 292.13 Joules
+Idle stabilized at: 9.73 seconds
+$
+
+power_1GB_simple output:
+$ python3 gpu_power_sample.py
+Recording pre-application idle power...
+Running program and logging...
+
+Parallel Total Time taken 1.5534 
+
+
+Parallel pMatch Time taken 0.1497 
+
+
+Parallel ReadFile Time taken 0.3048 
+
+Parallel CopyStringsToDevice Time taken 1.0988 
+Recording post-application idle power...
+
+=== Power Benchmark ===
+Measurement Window: 3.99s to 10.61s
+Idle Baseline: 29.32 W
+Effective Measurement Duration: 6.62 seconds
+Average Power: 34.91 W
+Total Energy: 231.09 Joules
+Idle stabilized at: 10.63 seconds
+$
