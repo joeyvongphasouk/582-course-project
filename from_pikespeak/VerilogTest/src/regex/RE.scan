@@ -1,0 +1,20 @@
+char
+- dash
+. dot
+( open
+) close
++ plus
+* kleene
+| pipe
+x char x78
+\? char ?
+\- char -
+\. char .
+\( char (
+\) char )
+\+ char +
+\* char *
+\| char |
+\s char x20
+\n char x0a
+\\ char \

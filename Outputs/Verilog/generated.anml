@@ -5347,7 +5347,7 @@
 			<activate-on-match element="144"/>
 			<activate-on-match element="145"/>
 		</state-transition-element>
-		<state-transition-element id="71" symbol-set="[\xa]" start="all-input">
+		<state-transition-element id="71" symbol-set="[\x0a]" start="all-input">
 			<activate-on-match element="73"/>
 			<activate-on-match element="74"/>
 			<activate-on-match element="75"/>
@@ -10822,7 +10822,7 @@
 			<activate-on-match element="297"/>
 			<activate-on-match element="379"/>
 		</state-transition-element>
-		<state-transition-element id="144" symbol-set="[\xa]">
+		<state-transition-element id="144" symbol-set="[\x0a]">
 			<activate-on-match element="225"/>
 			<activate-on-match element="226"/>
 			<activate-on-match element="227"/>
@@ -16744,7 +16744,7 @@
 			<activate-on-match element="374"/>
 			<report-on-match reportcode="0"/>
 		</state-transition-element>
-		<state-transition-element id="222" symbol-set="[\xa]">
+		<state-transition-element id="222" symbol-set="[\x0a]">
 			<activate-on-match element="301"/>
 			<activate-on-match element="302"/>
 			<activate-on-match element="303"/>
@@ -17185,7 +17185,7 @@
 		<state-transition-element id="295" symbol-set="[\x20]">
 			<activate-on-match element="298"/>
 		</state-transition-element>
-		<state-transition-element id="296" symbol-set="[\xa]">
+		<state-transition-element id="296" symbol-set="[\x0a]">
 			<activate-on-match element="298"/>
 		</state-transition-element>
 		<state-transition-element id="297" symbol-set="[\x5c]">
@@ -17486,7 +17486,7 @@
 			<activate-on-match element="298"/>
 			<activate-on-match element="375"/>
 		</state-transition-element>
-		<state-transition-element id="372" symbol-set="[\xa]">
+		<state-transition-element id="372" symbol-set="[\x0a]">
 			<activate-on-match element="298"/>
 			<activate-on-match element="375"/>
 		</state-transition-element>
@@ -17951,7 +17951,7 @@
 		<state-transition-element id="471" symbol-set="[\x20]">
 			<activate-on-match element="474"/>
 		</state-transition-element>
-		<state-transition-element id="472" symbol-set="[\xa]">
+		<state-transition-element id="472" symbol-set="[\x0a]">
 			<activate-on-match element="474"/>
 		</state-transition-element>
 		<state-transition-element id="473" symbol-set="[\x5c]">
@@ -18248,7 +18248,7 @@
 			<activate-on-match element="298"/>
 			<activate-on-match element="474"/>
 		</state-transition-element>
-		<state-transition-element id="547" symbol-set="[\xa]">
+		<state-transition-element id="547" symbol-set="[\x0a]">
 			<activate-on-match element="298"/>
 			<activate-on-match element="474"/>
 		</state-transition-element>

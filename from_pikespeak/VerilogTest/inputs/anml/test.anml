@@ -1,0 +1,11 @@
+<anml version="1.0"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<automata-network id="automata">
+		<state-transition-element id="0" symbol-set="[\x4a]" start="all-input">
+			<activate-on-match element="0"/>
+			<report-on-match reportcode="0"/>
+		</state-transition-element>
+		<state-transition-element id="1" symbol-set="[\x52]" start="all-input">
+			<report-on-match reportcode="0"/>
+		</state-transition-element>
+	</automata-network>
+</anml>

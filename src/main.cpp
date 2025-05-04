@@ -60,13 +60,12 @@ int main(int argc, char* argv[]) {
 		return 1;
 	}
 	
-	automata = minimizeAutomata(automata);
+	automata.minimize();
 	outputVerilogFile(automata, fout);
 	fout.close();
 	
 	fout.open(outputDir + "generated.xdc");
 	if (fout.fail()) {
-		std::cout << "?\n"; 
 		return 1;
 	}
 	

@@ -1,6 +1,7 @@
 #ifndef AUTOMATA_H
 #define AUTOMATA_H
 
+#include <iostream>
 #include <vector>
 #include <unordered_set>
 #include <utility>
@@ -15,8 +16,10 @@ struct Automata {
 	
 	std::vector<STE> stes;
 	int bytesPerCharacter;
+	
+	void display(std::ostream& out);
+	
+	void minimize();
 };
-
-Automata minimizeAutomata(Automata& automata);
 
 #endif

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date             : Mon Apr 21 09:49:03 2025
+| Date             : Sun Apr 27 23:50:47 2025
 | Host             : pikespeak running 64-bit Ubuntu 22.04.5 LTS
 | Command          : report_power -file power_report.txt
 | Design           : main
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.214        |
-|   FPGA Power (W)         | 1.974        |
+| Total On-Chip Power (W)  | 2.223        |
+|   FPGA Power (W)         | 1.983        |
 |   HBM Power (W)          | 0.240        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.002        |
+| Dynamic (W)              | 0.011        |
 | Device Static (W)        | 2.212        |
 | Effective TJA (C/W)      | 0.5          |
 | Max Ambient (C)          | 98.8         |
@@ -54,15 +54,15 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        3 |       --- |             --- |
+| Clocks         |     0.006 |        3 |       --- |             --- |
 | CLB Logic      |    <0.001 |       17 |       --- |             --- |
 |   LUT as Logic |    <0.001 |        8 |    871680 |           <0.01 |
 |   Register     |    <0.001 |        2 |   1743360 |           <0.01 |
 |   Others       |     0.000 |        6 |       --- |             --- |
 | Signals        |    <0.001 |       25 |       --- |             --- |
-| I/O            |     0.001 |       19 |       416 |            4.57 |
+| I/O            |     0.004 |       19 |       416 |            4.57 |
 | Static Power   |     2.212 |          |           |                 |
-| Total          |     2.214 |          |           |                 |
+| Total          |     2.223 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,14 +72,14 @@ Table of Contents
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint     |       0.850 |     0.849 |       0.001 |      0.848 |       NA    | Unspecified | NA         |
-| Vccint_io  |       0.850 |     0.201 |       0.000 |      0.201 |       NA    | Unspecified | NA         |
+| Vccint     |       0.850 |     0.856 |       0.008 |      0.848 |       NA    | Unspecified | NA         |
+| Vccint_io  |       0.850 |     0.204 |       0.003 |      0.201 |       NA    | Unspecified | NA         |
 | Vccbram    |       0.850 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
 | Vccaux     |       1.800 |     0.550 |       0.000 |      0.550 |       NA    | Unspecified | NA         |
 | Vccaux_io  |       1.800 |     0.024 |       0.000 |      0.024 |       NA    | Unspecified | NA         |
 | Vcco33     |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25     |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco18     |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18     |       1.800 |     0.001 |       0.001 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15     |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135    |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12     |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -134,7 +134,7 @@ Table of Contents
 +-------+--------+-----------------+
 | Clock | Domain | Constraint (ns) |
 +-------+--------+-----------------+
-| clock | clock  |             4.0 |
+| clock | clock  |             0.5 |
 +-------+--------+-----------------+
 
 
@@ -144,10 +144,13 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------+-----------+
-| Name | Power (W) |
-+------+-----------+
-| main |     0.002 |
-+------+-----------+
++-------------------+-----------+
+| Name              | Power (W) |
++-------------------+-----------+
+| main              |     0.011 |
+|   clock_IBUF_inst |     0.002 |
+|   ste1FF          |     0.003 |
+|   ste2FF          |     0.003 |
++-------------------+-----------+
 
 

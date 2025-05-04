@@ -172,14 +172,10 @@ void outputVerilogFile(Automata& automata, std::ostream& out, bool simulation) {
 	out << "\t\tisActive <= setActive;\n";
 	out << "endmodule\n\n";
 	
-	if (simulation) {
-		out << "module main();\n";
-		out << "\tinteger fin, bytesRead;\n";
-		out << "\treg [" << characterSize - 1 << ":0] character;\n";
-		out << "\treg clock;\n\n";
-	} else {
-		
-	}
+	out << "module main();\n";
+	out << "\tinteger fin, bytesRead;\n";
+	out << "\treg [" << characterSize - 1 << ":0] character;\n";
+	out << "\treg clock;\n\n";
 	
 	first = true;
 	for (unsigned int id = 0; id < automata.stes.size(); id++) {

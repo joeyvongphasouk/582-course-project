@@ -1,4 +1,4 @@
-read_verilog generated.v
+read_verilog romeo_ours.v
 read_xdc generated.xdc
 
 synth_design -top main -part xcu50-fsvh2104-2-e

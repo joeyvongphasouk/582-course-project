@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date         : Mon Apr 21 09:14:37 2025
+| Date         : Sun Apr 27 23:50:47 2025
 | Host         : pikespeak running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_utilization -file utilization_report.txt
 | Design       : main
@@ -37,11 +37,11 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs                |    0 |     0 |          0 |    871680 |  0.00 |
-|   LUT as Logic          |    0 |     0 |          0 |    871680 |  0.00 |
+| CLB LUTs                |    8 |     0 |          0 |    871680 | <0.01 |
+|   LUT as Logic          |    8 |     0 |          0 |    871680 | <0.01 |
 |   LUT as Memory         |    0 |     0 |          0 |    403200 |  0.00 |
-| CLB Registers           |    0 |     0 |          0 |   1743360 |  0.00 |
-|   Register as Flip Flop |    0 |     0 |          0 |   1743360 |  0.00 |
+| CLB Registers           |    2 |     0 |          0 |   1743360 | <0.01 |
+|   Register as Flip Flop |    2 |     0 |          0 |   1743360 | <0.01 |
 |   Register as Latch     |    0 |     0 |          0 |   1743360 |  0.00 |
 | CARRY8                  |    0 |     0 |          0 |    108960 |  0.00 |
 | F7 Muxes                |    0 |     0 |          0 |    435840 |  0.00 |
@@ -66,7 +66,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 0     |          Yes |       Reset |            - |
+| 2     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -76,13 +76,13 @@ Table of Contents
 +----------------------------------------+------+-------+------------+-----------+-------+
 |                Site Type               | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------------------+------+-------+------------+-----------+-------+
-| CLB                                    |    0 |     0 |          0 |    108960 |  0.00 |
-|   CLBL                                 |    0 |     0 |            |           |       |
+| CLB                                    |    3 |     0 |          0 |    108960 | <0.01 |
+|   CLBL                                 |    3 |     0 |            |           |       |
 |   CLBM                                 |    0 |     0 |            |           |       |
-| LUT as Logic                           |    0 |     0 |          0 |    871680 |  0.00 |
+| LUT as Logic                           |    8 |     0 |          0 |    871680 | <0.01 |
 |   using O5 output only                 |    0 |       |            |           |       |
-|   using O6 output only                 |    0 |       |            |           |       |
-|   using O5 and O6                      |    0 |       |            |           |       |
+|   using O6 output only                 |    7 |       |            |           |       |
+|   using O5 and O6                      |    1 |       |            |           |       |
 | LUT as Memory                          |    0 |     0 |          0 |    403200 |  0.00 |
 |   LUT as Distributed RAM               |    0 |     0 |            |           |       |
 |     using O5 output only               |    0 |       |            |           |       |
@@ -92,10 +92,10 @@ Table of Contents
 |     using O5 output only               |    0 |       |            |           |       |
 |     using O6 output only               |    0 |       |            |           |       |
 |     using O5 and O6                    |    0 |       |            |           |       |
-| CLB Registers                          |    0 |     0 |          0 |   1743360 |  0.00 |
-|   Register driven from within the CLB  |    0 |       |            |           |       |
+| CLB Registers                          |    2 |     0 |          0 |   1743360 | <0.01 |
+|   Register driven from within the CLB  |    2 |       |            |           |       |
 |   Register driven from outside the CLB |    0 |       |            |           |       |
-| Unique Control Sets                    |    0 |       |          0 |    217920 |  0.00 |
+| Unique Control Sets                    |    1 |       |          0 |    217920 | <0.01 |
 +----------------------------------------+------+-------+------------+-----------+-------+
 * * Note: Available Control Sets calculated as Slices * 2, Review the Control Sets Report for more information regarding control sets.
 
@@ -130,10 +130,13 @@ Table of Contents
 +------------------+------+-------+------------+-----------+-------+
 |     Site Type    | Used | Fixed | Prohibited | Available | Util% |
 +------------------+------+-------+------------+-----------+-------+
-| Bonded IOB       |    1 |     1 |          0 |       416 |  0.24 |
-| HPIOB_M          |    0 |     0 |          0 |       192 |  0.00 |
-| HPIOB_S          |    1 |     1 |          0 |       192 |  0.52 |
-|   INPUT          |    0 |       |            |           |       |
+| Bonded IOB       |   19 |     1 |          0 |       416 |  4.57 |
+| HPIOB_M          |   10 |     0 |          0 |       192 |  5.21 |
+|   INPUT          |    9 |       |            |           |       |
+|   OUTPUT         |    1 |       |            |           |       |
+|   BIDIR          |    0 |       |            |           |       |
+| HPIOB_S          |    9 |     1 |          0 |       192 |  4.69 |
+|   INPUT          |    8 |       |            |           |       |
 |   OUTPUT         |    1 |       |            |           |       |
 |   BIDIR          |    0 |       |            |           |       |
 | HPIOB_SNGL       |    0 |     0 |          0 |        32 |  0.00 |
@@ -152,7 +155,7 @@ Table of Contents
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCE     |    0 |     0 |          0 |       192 |  0.00 |
+| BUFGCE     |    1 |     0 |          0 |       192 |  0.52 |
 | BUFGCE_DIV |    0 |     0 |          0 |        32 |  0.00 |
 | BUFG_GT    |    0 |     0 |          0 |       384 |  0.00 |
 | BUFGCTRL*  |    0 |     0 |          0 |        64 |  0.00 |
@@ -205,7 +208,15 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUF     |    1 |                 I/O |
+| INBUF    |   17 |                 I/O |
+| IBUFCTRL |   17 |              Others |
+| LUT5     |    4 |                 CLB |
+| OBUF     |    2 |                 I/O |
+| LUT6     |    2 |                 CLB |
+| LUT3     |    2 |                 CLB |
+| FDRE     |    2 |            Register |
+| LUT4     |    1 |                 CLB |
+| BUFGCE   |    1 |               Clock |
 +----------+------+---------------------+
 
 
@@ -262,15 +273,17 @@ Table of Contents
 +----------------------------+------+------+--------+--------+
 |          Site Type         | SLR0 | SLR1 | SLR0 % | SLR1 % |
 +----------------------------+------+------+--------+--------+
-| CLB                        |    0 |    0 |   0.00 |   0.00 |
-|   CLBL                     |    0 |    0 |   0.00 |   0.00 |
+| CLB                        |    0 |    3 |   0.00 |  <0.01 |
+|   CLBL                     |    0 |    3 |   0.00 |   0.01 |
 |   CLBM                     |    0 |    0 |   0.00 |   0.00 |
-| CLB LUTs                   |    0 |    0 |   0.00 |   0.00 |
-|   LUT as Logic             |    0 |    0 |   0.00 |   0.00 |
+| CLB LUTs                   |    0 |    8 |   0.00 |  <0.01 |
+|   LUT as Logic             |    0 |    8 |   0.00 |  <0.01 |
+|     using O6 output only   |    0 |    7 |   0.00 |  <0.01 |
+|     using O5 and O6        |    0 |    1 |   0.00 |  <0.01 |
 |   LUT as Memory            |    0 |    0 |   0.00 |   0.00 |
 |     LUT as Distributed RAM |    0 |    0 |   0.00 |   0.00 |
 |     LUT as Shift Register  |    0 |    0 |   0.00 |   0.00 |
-| CLB Registers              |    0 |    0 |   0.00 |   0.00 |
+| CLB Registers              |    0 |    2 |   0.00 |  <0.01 |
 | CARRY8                     |    0 |    0 |   0.00 |   0.00 |
 | F7 Muxes                   |    0 |    0 |   0.00 |   0.00 |
 | F8 Muxes                   |    0 |    0 |   0.00 |   0.00 |
@@ -280,7 +293,7 @@ Table of Contents
 |   RAMB18                   |    0 |    0 |   0.00 |   0.00 |
 | URAM                       |    0 |    0 |   0.00 |   0.00 |
 | DSPs                       |    0 |    0 |   0.00 |   0.00 |
-| Unique Control Sets        |    0 |    0 |   0.00 |   0.00 |
+| Unique Control Sets        |    0 |    1 |   0.00 |  <0.01 |
 +----------------------------+------+------+--------+--------+
 * Note: Available Control Sets based on CLB Registers / 8
 
@@ -291,10 +304,10 @@ Table of Contents
 +-----------+-----------+---------+------------+----------+------------+----------+-----+
 | SLR Index | Used IOBs | (%)IOBs | Used IPADs | (%)IPADs | Used OPADs | (%)OPADs | GTs |
 +-----------+-----------+---------+------------+----------+------------+----------+-----+
-| SLR1      |         1 |    0.48 |          0 |     0.00 |          0 |     0.00 |   0 |
+| SLR1      |        19 |    9.13 |          0 |     0.00 |          0 |     0.00 |   0 |
 | SLR0      |         0 |    0.00 |          0 |     0.00 |          0 |     0.00 |   0 |
 +-----------+-----------+---------+------------+----------+------------+----------+-----+
-| Total     |         1 |         |          0 |          |          0 |          |   0 |
+| Total     |        19 |         |          0 |          |          0 |          |   0 |
 +-----------+-----------+---------+------------+----------+------------+----------+-----+
 
 

@@ -1,10 +1,58 @@
 #include <algorithm>
 
+#include "regex/utilities.h"
+
 #include "automata.h"
 
-Automata minimizeAutomata(Automata& automata) {
-	std::vector<Automata::STE> stes = automata.stes;
+void Automata::display(std::ostream& out) {
+	out << "Automata: " << '\n';
+	out << "https://dreampuf.github.io/GraphvizOnline/";
+	out << "#digraph%20G%20%7B%0D%0A";
 	
+	out << "%20%20%20%20" << toURI("-1 [shape=circle];\n");
+	
+	for (unsigned int steId = 0; steId < stes.size(); steId++) {
+		out << "%20%20%20%20" << steId << toURI(" [shape=");
+		if (stes[steId].reporting) {
+			out << toURI("double");
+		}
+		out << toURI("circle];\n");
+		
+		std::string transitionsDisplay = "\"";
+		bool first = true;
+		for (std::pair<int, int>& edgeRange : stes[steId].edgeRanges) {
+			if (first) {
+				first = false;
+			} else {
+				transitionsDisplay.push_back(',');
+			}
+			
+			transitionsDisplay.push_back('[');
+			transitionsDisplay.push_back(edgeRange.first);
+			if (edgeRange.first != edgeRange.second) {
+				transitionsDisplay.push_back(',');
+				transitionsDisplay.push_back(edgeRange.second);
+			}
+			transitionsDisplay.push_back(']');
+		}
+		transitionsDisplay.push_back('\"');
+		transitionsDisplay = toURI(transitionsDisplay);
+		
+		if (stes[steId].start) {
+			out << "%20%20%20%20" << -1 << "%20%2D%3E%20" << steId;
+			out << toURI(" [label=") << transitionsDisplay << toURI("];\n");
+		}
+		
+		for (int parent : stes[steId].parents) {
+			out << "%20%20%20%20" << parent << "%20%2D%3E%20" << steId;
+			out << toURI(" [label=") << transitionsDisplay << toURI("];\n");
+		}
+	}
+	
+	out << "%7D%0D%0A" << '\n';
+}
+
+void Automata::minimize() {
 	for (Automata::STE& ste : stes) {
 		std::sort(ste.edgeRanges.begin(), ste.edgeRanges.end());
 		
@@ -48,25 +96,30 @@ Automata minimizeAutomata(Automata& automata) {
 				}
 				
 				bool sameReportStatus = newSTEs[newId].reporting == stes[steId].reporting;
-				bool currentHasSelfEdge = (stes[steId].parents.find(steId) != stes[steId].parents.end()) || (newSTEs[newId].parents.find(steId) != newSTEs[newId].parents.end());
+				bool currentHasSelfEdge = stes[steId].parents.find(steId) != stes[steId].parents.end();
+				bool currentHasEdgeToNew = newSTEs[newId].parents.find(steId) != newSTEs[newId].parents.end();
 				bool newHasSelfEdge = false;
+				bool newHasEdgeToCurrent = false;
 				for (unsigned int parentId = oldId; parentId < steId; parentId++) {
 					if (newIds[parentId] != (int)newId) {
 						continue;
 					}
 					
-					if ((stes[steId].parents.find(parentId) != stes[steId].parents.end()) || (newSTEs[newId].parents.find(parentId) != newSTEs[newId].parents.end())) {
+					if (stes[steId].parents.find(parentId) != stes[steId].parents.end()) {
+						newHasEdgeToCurrent = true;
+					}
+					if (newSTEs[newId].parents.find(parentId) != newSTEs[newId].parents.end()) {
 						newHasSelfEdge = true;
-						break;
 					}
 				}
-				bool sameSelfEdgeStatus = currentHasSelfEdge == newHasSelfEdge;
 				
-				bool sameParents = true;
-				for (unsigned int parentId : stes[steId].parents) {
-					if (parentId != steId && newIds[parentId] != (int)newId && newSTEs[newId].parents.find(parentId) == newSTEs[newId].parents.end()) {
-						sameParents = false;
-						break;
+				bool sameParents = stes[steId].start == newSTEs[newId].start;
+				if (sameParents) {
+					for (unsigned int parentId : stes[steId].parents) {
+						if (parentId != steId && newIds[parentId] != (int)newId && newSTEs[newId].parents.find(parentId) == newSTEs[newId].parents.end()) {
+							sameParents = false;
+							break;
+						}
 					}
 				}
 				if (sameParents) {
@@ -102,7 +155,7 @@ Automata minimizeAutomata(Automata& automata) {
 				std::vector<std::pair<int, int>> mergedEdgeRanges;
 				unsigned int currentEdgeRangeIndex = 0;
 				unsigned int newEdgeRangeIndex = 0;
-				while (currentEdgeRangeIndex < stes[steId].edgeRanges.size() && newEdgeRangeIndex < newSTEs[newId].edgeRanges.size()) {
+				while (currentEdgeRangeIndex < stes[steId].edgeRanges.size() || newEdgeRangeIndex < newSTEs[newId].edgeRanges.size()) {
 					std::pair<int, int>* edgeRange;
 					if (currentEdgeRangeIndex == stes[steId].edgeRanges.size()) {
 						sameCharacters = false;
@@ -114,14 +167,15 @@ Automata minimizeAutomata(Automata& automata) {
 						currentEdgeRangeIndex++;
 					} else {
 						edgeRange = &stes[steId].edgeRanges[currentEdgeRangeIndex];
-						if (sameCharacters && stes[steId].edgeRanges[currentEdgeRangeIndex] != newSTEs[newId].edgeRanges[newEdgeRangeIndex]) {
-							sameCharacters = false;
+						if (sameCharacters && *edgeRange == newSTEs[newId].edgeRanges[newEdgeRangeIndex]) {
 							currentEdgeRangeIndex++;
 							newEdgeRangeIndex++;
 						} else if (stes[steId].edgeRanges[currentEdgeRangeIndex].first <= newSTEs[newId].edgeRanges[newEdgeRangeIndex].first) {
+							sameCharacters = false;
 							edgeRange = &stes[steId].edgeRanges[currentEdgeRangeIndex];
 							currentEdgeRangeIndex++;
 						} else {
+							sameCharacters = false;
 							edgeRange = &newSTEs[newId].edgeRanges[newEdgeRangeIndex];
 							newEdgeRangeIndex++;
 						}
@@ -144,11 +198,11 @@ Automata minimizeAutomata(Automata& automata) {
 					newSTEs[newId].reporting |= stes[steId].reporting;
 					
 					merge = true;
-				} else if (sameReportStatus && sameSelfEdgeStatus && sameParents && sameChildren) {
+				} else if (sameReportStatus && newHasSelfEdge == currentHasSelfEdge && newHasEdgeToCurrent == currentHasEdgeToNew && (!newHasEdgeToCurrent || newHasSelfEdge) && sameParents && sameChildren) {
 					newSTEs[newId].edgeRanges = mergedEdgeRanges;
 					
 					merge = true;
-				} else if (sameReportStatus && sameSelfEdgeStatus && sameChildren && sameCharacters) {
+				} else if (sameReportStatus && (newHasSelfEdge || newHasEdgeToCurrent == currentHasSelfEdge || currentHasEdgeToNew) && sameChildren && sameCharacters) {
 					for (unsigned int parentId : stes[steId].parents) {
 						newSTEs[newId].parents.emplace(parentId);
 					}
@@ -189,6 +243,4 @@ Automata minimizeAutomata(Automata& automata) {
 			break;
 		}
 	}
-	
-	return {stes, automata.bytesPerCharacter};
 }
